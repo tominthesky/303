@@ -5,7 +5,7 @@ $whitelist = ['111.90.176.235'];
 $ip = $_SERVER['REMOTE_ADDR'];
 if (!in_array($ip, $whitelist)) {
     header('HTTP/1.1 403 Forbidden');
-    die("");
+    die(" ");
 }
 
 $ea = '$2a$12$DH.DkcOFokLzY28Avask3ustmDnthzhXTH9wWrlLmXHYbufCcpq7C'; // bcrypt hash
