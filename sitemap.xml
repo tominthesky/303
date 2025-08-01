@@ -1,19 +1,19 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- 
+<!--
 Created with IncludeHelp XML Sitemap Generator
 https://www.includehelp.com/tools/xml-sitemap-generator.aspx
-  -->
+ -->
 <url>
-<loc>https://bramfg.com/</loc>
-<lastmod>2025-08-01</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
+	<loc>https://bramfg.com/</loc>
+	<lastmod>2025-08-01</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://bramfg.com/news/</loc>
-<lastmod>2025-08-01</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
+	<loc>https://bramfg.com/news/</loc>
+	<lastmod>2025-08-01</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>1.0</priority>
 </url>
 </urlset>
