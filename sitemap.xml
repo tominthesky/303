@@ -5,13 +5,7 @@ Created with IncludeHelp XML Sitemap Generator
 https://www.includehelp.com/tools/xml-sitemap-generator.aspx
  -->
 <url>
-	<loc>https://bramfg.com/</loc>
-	<lastmod>2025-08-01</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://bramfg.com/news/</loc>
+	<loc>https://sclt.gov.iq/</loc>
 	<lastmod>2025-08-01</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>1.0</priority>
