@@ -17,7 +17,7 @@
 <meta content="Indonesia" name="geo.placename" />
 <link rel="canonical" href="https://am-autoparts.ae/" />
 <link rel="alternate" hreflang="id-ID" href="https://am-autoparts.ae/" />
-<link rel="amphtml" href="https://abapformazione.it/santai/index.html" />
+<link rel="amphtml" href="https://kasih-naiklah-google.pages.dev/" />
 <link rel="shortcut icon" href="https://imgstore.io/images/2025/05/26/favicon-koitt-2.png">
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="id_ID" />
