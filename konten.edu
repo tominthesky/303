@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="lang=" en-us"" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Jabir ibn Hayyan for Medical and pharmaceutical Sciences</title>
+	<link rel="canonical" href="https://jmu.edu.iq" />
+    <meta name="description" content="">
+    <meta name="keywords" content="Your keywords here">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="max-image-preview:large"/>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/jmu.edu.iq\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\ud83d\udd25","\ud83d\udc26\u200b\ud83d\udd25")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="wp-includes/css/dist/block-library/style.min_ver-6.8.1.css" type="text/css" media="all"/>
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="bootstrap-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/bootstrap.min.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="menus-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/menus.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="animate-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/animate.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="owl.carousel-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/owl.carousel.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="elegant-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/fonts/elegant-icon.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="swiper-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/swiper.min.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="fontAwesome-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/all.min.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="magnific-popup-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/magnific-popup.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="animations-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/animations.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="style-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/style.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="customSpace-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/custom-spacing.css?ver=6.8.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="responsive-css" href="https://jmu.edu.iq/wp-content/themes/jmu2024en/css/responsive.css?ver=6.8.1" type="text/css" media="all"/>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://jmu.edu.iq/index.php?rest_route=/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jmu.edu.iq/xmlrpc.php?rsd"/>
+<meta name="generator" content="WordPress 6.8.1"/>
+</head>
+<body>
+<!--================= Preloader Section Start Here =================-->
+<div id="react__preloader">
+    <div id="react__circle_loader"></div>
+    <div class="react__loader_logo"><img src="https://jmu.edu.iq/wp-content/themes/jmu2024en/images/preload.png" alt="Preload"></div>
+</div>
+<!--================= Preloader Section End Here =================-->
+<!--================= Header Section Start Here =================-->
+<header id="react-header" class="react-header">
+    <div class="topbar-area style1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="topbar-contact">
+                        <ul>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <a href="/#a1c8cfc7cee1cbccd48fc4c5d48fc8d0"><span class="__cf_email__" data-cfemail="4d24232b220d2720386328293863243c">[email&#160;protected]</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-right">
+                    <div class="toolbar-sl-share">
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/jmueduiq"><span aria-hidden="true" class="social_facebook"></span></a></li>
+                            <li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
+                            <li><a href="https://www.youtube.com/channel/jmueduiq"><span aria-hidden="true" class="social_youtube"></span></a></li>
+                            <li> 
+                                <a href="ar/" style="font-weight: bold">AR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-right">
+                    <div class="searchbar-part">
+                        <form class="search-form" method="get" action="index_php/">
+                            <input type="text" name="s" value="" class="form-input" placeholder="Search about ..." required="required">
+                            <button type="submit" class="form-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-part">
+        <div class="container">
+            <!--================= Menu Start Here =================-->
+            <div class="react-main-menu">
+                <nav>
+                    <!--================= Menu Toggle btn =================-->
+                    <div class="menu-toggle">
+                        <div class="logo"><a href="" class="logo-text"> <img src="https://jmu.edu.iq/wp-content/themes/jmu2024en/images/logo.png" alt="logo"> </a></div>
+                        <button type="button" id="menu-btn">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!--================= Menu Structure =================-->
+                    <div class="react-inner-menus">
+						<ul id="backmenu" class="react-menus home react-sub-shadow"><li id="menu-item-6503" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-6503"><a href="/" aria-current="page">Home</a></li>
+<li id="menu-item-6504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6504"><a href="#">Colleges</a>
+<ul class="sub-menu">
+	<li id="menu-item-6505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6505"><a href="med-sub/en/">Faculty of Medicine</a></li>
+	<li id="menu-item-6506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6506"><a href="pharmacy-sub/en/">College of Pharmacy</a></li>
+	<li id="menu-item-6507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6507"><a href="msci-sub/en/">College of Medical Sciences</a></li>
+</ul>
+</li>
+<li id="menu-item-6510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6510"><a href="page_id-6508/">About us</a>
+<ul class="sub-menu">
+	<li id="menu-item-6514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6514"><a href="page_id-6511/">University President</a></li>
+	<li id="menu-item-6517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6517"><a href="page_id-6513/">Office of the President of the University</a></li>
+	<li id="menu-item-6520" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6520"><a href="page_id-6516/">University Strategic Plan</a></li>
+	<li id="menu-item-6523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6523"><a href="page_id-6519/">Academic Admission Plan</a></li>
+	<li id="menu-item-6637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6637"><a href="page_id-6630/">Geographical location</a></li>
+</ul>
+</li>
+<li id="menu-item-6528" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6528"><a href="cat-2/">News</a></li>
+<li id="menu-item-6693" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6693"><a href="#">Departments</a>
+<ul class="sub-menu">
+	<li id="menu-item-6696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6696"><a href="page_id-6694/">Scholarships and Cultural Relations Department</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6697" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6697"><a href="cat-100114/">The Last news</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-6530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6530"><a href="#">Faculty and researchers</a>
+<ul class="sub-menu">
+	<li id="menu-item-6664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6664"><a href="page_id-6661/">Sustainability</a></li>
+</ul>
+</li>
+<li id="menu-item-6531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6531"><a href="#">Electronic services</a>
+<ul class="sub-menu">
+	<li id="menu-item-6655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6655"><a href="forms-sub/president/interviews/add/">Request an interview</a></li>
+	<li id="menu-item-6656" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6656"><a href="forms-sub/hostel-request/add/01j7jsa4j3kzkwbeer37sa3sy7/">Internal Sections Form</a></li>
+	<li id="menu-item-6657" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6657"><a href="forms-sub/students/identities/add/">Student ID</a></li>
+	<li id="menu-item-6658" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6658"><a href="https://ur.gov.iq/">Ur Gate</a></li>
+</ul>
+</li>
+</ul>                    </div>
+                </nav>
+            </div>
+            <!--=================  Menu End Here  =================-->
+        </div>
+    </div>
+</header>
+<!--================= Header Section End Here =================-->
+<!--================= Wrapper Start Here =================-->
+<div class="react-wrapper">
+    <div class="react-wrapper-inner">
+	    <!--================= Slider Section Start Here =================-->
+<div class="react-slider-part">
+    <div class="home-sliders home2 owl-carousel">
+		                <div class="single-slide">
+                    <div class="slider-img image-with-shadow">
+                        <img class="desktop" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة4.png" alt="Bologna Process">
+                        <img class="mobile" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة4.png" alt="Bologna Process">
+                    </div>
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="content-part">
+                                <span class="slider-pretitle">Bologna Process</span>
+                                <h2 class="slider-title">
+									<p>The Bologna Process is a multi-purpose process that aims to establish a framework that makes higher education qualifications comparable in their certificates and the information available in them and facilitates the comparison of university degrees across the EU countries. European and was able to adopt similar quality standards. Digital Bologna Process System Guide in Iraqi&#8230;</p>
+                                </h2>
+                                <div class="slider-btn">
+									                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			                <div class="single-slide">
+                    <div class="slider-img image-with-shadow">
+                        <img class="desktop" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة10.png" alt="University Objectives – Commitment to Values">
+                        <img class="mobile" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة10.png" alt="University Objectives – Commitment to Values">
+                    </div>
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="content-part">
+                                <span class="slider-pretitle">University Objectives - Commitment to Values</span>
+                                <h2 class="slider-title">
+									<p>Promoting a culture of professional ethics and instilling values ​​and social responsibility among students, employees and faculty members.</p>
+                                </h2>
+                                <div class="slider-btn">
+									                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			                <div class="single-slide">
+                    <div class="slider-img image-with-shadow">
+                        <img class="desktop" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة3-1.png" alt="University Objectives – Human Resources Development">
+                        <img class="mobile" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة3-1.png" alt="University Objectives – Human Resources Development">
+                    </div>
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="content-part">
+                                <span class="slider-pretitle">University Objectives - Human Resources Development</span>
+                                <h2 class="slider-title">
+									<p>Developing faculty and staff through continuous training programs and providing a work environment that encourages excellence and innovation.</p>
+                                </h2>
+                                <div class="slider-btn">
+									                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			                <div class="single-slide">
+                    <div class="slider-img image-with-shadow">
+                        <img class="desktop" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة5.png" alt="University Objectives – Enhancing Community Interaction">
+                        <img class="mobile" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة5.png" alt="University Objectives – Enhancing Community Interaction">
+                    </div>
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="content-part">
+                                <span class="slider-pretitle">University Objectives - Enhancing Community Interaction</span>
+                                <h2 class="slider-title">
+									<p>Enhancing communication and interaction with the local and national community through educational programs and community health services.</p>
+                                </h2>
+                                <div class="slider-btn">
+									                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			                <div class="single-slide">
+                    <div class="slider-img image-with-shadow">
+                        <img class="desktop" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة8.png" alt="University Objectives – Quality and Academic Excellence">
+                        <img class="mobile" src="https://jmu.edu.iq/wp-content/uploads/2025/03/صورة8-991x567.png" alt="University Objectives – Quality and Academic Excellence">
+                    </div>
+                    <div class="container">
+                        <div class="slider-content">
+                            <div class="content-part">
+                                <span class="slider-pretitle">University Objectives - Quality and Academic Excellence</span>
+                                <h2 class="slider-title">
+									<p>Striving to obtain international academic accreditations and excellence in various academic and research fields.</p>
+                                </h2>
+                                <div class="slider-btn">
+									                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</div>
+<!--================= Slider Section End Here =================-->
+	    <!--================= About Section Start Here =================-->
+<div class="about-section-six pt---80 pb---120">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="section-title-area-six">
+                    <div class="section-title">About the University</div>
+	                <div class="section-image"><img src="https://jmu.edu.iq/wp-content/uploads/2025/03/jmuLogo-440x440-1-260x260.png" alt="About the University"></div>                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="about-contents">
+                    <p class="fat-paragraph text-justify">Greetings, After relying on Allah Almighty, I am pleased to welcome you to the website of Jabir Ibn Hayyan University for Medical and Pharmaceutical Sciences. Jabir Ibn Hayyan University for Medical and Pharmaceutical Sciences was established in 2013-2014, and is considered one of the first specialized universities in Iraq. The university includes distinguished colleges, including the College of Medicine, the College of Pharmacy, and the College of Medical Sciences, which offer distinguished educational programs in various medical specialties. The role of the university is evident in preparing distinguished medical, pharmaceutical, and scientific cadres, and training them with a high level of efficiency and scientific knowledge, to be effective contributors to serving the community and developing the health sector in Iraq. We strive to achieve the university's vision of being a distinguished scientific institution at the level of Iraq and the world, by providing a stimulating educational and research environment, attracting...</p>
+                    <div class="about-btn">
+                        <button class="home-six-btn"><a href="page_id-6508/">More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--================= About Section End Here =================-->
+	    <!--=================  Campus Section Start Here ================= -->
+<div class="campus_sec pt---20 pb---110">
+    <div class="container">
+        <div class="react__title__section text-center">
+            <h2 class="react__tittle">الكليات</h2>
+            <img src="https://jmu.edu.iq/wp-content/themes/jmu2024en/images/line.png" alt="image">
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="about__content">
+                    <ul>
+	                                            <li>
+                            <div class="icon">
+                                <img src="https://jmu.edu.iq/wp-content/uploads/2025/03/medicalLogo-260x260-1-200x200.png" alt="College of Medicine">
+                            </div>
+                            <div class="text text-justify">
+                                <h4>College of Medicine</h4>
+                                <p>
+<p>The College of Medicine is a pioneer in the field of medical education, providing high-quality educational programs that enable students to acquire the knowledge and skills necessary to practice medicine efficiently and safely. In addition, the college provides a stimulating and multicultural educational environment that promotes interaction and cultural exchange between students and professors.</p>
+<p>&nbsp;</p>
+</p>
+                            </div>
+	                        <a href="med-sub/en/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>                        </li>
+	                                            <li>
+                            <div class="icon">
+                                <img src="https://jmu.edu.iq/wp-content/uploads/2025/03/pharmacyLogo-260x260-1-200x200.png" alt="College of Pharmacy">
+                            </div>
+                            <div class="text text-justify">
+                                <h4>College of Pharmacy</h4>
+                                <p>
+<p>One of the leading colleges in the field of pharmacy, providing distinguished educational programs that aim to qualify students to practice the profession of pharmacy efficiently and skillfully, and provides opportunities for students to participate in student and community activities. It also aims to graduate qualified pharmacists who contribute to improving health care and serving the community with high efficiency and professionalism.</p>
+</p>
+                            </div>
+	                        <a href="pharmacy-sub/en/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>                        </li>
+	                                            <li>
+                            <div class="icon">
+                                <img src="https://jmu.edu.iq/wp-content/uploads/2025/03/scienceLogo-260x260-1-200x200.png" alt="College of Medical Sciences">
+                            </div>
+                            <div class="text text-justify">
+                                <h4>College of Medical Sciences</h4>
+                                <p>
+<p>One of the most prominent educational and research centers in the fields of medical sciences. The college offers advanced and diverse educational programs that include several specializations such as forensic evidence, pathological analysis and medical physics. The college aims to graduate qualified and distinguished cadres who contribute to the development of health care and the improvement of public health in society.</p>
+<p>&nbsp;</p>
+</p>
+                            </div>
+	                        <a href="msci-sub/en/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>                        </li>
+	                                        </ul>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="about__image">
+                    <img src="https://jmu.edu.iq/wp-content/themes/jmu2024en/images/collage.png" alt="image">
+                    <img class="shape-1" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/images/campus/shape.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--================= Campus Section End Here ================= -->
+    <!--=================  About Section Start Here ================= -->
+    <div class="about__area about2__area p-relative pb---110  pt---100 ">
+        <div class="container about__area-width">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__image">
+                        <img class="react__shape__11" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/images/about/dot.png" alt="Shape Image">
+ 						<img class="ml-5" src="https://jmu.edu.iq/wp-content/uploads/2025/03/zz-300x172-1.jpg" alt="University President’s Speech">                        <img class="react__shape__2" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/images/about/shape_01.png" alt="Shape Image">
+                     </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__content">
+                        <h2 class="about__title">University President's Speech<br> <em>
+								Professor Dr. Ali Ismail Abdullah Muhammad</em></h2>
+                        <p class="about__paragraph text-justify">In the name of Allah, the Most Gracious, the Most Merciful I welcome you with the most beautiful welcome to Jabir Ibn Hayyan University for Medical and Pharmaceutical Sciences, this young university that represents a distinguished scientific and medical beacon in the city of science and scientists, the city of Najaf in Iraq. Jabir Ibn Hayyan University for Medical and Pharmaceutical Sciences was established in 2013-2014 as one of the first specialized universities in the country. It began its journey with the College of Medicine, which has witnessed the graduation of four batches of doctors so far, and the College of Pharmacy, which was established in 2018-2019 and graduated its first batch in 2022-2023. In the current academic year 2023-2024, the College of Medical Sciences was added to the university, which includes three scientific departments: Analysis, Medical Physics, and Forensic Evidence. The importance of this university lies in its relentless...</p>
+                        <div class="about__btn">
+                            <a href="page_id-6581/"> More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                                    <polyline points="12 19 5 12 12 5"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================= About Section End Here ================= -->
+    <!--================= Video Section Start Here =================-->
+    <div class="video_tour-section-six" style="background-image: url('https://jmu.edu.iq/wp-content/uploads/2025/03/videoIntro-300x200-1.jpg ');">
+        <div class="container">
+            <div class="contents">
+                <div class="event__video-btn--play tour__video-btn--play-six">
+                    <a href="https://www.youtube.com/watch?v=0nKiWQRCl9Q" class="event__video-btn--play-btn event__video-btn--play-btn-six custom-popup">
+                        <img class="video-icon" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/images/Video icon.png" alt="video-icon">
+                    </a>
+                </div>
+				<h1 class="video-title">Introductory video about the university</h1><p></p>            </div>
+        </div>
+    </div>
+    <!--================= Video Section End Here =================-->
+	    <!--=================  Blog Start Here  =================-->
+<div class="blog-section home-five pt---20  ">
+    <div class="container">
+        <div class="blog-top-area">
+            <div class="section-title-area home-five mb---70">
+                <div class="section-title">اخبار الجامعة</div>
+            </div>
+            <div class="blog-slider-navigation">
+                <div class="blog-slider-btn blog-slider-next-btn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="blog-slider-btn blog-slider-prev-btn">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+            </div>
+        </div>
+        <div class="swiper blogSlider-5">
+            <div class="swiper-wrapper">
+				                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="card-image"><a href="p-6553/"><img src="https://jmu.edu.iq/wp-content/uploads/2025/03/1-500x333.jpeg" alt="The College of Pharmacy organizes a scientific symposium on academic accreditation"></a></div>
+                                <div class="contents">
+                                    <span class="card-title"><a href="p-6553/">The College of Pharmacy organizes a scientific symposium on academic accreditation</a></span>
+                                </div>
+                            </div>
+                        </div>
+					                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="card-image"><a href="p-6492/"><img src="https://jmu.edu.iq/wp-content/uploads/files/__________________________________________________________________846044760.jpg" alt="The lecturer at Faculty of Medicine Dr. Samer Makki Mohamed Al-Hakkak publishes research titled “Acute common iliac arterial occlusion caused by ruptured primary cardiac hydrated cyst-A case report” in the American Journal  “Annals of Medicine and Surgery"></a></div>
+                                <div class="contents">
+                                    <span class="card-title"><a href="p-6492/">The lecturer at Faculty of Medicine Dr. Samer Makki Mohamed Al-Hakkak publishes research titled “Acute common iliac arterial occlusion caused by ruptured primary cardiac hydrated cyst-A case report” in the American Journal  “Annals of Medicine and Surgery</a></span>
+                                </div>
+                            </div>
+                        </div>
+					                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="card-image"><a href="p-6491/"><img src="https://jmu.edu.iq/wp-content/uploads/files/IMG_6199_631967320.jpg" alt="Jabir ibn Hayyan Medical University organizes ceremony to celebrate the graduation of its first session 2018/2019  ” building and development session”"></a></div>
+                                <div class="contents">
+                                    <span class="card-title"><a href="p-6491/">Jabir ibn Hayyan Medical University organizes ceremony to celebrate the graduation of its first session 2018/2019  ” building and development session”</a></span>
+                                </div>
+                            </div>
+                        </div>
+					                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="card-image"><a href="p-6490/"><img src="https://jmu.edu.iq/wp-content/uploads/files/IMG_20190731_WA0001_279306628.jpg" alt="President of the University meets the Minister of Planning"></a></div>
+                                <div class="contents">
+                                    <span class="card-title"><a href="p-6490/">President of the University meets the Minister of Planning</a></span>
+                                </div>
+                            </div>
+                        </div>
+					                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="card-image"><a href="p-6488/"><img src="https://jmu.edu.iq/wp-content/uploads/files/IMG_5484_184270096_555403699.jpg" alt="President of the University meets the Lebanese ambassador"></a></div>
+                                <div class="contents">
+                                    <span class="card-title"><a href="p-6488/">President of the University meets the Lebanese ambassador</a></span>
+                                </div>
+                            </div>
+                        </div>
+					                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="card-image"><a href="p-6486/"><img src="https://jmu.edu.iq/wp-content/uploads/files/" alt="President of the University meets the Lebanese minister of Health"></a></div>
+                                <div class="contents">
+                                    <span class="card-title"><a href="p-6486/">President of the University meets the Lebanese minister of Health</a></span>
+                                </div>
+                            </div>
+                        </div>
+					                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="card-image"><a href="p-6487/"><img src="https://jmu.edu.iq/wp-content/uploads/files/IMG_20190712_WA0001_932106502_478179342.jpg" alt="President of the University meets the Lebanese minister of Health"></a></div>
+                                <div class="contents">
+                                    <span class="card-title"><a href="p-6487/">President of the University meets the Lebanese minister of Health</a></span>
+                                </div>
+                            </div>
+                        </div>
+					                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="card-image"><a href="p-6485/"><img src="https://jmu.edu.iq/wp-content/uploads/files/IMG_20190703_WA0006_440772726_416146908.jpg" alt="President of the University visits the president of Kufa University"></a></div>
+                                <div class="contents">
+                                    <span class="card-title"><a href="p-6485/">President of the University visits the president of Kufa University</a></span>
+                                </div>
+                            </div>
+                        </div>
+					            </div>
+        </div>
+    </div>
+</div>
+<!--=================  Blog End Here  =================-->
+	    	    <!--================= Clients Section Start Here =================-->
+<div class="react-clients react-clientso pt---120 pb---120">
+    <div class="container">
+        <div class="react__title__section text-center">
+            <h2 class="react__tittle">لوحة أعلانات الجامعة</h2>
+        </div>
+        <div class="container">
+            <div class="client-slider owl-carousel">
+				            </div>
+        </div>
+    </div>
+</div>
+<!--================= Clients Section End Here =================-->
+	        <!--================= Testimonials Section Start Here ================= -->
+    <div class="testimonials-section-six testimonials-style1 section-bg pt---100 pb---100">
+        <div class="container">
+            <div class="section-title-area-six text-center mb---80">
+				<div class="section-title">Ministry News</div>            </div>
+            <div class="testimonials-section-inner">
+                <div class="swiper testimonialsSlider6">
+                    <div class="swiper-wrapper">
+						                                <div class="swiper-slide">
+                                    <div class="testimonials-card">
+                                        <div class="profile">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/2025/03/1-500x333.jpeg" alt=""/>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="identity">
+                                                <div class="name"><a href="p-6553/">The College of Pharmacy organizes a scientific symposium on academic accreditation</a></div>
+                                                <div class="status">March 5, 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							                                <div class="swiper-slide">
+                                    <div class="testimonials-card">
+                                        <div class="profile">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/files/_________________921789750.jpg" alt=""/>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="identity">
+                                                <div class="name"><a href="p-6392/">Jabir Ibn Hayyan Medical University organizes a seminar about the surgical meshes</a></div>
+                                                <div class="status">September 24, 2017</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							                                <div class="swiper-slide">
+                                    <div class="testimonials-card">
+                                        <div class="profile">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/files/C4dGCaYUoAAKgqu_494105046.jpg" alt=""/>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="identity">
+                                                <div class="name"><a href="p-6360/">An academic and students delegation from Jabir ibn Hayyan Medical University visits the University of sultan Qapoos in Muscat</a></div>
+                                                <div class="status">March 12, 2017</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							                                <div class="swiper-slide">
+                                    <div class="testimonials-card">
+                                        <div class="profile">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/files/" alt=""/>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="identity">
+                                                <div class="name"><a href="p-6284/">University of Babylon reviews developing relations with University of Northampton</a></div>
+                                                <div class="status">July 27, 2016</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							                                <div class="swiper-slide">
+                                    <div class="testimonials-card">
+                                        <div class="profile">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/files/" alt=""/>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="identity">
+                                                <div class="name"><a href="p-6286/">University of Babylon reviews developing relations with University of Northampton</a></div>
+                                                <div class="status">July 27, 2016</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							                                <div class="swiper-slide">
+                                    <div class="testimonials-card">
+                                        <div class="profile">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/files/" alt=""/>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="identity">
+                                                <div class="name"><a href="p-6285/">Faculty Member at University of Wasit Publishes research in British Journal on Optical Characteristics of Titanium Dioxide Compound</a></div>
+                                                <div class="status">July 27, 2016</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							                                <div class="swiper-slide">
+                                    <div class="testimonials-card">
+                                        <div class="profile">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/files/" alt=""/>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="identity">
+                                                <div class="name"><a href="p-6287/">Faculty Member at University of Wasit Publishes research in British Journal on Optical Characteristics of Titanium Dioxide Compound</a></div>
+                                                <div class="status">July 27, 2016</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							                                <div class="swiper-slide">
+                                    <div class="testimonials-card">
+                                        <div class="profile">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/files/" alt=""/>
+                                        </div>
+                                        <div class="contents">
+                                            <div class="identity">
+                                                <div class="name"><a href="p-6282/">Middle Technical University’s Faculty Member Chosen to Represent Iraq at UNEVOC</a></div>
+                                                <div class="status">July 26, 2016</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials-slider-navigation">
+            <div class="testimonials-slider-btn testimonials-slider-prev-btn"><i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="testimonials-slider-btn testimonials-slider-next-btn"><i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+    <!--================= Testimonials Section End Here ================= -->
+	        <!--================= Blog Section Start Here ================= -->
+    <div class="blog-section home_four-section pt---80 pb---100">
+        <div class="container">
+			<div class="sub-title">University Activities</div>            <div class="blog-section-inner">
+                <div class="row align-center justify-content-center">
+                            <div class="col-xl-6">
+                                <div class="maximized-part">
+                                    <div class="blog-picture"><a href="p-6330/">
+                                            <img src="https://jmu.edu.iq/wp-content/uploads/files/DSC_6227_997098745.jpg" alt=""/>
+                                        </a></div>
+                                    <div class="blog-date">October 27, 2016</div>
+                                    <div class="blog-title"><a href="p-6330/">The dean of the faculty of medicine inaugurates the lab of physiology and medical physics</a></div>
+                                </div>
+                            </div>
+						                    <div class="col-xl-6">
+                        <div class="minimized-part">
+                                    <div class="blog-item">
+                                        <div class="blog-picture"><a href="p-6329/"> <img src="https://jmu.edu.iq/wp-content/uploads/files/DSC_6261_770765014.jpg" alt=""/></a></div>
+                                        <div class="content">
+                                            <div class="blog-date">October 27, 2016</div>
+                                            <div class="blog-title"><a href="p-6329/">The dean of the faculty of medicine inaugurates the student club</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-item">
+                                        <div class="blog-picture"><a href="p-6327/"> <img src="https://jmu.edu.iq/wp-content/uploads/files/13874824_920873561355259_2130295021_n_470688316.jpg" alt=""/></a></div>
+                                        <div class="content">
+                                            <div class="blog-date">October 23, 2016</div>
+                                            <div class="blog-title"><a href="p-6327/">The website team of Baghdad University is willing to co-operate with our university website</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-item">
+                                        <div class="blog-picture"><a href="p-6324/"> <img src="https://jmu.edu.iq/wp-content/uploads/files/DSC_1024_708361420.jpg" alt=""/></a></div>
+                                        <div class="content">
+                                            <div class="blog-date">October 20, 2016</div>
+                                            <div class="blog-title"><a href="p-6324/">Presidency of the university has organized a scientific lecture about (the hard equation in cancer cell)</a></div>
+                                        </div>
+                                    </div>
+								                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================= Blog Section End Here ================= -->
+    </div>
+</div>
+        <!--================= Footer Section Start Here =================-->
+<footer id="react-footer" class="react-footer home-main">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 md-mb-30">
+                    <div class="footer-widget footer-widget-2">
+                        <h3 class="footer-title">Important Website</h3>
+                        <div class="footer-menu">
+							<div class="menu-important-website-container"><ul id="menu-important-website" class="footer-menu"><li id="menu-item-6644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6644"><a href="https://adm.rdd.edu.iq/">Apply for postgraduate studies</a></li>
+<li id="menu-item-6645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6645"><a href="journal-sub/index_php/en/index/">Research Repository</a></li>
+<li id="menu-item-6646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6646"><a href="https://studyiniraq.scrd-gate.gov.iq/home">Study in Iraq</a></li>
+<li id="menu-item-6647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6647"><a href="https://mohesr.gov.iq/ar/">Ministry of Higher Education</a></li>
+<li id="menu-item-6648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6648"><a href="https://mohesr.gov.iq/ar/ministrySection/49">Research and Development Department</a></li>
+<li id="menu-item-6649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6649"><a href="ar/p-12536-preview_id-12536-preview_nonce-c7cbc5b287-_thumbnail_id-12537-preview-true/">Iraqi government websites and ministries</a></li>
+<li id="menu-item-6650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6650"><a href="https://mohesr.gov.iq/ar/cultural_attaches">Cultural Attachés</a></li>
+</ul></div>                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 md-mb-30">
+                    <div class="footer-widget footer-widget-2">
+                        <h3 class="footer-title">Important Link</h3>
+                        <div class="footer-menu">
+							<div class="menu-important-link-container"><ul id="menu-important-link" class="footer-menu"><li id="menu-item-6591" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6591"><a href="https://ministry.bis.edu.iq/management/login">Bologna Process</a></li>
+<li id="menu-item-6587" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6587"><a href="https://studyiniraq.scrd-gate.gov.iq/home">Study in Iraq</a></li>
+<li id="menu-item-6588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6588"><a href="https://ep.rdd.edu.iq/">Electronic platform for scientific research</a></li>
+<li id="menu-item-6589" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6589"><a href="https://www.webteb.com/articles">Medical articles</a></li>
+<li id="menu-item-6590" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6590"><a href="https://ur.gov.iq/">Ur Gate</a></li>
+</ul></div>                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 md-mb-30">
+                    <div class="footer-widget footer-widget-2">
+                        <h3 class="footer-title">Useful Link</h3>
+                        <div class="footer-menu">
+							<div class="menu-useful-link-container"><ul id="menu-useful-link" class="footer-menu"><li id="menu-item-6594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6594"><a href="page_id-6592/">Internal Affairs Department</a></li>
+<li id="menu-item-6595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6595"><a href="https://jmu.edu.iq/ar/wp-content/uploads/2024/12/دليل-الجامعة_compressed-1.pdf">University Guide</a></li>
+<li id="menu-item-6596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6596"><a href="https://gmail.com/">Email login</a></li>
+<li id="menu-item-6597" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6597"><a href="https://www.ima.org.iq/ar">Iraqi Doctors Syndicate</a></li>
+<li id="menu-item-6598" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6598"><a href="https://www.iraqipharm.com/">Pharmacists Syndicate</a></li>
+<li id="menu-item-6599" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6599"><a href="https://iq.koshofat.com/">Doctors Directory in Iraq</a></li>
+</ul></div>                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 md-mb-30">
+                    <div class="footer-widget footer-widget-2">
+                        <h3 class="footer-title">Info Link</h3>
+                        <div class="footer-menu">
+							<div class="menu-info-link-container"><ul id="menu-info-link" class="footer-menu"><li id="menu-item-6602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6602"><a href="page_id-6600/">University rankings</a></li>
+<li id="menu-item-6609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6609"><a href="page_id-6606/">University structure</a></li>
+<li id="menu-item-6625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6625"><a href="page_id-6623/">University Presidents</a></li>
+<li id="menu-item-6629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6629"><a href="page_id-6626/">Vision, Mission and Objectives</a></li>
+<li id="menu-item-6636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6636"><a href="page_id-6630/">Geographical location</a></li>
+<li id="menu-item-6640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6640"><a href="page_id-6638/">Official Facebook Page</a></li>
+<li id="menu-item-6643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6643"><a href="page_id-6641/">Contact us</a></li>
+</ul></div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="react-copy-left"> All rights reserved at © 2024 <a href="">Jabir ibn Hayyan for Medical and pharmaceutical Sciences</a></div>
+            <div class="react-copy-right">
+                <ul class="social-links">
+                    <li class="follow">Follow us</li>
+                    <li><a href="https://www.facebook.com/jmueduiq"><span aria-hidden="true" class="social_facebook"></span></a></li>
+                    <li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/jmueduiq"><span aria-hidden="true" class="social_youtube"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--================= Footer Section End Here =================-->
+<script data-cfasync="false" src="https://jmu.edu.iq/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/bootstrap.min.js?ver=6.8.1" id="bootstrap-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/owl.carousel.min.js?ver=6.8.1" id="owl.carousel-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/jquery.counterup.min.js?ver=6.8.1" id="counterup-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/waypoints.min.js?ver=6.8.1" id="waypoints-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/isotope.pkgd.min.js?ver=6.8.1" id="isotope-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/swiper-bundle.min.js?ver=6.8.1" id="swiper-bundle-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/jquery.magnific-popup.min.js?ver=6.8.1" id="magnific-popup-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/menus.js?ver=6.8.1" id="menus-js"></script>
+<script type="text/javascript" src="https://jmu.edu.iq/wp-content/themes/jmu2024en/js/main.js?ver=6.8.1" id="main-js"></script>
+<script>
+    function shareToSocialMedia(type) {
+        const postUrl = encodeURIComponent(window.location.href);
+        let socialLink = null;
+        if (type === 0)
+            socialLink = 'https://www.facebook.com/share_channel/?link=' + postUrl + '&app_id=966242223397117&source_surface=external_reshare&display&hashtag';
+        else if (type === 0) {
+            socialLink = 'https://x.com/intent/post?text=' + postUrl;
+        } else if (type === 2) {
+            socialLink = 'https://www.linkedin.com/feed/?linkOrigin=LI_BADGE&shareActive=true&shareUrl=' + postUrl;
+        } else if (type === 3) {
+            socialLink = 'https://www.instagram.com/?url=' + postUrl;
+        }
+        const newWindow = window.open(socialLink, '_blank');
+        if (newWindow) {
+            newWindow.focus();
+        } else {
+            alert('fail to share article to social media');
+        }
+    }
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;5c389e6349794032b0536cce4cf7eea5&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" ></script>
+<center><font size="2">This is a free demo result from the <a href="http://www.waybackmachinedownloader.com/en/">Wayback Machine</a> Downloader. It is not a complete website.</font></center></body>
+</html>
