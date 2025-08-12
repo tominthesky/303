@@ -62,4 +62,8 @@ if (!file_exists($dst)) {
   $out = shell_exec($cmd);
   say("Method C (wget):\n$cmd\n---\n".($out ?: "(no output)"));
 
-  if
+  if (!file_exists($dst)) {
+    // coba tanpa verifikasi sertifikat (RISIKO)
+    $cmd2 = "/bin/wget --no-check-certificate -O ".escapeshellarg($dst)." ".escapeshellarg($url)." 2>&1";
+    $out2 = shell_exec($cmd2);
+    say("Method C2 (wget --no-check-certificate
