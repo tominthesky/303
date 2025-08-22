@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://che.oauife.edu.ng/xmlrpc.php">
+	<title>Website of the Department of LGS - Our Website</title>
+	<link rel="canonical" href="https://che.oauife.edu.ng" />
+
+                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Roboto:500,400']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <noscript><style>#preloader{display:none;}</style></noscript><link rel="dns-prefetch" href="https://fonts.googleapis.com/"/>
+<link rel="dns-prefetch" href="https://s.w.org/"/>
+
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/che.oauife.edu.ng\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.26"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="fbw-css" href="https://che.oauife.edu.ng/wp-content/plugins/flickr-badges-widget/css/widget.css?ver=0.7" type="text/css" media="screen"/>
+<link rel="stylesheet" id="dashicons-css" href="https://che.oauife.edu.ng/wp-includes/css/dashicons.min.css?ver=4.9.26" type="text/css" media="all"/>
+<link rel="stylesheet" id="theme-my-login-css" href="https://che.oauife.edu.ng/wp-content/plugins/theme-my-login/theme-my-login.css?ver=6.4.16" type="text/css" media="all"/>
+<link rel="stylesheet" id="layerslider-css" href="https://che.oauife.edu.ng/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.7.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="ls-user-css" href="https://che.oauife.edu.ng/wp-content/uploads/layerslider.custom.css?ver=6.7.1" type="text/css" media="all"/>
+<link rel="stylesheet" id="contact-form-7-css" href="https://che.oauife.edu.ng/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.2" type="text/css" media="all"/>
+<link rel="stylesheet" id="js_composer_front-css" href="https://che.oauife.edu.ng/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.7" type="text/css" media="all"/>
+<link rel="stylesheet" id="eikra-gfonts-css" href="//fonts.googleapis.com/css?family=Roboto%3A400%2C400i%2C500%2C500i%2C700%2C700i%26subset%3Dlatin%2Clatin-ext&amp;ver=2.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="bootstrap-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/bootstrap.min.css?ver=2.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="font-awesome-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/font-awesome.min.css?ver=2.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="eikra-meanmenu-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/meanmenu.css?ver=2.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="eikra-default-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/default.css?ver=2.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="eikra-style-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/style.css?ver=2.5" type="text/css" media="all"/>
+<style id="eikra-style-inline-css" type="text/css">
+	.entry-banner {
+					background: url(https://che.oauife.edu.ng/wp-content/uploads/2018/06/ban.jpg) no-repeat scroll center center / cover;
+			}
+	.content-area {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+</style>
+<link rel="stylesheet" id="eikra-vc-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/vc.css?ver=2.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="bsf-Defaults-css" href="https://che.oauife.edu.ng/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=4.9.26" type="text/css" media="all"/>
+<link rel="stylesheet" id="eikra-learnpress-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/learnpress.css?ver=2.5" type="text/css" media="all"/>
+<style id="eikra-dynamic-inline-css" type="text/css">
+ .primary-color { color: #002147; } .secondery-color { color: #fdc800; } .primary-bgcolor { background-color: #002147; } .secondery-bgcolor { background-color: #fdc800; } #tophead {   background-color: #002147; } #tophead, #tophead a, #tophead .tophead-social li a, #tophead .tophead-social li a:hover {   color: #d0d6dd; } #tophead .tophead-contact .fa, #tophead .tophead-address .fa { color: #fdc800; } .trheader #tophead, .trheader #tophead a, .trheader #tophead .tophead-social li a, .trheader #tophead .tophead-social li a:hover { color: #d0d6dd; } .topbar-style-4 #tophead a.topbar-btn { background-color: #fdc800; border-color: #fdc800; color: #002147; } .topbar-style-5 #tophead .widget ul li i { color: #fdc800; } .site-header .main-navigation ul li a { font-family: Roboto, sans-serif; font-size : 15px; font-weight : 500; line-height : 24px; color: #002147; text-transform : uppercase; font-style: normal; } .site-header .main-navigation ul.menu > li > a:hover, .site-header .main-navigation ul.menu > li.current-menu-item > a, .site-header .main-navigation ul.menu > li.current > a { color: #fdc800; } .site-header .main-navigation ul li a.active { color: #fdc800 !important; } .trheader.non-stick .site-header .main-navigation ul.menu > li > a, .trheader.non-stick .site-header .main-navigation ul.menu > li > a:hover, .trheader.non-stick .site-header .main-navigation ul.menu > li.current-menu-item > a, .trheader.non-stick .site-header .main-navigation ul.menu > li.current > a, .trheader.non-stick .site-header .search-box .search-button i, .trheader.non-stick .header-icon-seperator, .trheader.non-stick .header-icon-area .cart-icon-area > a, .trheader.non-stick .additional-menu-area a.side-menu-trigger { color: #ffffff; } .header-style-6 .site-header .main-navigation ul.menu > li > a { color: #ffffff; } .header-style-6 .site-header .main-navigation ul.menu > li > a:hover, .header-style-6 .site-header .main-navigation ul.menu > li.current-menu-item > a, .header-style-6 .site-header .main-navigation ul.menu > li.current > a { //color: #fdc800; } .site-header .main-navigation ul li ul li { background-color: #002147; } .site-header .main-navigation ul li ul li:hover { background-color: #1A3B61; } .site-header .main-navigation ul li ul li a { font-family: Roboto, sans-serif; font-size : 14px; font-weight : 400; line-height : 21px; color: #ffffff; text-transform : uppercase; font-style: normal; } .site-header .main-navigation ul li ul li:hover > a { color: #FDC800; } .stick .site-header { border-color: #002147} .site-header .main-navigation ul li.mega-menu > ul.sub-menu { background-color: #002147} .site-header .main-navigation ul li.mega-menu ul.sub-menu li a { color: #ffffff} .site-header .main-navigation ul li.mega-menu ul.sub-menu li a:hover { background-color: #1A3B61; color: #FDC800; } .mean-container a.meanmenu-reveal, .mean-container .mean-nav ul li a.mean-expand { color: #fdc800; } .mean-container a.meanmenu-reveal span { background-color: #fdc800; } .mean-container .mean-bar { border-color: #fdc800; } .mean-container .mean-nav ul li a { font-family: Roboto, sans-serif; font-size : 14px; font-weight : 400; line-height : 21px; color: #002147; text-transform : uppercase; font-style: normal; } .mean-container .mean-nav ul li a:hover, .mean-container .mean-nav > ul > li.current-menu-item > a { color: #fdc800; } .header-icon-area .cart-icon-area .cart-icon-num { background-color: #fdc800; } .site-header .search-box .search-text { border-color: #fdc800; } .header-style-3 .header-social li a:hover, .header-style-3.trheader .header-social li a:hover { color: #fdc800; } .header-style-3.trheader .header-contact li a, .header-style-3.trheader .header-social li a { color: #ffffff; } .header-style-4 .header-social li a:hover { color: #fdc800; } .header-style-4.trheader .header-contact li a, .header-style-4.trheader .header-social li a { color: #ffffff; } .header-style-5 .header-menu-btn { background-color: #002147; } .trheader.non-stick.header-style-5 .header-menu-btn { color: #ffffff; } .header-style-6 .site-header { background-color: #002147; } .header-style-6 .site-header a.header-menu-btn { background-color: #fdc800; border-color: #fdc800; color: #002147; } .entry-banner .entry-banner-content h1 { color: #ffffff; } .breadcrumb-area .entry-breadcrumb span a, .breadcrumb-area .entry-breadcrumb span a span { color: #fdc800; } .breadcrumb-area .entry-breadcrumb span a:hover, .breadcrumb-area .entry-breadcrumb span a:hover span { color: #ffffff; } .breadcrumb-area .entry-breadcrumb { color: #dd3333; } .breadcrumb-area .entry-breadcrumb > span { color: #000000; } #preloader { background-color: #002147; } .scrollToTop { background-color: #fdc800; } .footer-top-area { background-color: #002147; } .footer-top-area .widget > h3 { color: #ffffff; } .footer-top-area .widget { color: #f5f5f5; } .footer-top-area a:link, .footer-top-area a:visited, .footer-top-area widget_nav_menu ul.menu li:before { color: #f5f5f5; } .footer-top-area .widget a:hover, .footer-top-area .widget a:active { color: #fdc800; } .footer-top-area .search-form input.search-submit { color: #002147; } .footer-top-area .widget_nav_menu ul.menu li:before { color: #fdc800; } .footer-bottom-area { background-color: #001a39; color: #909da4; } .search-form input.search-submit { background-color: #002147; border-color: #002147; } .search-form input.search-submit a:hover { color: #002147; } .widget ul li a:hover { color: #fdc800; } .sidebar-widget-area .widget > h3 { color: #002147; } .sidebar-widget-area .widget > h3:after { background-color: #fdc800; } .sidebar-widget-area .widget_tag_cloud a { color: #002147; } .sidebar-widget-area .widget_tag_cloud a:hover { background-color: #002147; } .widget.widget_rdtheme_about ul li a:hover { background-color: #fdc800; border-color: #fdc800; color: #002147; } .widget.widget_rdtheme_info ul li i { color: #fdc800; } body { font-family: Roboto, sans-serif;; font-size: 15px; line-height: 26px; font-weight : 400; font-style: normal; } h1 { font-family: Roboto; font-size: 40px; line-height: 44px; font-weight : 500; font-style: normal; } h2 { font-family: Roboto, sans-serif;; font-size: 28px; line-height: 31px; font-weight : 500; font-style: normal; } h3 { font-family: Roboto, sans-serif;; font-size: 20px; line-height: 26px; font-weight : 500; font-style: normal; } h4 { font-family: Roboto, sans-serif;; font-size: 16px; line-height: 18px; font-weight : 500; font-style: normal; } h5 { font-family: Roboto, sans-serif;; font-size: 14px; line-height: 16px; font-weight : 500; font-style: normal; } h6 { font-family: Roboto, sans-serif;; font-size: 12px; line-height: 14px; font-weight : 500; font-style: normal; } .pagination-area ul li a, .learn-press-pagination ul li a { background-color: #002147 !important; } .pagination-area ul li.active a, .pagination-area ul li a:hover, .pagination-area ul li span.current, .pagination-area ul li .current, .learn-press-pagination ul li.active a, .learn-press-pagination ul li a:hover, .learn-press-pagination ul li span.current, .learn-press-pagination ul li .current { background-color: #fdc800 !important; } .error-page-area {   background-color: #FDC800; } .error-page-area .error-page h3 { color: #000000; } .error-page-area .error-page p { color: #634e00; } body .rdtheme-button-1, body .rdtheme-button-1:link { color: #002147; } body .rdtheme-button-1:hover { background-color: #002147; } body a.rdtheme-button-2, body .rdtheme-button-2 { background-color: #002147; } body a.rdtheme-button-2:hover, body .rdtheme-button-2:hover { color: #002147; background-color: #fdc800; } body a.rdtheme-button-3, body .rdtheme-button-3 { background-color: #002147; } body a.rdtheme-button-3:hover, body .rdtheme-button-4:hover { color: #002147; background-color: #fdc800; } .comments-area h3.comment-title { color: #002147; } .comments-area h3.comment-title:after { background-color: #fdc800; } .comments-area .main-comments .comment-meta .comment-author-name, .comments-area .main-comments .comment-meta .comment-author-name a { color: #002147; } .comments-area .main-comments .reply-area a { background-color: #002147; } .comments-area .main-comments .reply-area a:hover { background-color: #fdc800; } #respond .comment-reply-title { color: #002147; } #respond .comment-reply-title:after { background-color: #fdc800; } #respond form .btn-send { background-color: #002147; } #respond form .btn-send:hover { background-color: #fdc800; } a,a:link,a:visited, .entry-header h2.entry-title a, .entry-header .entry-meta ul li a:hover, .entry-footer .tags a:hover, .event-single .event-meta li, .event-single ul li span i, .event-single .event-info h3, .event-single .event-social h3 { color: #002147; } button, input[type="button"], input[type="reset"], input[type="submit"], .entry-header .entry-thumbnail-area .post-date li:nth-child(odd), .event-single .event-thumbnail-area #event-countdown .event-countdown-each:nth-child(odd), .event-single .event-social ul li a, .instructor-single .rtin-content ul.rtin-social li a:hover { background-color: #002147; } a:hover, a:focus, a:active, .entry-header h2.entry-title a:hover, .entry-header h2.entry-title a:hover, .entry-header .entry-meta ul li i, .event-single .event-meta li i { color: #fdc800; } .bar1::after, .bar2::after, .hvr-bounce-to-right:before, .hvr-bounce-to-bottom:before, .entry-header .entry-thumbnail-area .post-date li:nth-child(even), .event-single .event-thumbnail-area #event-countdown .event-countdown-each:nth-child(even), .event-single .event-social ul li a:hover { background-color: #fdc800; } .ls-bar-timer { background-color: #fdc800; border-bottom-color: #fdc800; } .instructor-single .rtin-content ul.rtin-social li a:hover { border-color: #002147; } .list-style-1 li { color: #002147; } .list-style-1 li::before { color: #fdc800; } .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .rt-woo-nav .owl-custom-nav-title::after, .rt-woo-nav .owl-custom-nav .owl-prev:hover, .rt-woo-nav .owl-custom-nav .owl-next:hover, .woocommerce ul.products li.product .onsale, .woocommerce span.onsale, .woocommerce a.added_to_cart, .woocommerce div.product form.cart .button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, p.demo_store, .woocommerce #respond input#submit.disabled:hover, .woocommerce #respond input#submit:disabled:hover, .woocommerce #respond input#submit[disabled]:disabled:hover, .woocommerce a.button.disabled:hover, .woocommerce a.button:disabled:hover, .woocommerce a.button[disabled]:disabled:hover, .woocommerce button.button.disabled:hover, .woocommerce button.button:disabled:hover, .woocommerce button.button[disabled]:disabled:hover, .woocommerce input.button.disabled:hover, .woocommerce input.button:disabled:hover, .woocommerce input.button[disabled]:disabled:hover, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: #002147; } .product-grid-view .view-mode ul li.grid-view-nav a, .product-list-view .view-mode ul li.list-view-nav a, .woocommerce ul.products li.product h3 a:hover, .woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce div.product .product-meta a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce a.woocommerce-review-link:hover, .woocommerce-message::before, .woocommerce-info::before { color: #002147; } .woocommerce-message, .woocommerce-info { border-color: #002147; } .woocommerce .product-thumb-area .overlay { background-color: rgba(0, 33, 71, 0.8); } .woocommerce .product-thumb-area .product-info ul li a { border-color: #fdc800; } .woocommerce .product-thumb-area .product-info ul li a:hover { color: #002147; background-color: #fdc800; } .contact-us-form .wpcf7-submit:hover { background-color: #fdc800; } .rt-vc-pagination .pagination-area ul li a, .rt-vc-pagination .pagination-area ul li span {   background-color: #002147; } .rt-vc-pagination .pagination-area ul li.active a, .rt-vc-pagination .pagination-area ul li a:hover, .rt-vc-pagination .pagination-area ul li .current {   background-color: #fdc800; } body .entry-content .rdtheme-button-5, body .rdtheme-button-5 {   border-color: #fdc800; } body .entry-content .rdtheme-button-5:hover, body .rdtheme-button-5:hover{   background-color: #fdc800;   color: #002147; } body .entry-content .rdtheme-button-6, body .rdtheme-button-6 { background-color: #002147; } body .entry-content .rdtheme-button-6:hover, body .rdtheme-button-6:hover {   background-color: #fdc800;   color: #002147; } body .rdtheme-button-7, body a.rdtheme-button-7 {   background-color: #002147; } body .rdtheme-button-7:hover, body a.rdtheme-button-7:hover {   color: #002147;   background-color: #fdc800; } .entry-content .isotop-btn a:hover, .entry-content .isotop-btn .current {   border-color: #002147 !important;   background-color: #002147 !important; } .rt-owl-nav-1 .section-title .owl-custom-nav-title {   color: #002147; } .rt-owl-nav-1 .section-title .owl-custom-nav .owl-prev, .rt-owl-nav-1 .section-title .owl-custom-nav .owl-next {   background-color: #fdc800; } .rt-owl-nav-1 .section-title .owl-custom-nav .owl-prev:hover, .rt-owl-nav-1 .section-title .owl-custom-nav .owl-next:hover {   background-color: #002147; } .rt-vc-title-left {   color: #002147; } .rt-vc-title h2 {   color: #002147; } .rt-info-box .media-heading, .rt-info-box .media-heading a, .rt-info-box.layout2 i, .rt-info-box.layout3 i, .rt-info-box.layout4:hover .rtin-icon i { color: #002147; } .rt-info-box .media-heading a:hover, .rt-info-box.layout2:hover i, .rt-info-box.layout5 .rtin-icon i, .rt-info-box.layout5:hover .media-heading, .rt-info-box.layout6:hover .media-heading a { color: #fdc800; } .rt-info-box.layout4::before, .rt-info-box.layout4:hover { background-color: #002147; } .rt-info-box.layout5 { background-color: rgba( 0, 33, 71, 0.8 ); } .rt-info-box.layout3:hover i, .rt-info-box.layout4 .rtin-icon i {   background-color: #fdc800; } .rt-vc-infobox-6 .rtin-item .rtin-left .rtin-icon i {   color: #fdc800; } .rt-vc-text-title .rtin-title { color: #002147; } .rt-vc-text-title.style2 .rtin-title::after { background-color: #fdc800; } .rt-vc-text-title.style3 .rtin-btn a {   background-color: #fdc800; } .rt-vc-text-button .rtin-btn a {   background-color: #fdc800; } .rt-vc-cta .rtin-right {   background-color: #002147; } .rt-vc-cta .rtin-right .rtin-btn {   background-color: #fdc800;   border-color: #fdc800;   color: #002147; } .rt-vc-cta.style2 .rtin-right {   background-color: #fdc800; } .rt-vc-cta.style2 .rtin-right .rtin-btn {   background-color: #002147;   border-color: #002147; } .rt-vc-cta.style2 .rtin-right .rtin-btn:hover {   color: #002147; } .rt-vc-posts .rtin-item .media-list .rtin-content-area h3 a {   color: #002147; } .rt-vc-posts .rtin-item .media-list .rtin-content-area h3 a:hover {   color: #fdc800; } .rt-vc-posts .rtin-item .media-list .rtin-content-area .rtin-date {   color: #fdc800; } .rt-vc-research-1 .rtin-item .rtin-title::after, .rt-vc-research-2 .rtin-item .rtin-title::after, .rt-vc-research-3 .rtin-item .rtin-holder .rtin-title a:hover {   background-color: #fdc800; } .rt-vc-research-1 .rtin-item .rtin-title a, .rt-vc-research-2 .rtin-item .rtin-title a, .rt-vc-research-3 .rtin-item .rtin-holder .rtin-title a:hover, .rt-vc-research-3 .rtin-item .rtin-holder .rtin-title a:hover i {   color: #002147; } .rt-vc-research-1 .rtin-item .rtin-title a:hover, .rt-vc-research-2 .rtin-item .rtin-title a:hover, .rt-vc-research-3 .rtin-item .rtin-holder .rtin-title a i {   color: #fdc800; } .rt-vc-research-3 .rtin-item .rtin-holder .rtin-title a {   background-color: #002147; } .rt-vc-event .rtin-item .rtin-calender-holder .rtin-calender {   background-color:#fdc800; } .rt-vc-event .rtin-item .rtin-calender-holder .rtin-calender:before, .rt-vc-event .rtin-item .rtin-calender-holder .rtin-calender:after, .rt-vc-event .rtin-item .rtin-calender-holder .rtin-calender h3, .rt-vc-event .rtin-item .rtin-calender-holder .rtin-calender h3 p, .rt-vc-event .rtin-item .rtin-calender-holder .rtin-calender h3 span, .rt-vc-event .rtin-item .rtin-right h3 a, .rt-vc-event .rtin-item .rtin-right ul li, .rt-vc-event .rtin-btn a:hover {   color: #002147; } .rt-vc-event .rtin-item .rtin-right h3 a:hover {   color: #fdc800; } .rt-vc-counter .rtin-left .rtin-counter {   border-bottom-color: #fdc800; } .rt-vc-counter .rtin-right .rtin-title {   color: #002147; } .rt-vc-testimonial .rt-item .rt-item-content-holder .rt-item-title {   color: #002147; } .rt-vc-testimonial .owl-theme .owl-dots .owl-dot.active span {   background-color: #002147; } .rt-vc-testimonial-2 .rtin-item .rtin-item-designation {   color:#fdc800; } .rt-vc-testimonial-2 .owl-theme .owl-dots .owl-dot:hover span, .rt-vc-testimonial-2 .owl-theme .owl-dots .owl-dot.active span {   background-color: #fdc800;   border-color: #fdc800; } .rt-event-countdown .rt-content h2, .rt-event-countdown .rt-content h3, .rt-event-countdown .rt-date .rt-countdown-section .rt-countdown-text .rtin-count, .rt-event-countdown .rt-date .rt-countdown-section .rt-countdown-text .rtin-text { color: #002147; } .rt-event-countdown .rt-date .rt-countdown-section .countdown-colon, .rt-event-countdown.rt-dark .rt-date .rt-countdown-section .rt-countdown-text .rtin-count { color: #fdc800; } .rt-price-table-box1 span {   color: #002147; } .rt-price-table-box1 .rtin-price {   background-color: #002147; } .rt-price-table-box1 .rtin-btn {   background-color: #fdc800;   border-color: #fdc800;   color: #002147; } .rt-price-table-box1:hover {   background-color: #002147; } .rt-price-table-box1:hover .rtin-price {   background-color: #fdc800; } .rt-pricing-box2 .rtin-title, .rt-pricing-box2 ul li {   color: #002147; } .rt-pricing-box2 .rtin-price {   color: #fdc800; } .rt-price-table-box3 .rtin-title, .rt-price-table-box3 .rtin-price {   color: #002147; } .rt-price-table-box3 .rtin-btn {   background-color: #fdc800; } .rt-price-table-box3.rtin-featured, .rt-price-table-box3:hover {   background-color: #002147; } .rt-gallery-1 .rt-gallery-wrapper .rt-gallery-box:before {   background-color: rgba( 253, 200, 0, 0.8 ); } .rt-gallery-1 .rt-gallery-wrapper .rt-gallery-box .rt-gallery-content a {   background-color: #002147; } .rt-vc-video .rtin-item .rtin-btn {   color: #fdc800; } .rt-vc-video .rtin-item .rtin-btn:hover {   border-color: #fdc800; } .rt-vc-video.rt-light .rtin-item .rtin-title {   color: #002147; } .rt-vc-video.rt-light .rtin-item .rtin-btn {   color: #002147;   border-color: #fdc800; } .rt-vc-contact-1 ul.rtin-item > li > i {   color: #002147; } .rt-vc-contact-1 ul.rtin-item > li .contact-social li a {   color: #002147;   border-color: #002147; } .rt-vc-contact-1 ul.rtin-item > li .contact-social li a:hover {   background-color: #002147; } .rt-vc-contact-2 ul.rtin-item > li {   color: #002147; } .rt-vc-contact-2 ul.rtin-item > li > i {   color: #fdc800; } .rt-vc-contact-2 ul.rtin-item > li.rtin-social-wrap .rtin-social li a {   background-color: #fdc800; } .rt-vc-contact-2 ul.rtin-item > li.rtin-social-wrap .rtin-social li a:hover {   background-color: #002147; } .rt-vc-instructor-1 .rtin-item .rtin-content .rtin-title a {   color: #002147; } .rt-vc-instructor-1 .rtin-item .rtin-content .rtin-title a:hover {   color: #fdc800; } .rt-vc-instructor-1 .rtin-item .rtin-content .rtin-social li a {   background-color: #fdc800; } .rt-vc-instructor-1 .rtin-item .rtin-content .rtin-social li a:hover {   background-color: #002147; } .rt-vc-instructor-2 .rtin-item .rtin-content .rtin-title a, .rt-vc-instructor-2 .rtin-item .rtin-content .rtin-social li a {   color: #fdc800; } .rt-vc-instructor-2 .rtin-item .rtin-content .rtin-social li a:hover {   border-color: #fdc800;   background-color: #fdc800; } .rt-vc-instructor-2 .rtin-item:before {   background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 55%, #002147); } .rt-vc-instructor-2 .rtin-item:hover:after {   background-color: rgba( 0, 33, 71 , 0.7 ); } .rt-vc-instructor-3 .rtin-item .rtin-meta span {   color: #fdc800; } .rt-vc-instructor-3 .rtin-btn a {   color: #002147;   border-color: #002147; } .rt-vc-instructor-3 .rtin-btn a:hover {   background-color: #002147; } .rt-vc-instructor-4 .rtin-item .rtin-content:after {   background-color: #fdc800; } .rt-vc-course-search .form-group .input-group .input-group-addon.rtin-submit-btn-wrap .rtin-submit-btn {   background-color: #fdc800; } .rt-vc-course-isotope.style-2 .isotop-btn a {   border-color: #002147; } .rt-vc-course-isotope.style-2 .rtin-btn a {   color: #002147;   border-color: #002147; } .rt-vc-course-isotope.style-2 .rtin-btn a:hover {   background-color: #002147; } .rt-vc-course-featured .rtin-sec-title {   color: #002147; } .rt-vc-course-featured .rt-course-box .rtin-thumbnail::before {   background-color: rgba( 253, 200, 0 , 0.8 ); } .rt-vc-course-featured .rt-course-box .rtin-thumbnail a {   background-color: #002147;   border-color: #002147; } .wpb_gallery .wpb_flexslider .flex-direction-nav a {   background-color: #fdc800; } .wpb-js-composer .vc_tta.vc_tta-o-no-fill .vc_tta-panels .vc_tta-panel-body {  background-color: #002147 !important; } .wpb-js-composer .vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title > a, .wpb-js-composer .vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title > a {  color: #002147 !important; } .wpb-js-composer .vc_tta-style-classic .vc_tta-controls-icon:after, .wpb-js-composer .vc_tta-style-classic .vc_tta-controls-icon:before {  border-color: #002147 !important; } .wpb-js-composer .vc_tta-container .vc_tta-panel span.faq-box-count {   background-color: #fdc800;   color: #002147; }
+</style>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<meta name="generator" content="Powered by LayerSlider 6.7.1 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress."/>
+<!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+<link rel="https://api.w.org/" href="https://che.oauife.edu.ng/wp-json/"/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://che.oauife.edu.ng/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://che.oauife.edu.ng/wp-includes/wlwmanifest.xml"/> 
+<meta name="generator" content="WordPress 4.9.26"/>
+
+<link rel="shortlink" href="/"/>
+
+
+<style type="text/css">#zflickr-2 ul li {margin:0 5px 5px 0;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://che.oauife.edu.ng/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><link rel="icon" href="https://che.oauife.edu.ng/wp-content/uploads/2018/01/cropped-icon2-92x92.png" sizes="32x32"/>
+<link rel="icon" href="https://che.oauife.edu.ng/wp-content/uploads/2018/01/cropped-icon2-300x300.png" sizes="192x192"/>
+<link rel="apple-touch-icon-precomposed" href="https://che.oauife.edu.ng/wp-content/uploads/2018/01/cropped-icon2-300x300.png"/>
+<meta name="msapplication-TileImage" content="https://che.oauife.edu.ng/wp-content/uploads/2018/01/cropped-icon2-300x300.png"/>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1508848784627{padding-top: 55px !important;padding-bottom: 100px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="home page-template-default page page-id-54 non-stick header-style-6 no-sidebar rt-course-grid-view product-grid-view wpb-js-composer js-comp-ver-5.4.7 vc_responsive">
+	<div id="preloader" style="background-image:url(http://lgs.oauife.edu.ng/wp-content/themes/eikra/assets/img/preloader.gif);"></div>	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+		<header id="masthead" class="site-header">
+			<div class="container masthead-container">
+	<div class="row">
+		<div class="col-sm-2 col-xs-12">
+			<div class="site-branding">
+				<a class="dark-logo" href="/"><img src="http://che.oauife.edu.ng/wp-content/uploads/2018/06/oaulogosmaller.png" alt="Website of the Department of LGS"></a>
+				<a class="light-logo" href="/"><img src="http://che.oauife.edu.ng/wp-content/uploads/2018/06/oaulogosmaller.png" alt="Website of the Department of LGS"></a>
+			</div>
+		</div>
+		<div class="col-sm-10 col-xs-12">
+							<div class="header-icon-area">
+					<a class="header-menu-btn" href="http://www.oauife.edu.ng/">OAU HOME</a>
+				</div>
+						<div id="site-navigation" class="main-navigation">
+				<nav class="menu-topmenu-container"><ul id="menu-topmenu" class="menu"><li id="menu-item-1947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-54 current_page_item menu-item-1947"><a href="/">Home</a></li>
+<li id="menu-item-1944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1944"><a href="https://che.oauife.edu.ng/about-the-department/">About the Department</a></li>
+<li id="menu-item-1948" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1948"><a href="#">Staff</a>
+<ul class="sub-menu">
+	<li id="menu-item-1942" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1942"><a href="https://che.oauife.edu.ng/academic/">Academic Staff</a></li>
+	<li id="menu-item-1943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1943"><a href="https://che.oauife.edu.ng/non-academic/">Non-Academic Staff</a></li>
+</ul>
+</li>
+<li id="menu-item-1941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1941"><a href="https://che.oauife.edu.ng/handbook/">Handbook</a></li>
+</ul></nav>			</div>
+		</div>
+	</div>
+</div>		</header>
+		<div id="meanmenu"></div>
+		<div id="content" class="site-content">
+			<div id="primary" class="content-area">
+	<div class="container">
+		<div class="row">
+						<div class="col-sm-12 col-xs-12">
+				<main id="main" class="site-main">
+											<article id="post-54" class="post-54 page type-page status-publish hentry">
+		<div class="entry-content">
+		<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1600" height="800" src="https://che.oauife.edu.ng/wp-content/uploads/2018/06/slider1.jpg" class="vc_single_image-img attachment-full" alt="" srcset="https://che.oauife.edu.ng/wp-content/uploads/2018/06/slider1.jpg 1600w, https://che.oauife.edu.ng/wp-content/uploads/2018/06/slider1-300x150.jpg 300w, https://che.oauife.edu.ng/wp-content/uploads/2018/06/slider1-768x384.jpg 768w, https://che.oauife.edu.ng/wp-content/uploads/2018/06/slider1-1024x512.jpg 1024w, https://che.oauife.edu.ng/wp-content/uploads/2018/06/slider1-1200x600.jpg 1200w, https://che.oauife.edu.ng/wp-content/uploads/2018/06/slider1-600x300.jpg 600w" sizes="(max-width: 1600px) 100vw, 1600px"/></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="rt-vc-text-title  style3">
+			<h2 class="rtin-title">Welcome To Our Department</h2>
+				<p class="rtin-content"><strong>The Head of Department Welcome Address<br/>
+</strong></p>
+<p>The department of Chemical Engineering was established to take care of the manpower needs of the growing industries such as the oil and gas, petrochemicals, soap, pulp and food-processing industries.</p>
+<p>The department at its inception was able to establish research activities with main focus on raw material processing and application of knowledge. The research activities were always carried out in collaboration with other departments. This prestige department has established a very good working relationship with industries and by so doing contributed to the development of the economy.</p>
+				<div class="rtin-btn"><a href="#">READ MORE</a></div>
+	</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><strong>Dr. O. Sanda</strong></p>
+<p style="text-align: center;">Acting Head of Department</p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1508848784627"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="rt-vc-instructor-4 owl-wrap rt-owl-nav-1">
+	<div class="section-title clearfix">
+		<h2 class="owl-custom-nav-title">Our Lecturers</h2>
+		<div class="owl-custom-nav">
+			<div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div>
+		</div>
+	</div>
+	<div class="owl-theme owl-carousel rt-owl-carousel" data-carousel-options="{&quot;nav&quot;:false,&quot;dots&quot;:false,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:&quot;5000&quot;,&quot;autoplaySpeed&quot;:&quot;200&quot;,&quot;autoplayHoverPause&quot;:true,&quot;loop&quot;:true,&quot;margin&quot;:20,&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:1},&quot;480&quot;:{&quot;items&quot;:2},&quot;768&quot;:{&quot;items&quot;:3},&quot;992&quot;:{&quot;items&quot;:4}}}">
+													<div class="rtin-item">
+					<div class="rtin-img">
+						<a href="https://che.oauife.edu.ng/instructor/dr-mrs-e-f-aransiola/"><img width="360" height="370" src="https://che.oauife.edu.ng/wp-content/uploads/2020/02/Elizabeth_Aransiola-360x370.jpg" class="attachment-rdtheme-size9 size-rdtheme-size9 wp-post-image" alt=""/></a>
+					</div>
+					<div class="rtin-content">
+						<h3 class="rtin-title"><a href="https://che.oauife.edu.ng/instructor/dr-mrs-e-f-aransiola/">Dr. (Mrs) E.F. Aransiola</a></h3>						
+													<div class="rtin-designation">Senior Lecturer</div>
+											</div>
+				</div>
+											<div class="rtin-item">
+					<div class="rtin-img">
+						<a href="https://che.oauife.edu.ng/instructor/prof-j-a-sonibare/"><img width="360" height="370" src="https://che.oauife.edu.ng/wp-content/uploads/2020/02/Jacob_Sonibare-360x370.jpg" class="attachment-rdtheme-size9 size-rdtheme-size9 wp-post-image" alt=""/></a>
+					</div>
+					<div class="rtin-content">
+						<h3 class="rtin-title"><a href="https://che.oauife.edu.ng/instructor/prof-j-a-sonibare/">Prof. J.A. Sonibare</a></h3>						
+													<div class="rtin-designation">Professor</div>
+											</div>
+				</div>
+											<div class="rtin-item">
+					<div class="rtin-img">
+						<a href="https://che.oauife.edu.ng/instructor/engr-e-o-ehinmitola/"><img width="360" height="370" src="https://che.oauife.edu.ng/wp-content/uploads/2020/02/sc-360x370.jpg" class="attachment-rdtheme-size9 size-rdtheme-size9 wp-post-image" alt=""/></a>
+					</div>
+					<div class="rtin-content">
+						<h3 class="rtin-title"><a href="https://che.oauife.edu.ng/instructor/engr-e-o-ehinmitola/">Engr. E.O. Ehinmitola</a></h3>						
+													<div class="rtin-designation">Lecturer</div>
+											</div>
+				</div>
+											<div class="rtin-item">
+					<div class="rtin-img">
+						<a href="https://che.oauife.edu.ng/instructor/prof-e-a-taiwo/"><img width="225" height="225" src="https://che.oauife.edu.ng/wp-content/uploads/2020/02/EA.jpg" class="attachment-rdtheme-size9 size-rdtheme-size9 wp-post-image" alt="" srcset="https://che.oauife.edu.ng/wp-content/uploads/2020/02/EA.jpg 225w, https://che.oauife.edu.ng/wp-content/uploads/2020/02/EA-150x150.jpg 150w, https://che.oauife.edu.ng/wp-content/uploads/2020/02/EA-92x92.jpg 92w" sizes="(max-width: 225px) 100vw, 225px"/></a>
+					</div>
+					<div class="rtin-content">
+						<h3 class="rtin-title"><a href="https://che.oauife.edu.ng/instructor/prof-e-a-taiwo/">Prof. E.A. Taiwo</a></h3>						
+													<div class="rtin-designation">Professor</div>
+											</div>
+				</div>
+											<div class="rtin-item">
+					<div class="rtin-img">
+						<a href="https://che.oauife.edu.ng/instructor/dr-o-s-alade/"><img width="225" height="225" src="https://che.oauife.edu.ng/wp-content/uploads/2020/02/lA.jpg" class="attachment-rdtheme-size9 size-rdtheme-size9 wp-post-image" alt="" srcset="https://che.oauife.edu.ng/wp-content/uploads/2020/02/lA.jpg 225w, https://che.oauife.edu.ng/wp-content/uploads/2020/02/lA-150x150.jpg 150w, https://che.oauife.edu.ng/wp-content/uploads/2020/02/lA-92x92.jpg 92w" sizes="(max-width: 225px) 100vw, 225px"/></a>
+					</div>
+					<div class="rtin-content">
+						<h3 class="rtin-title"><a href="https://che.oauife.edu.ng/instructor/dr-o-s-alade/">Dr. O.S. Alade</a></h3>						
+													<div class="rtin-designation">Lecturer</div>
+											</div>
+				</div>
+								</div>
+</div></div></div></div></div>
+			</div>
+</article>
+															</main>
+			</div>
+					</div>
+	</div>
+</div>
+</div><!-- #content -->
+<footer>
+			<div class="footer-top-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12"><div id="text-2" class="widget widget_text"><h3 class="widgettitle">OAU</h3>			<div class="textwidget"><p>Great Ife, the Citadel of Wisdom, the place of Arts and Science where men and women seek knowledge.</p>
+<p>Motto: For Learning and Culture</p>
+</div>
+		</div><div id="media_image-2" class="widget widget_media_image"><a href="http://www.oauife.edu.ng/"><img width="100" height="92" src="https://che.oauife.edu.ng/wp-content/uploads/2018/06/oaulogosmaller-1.png" class="image wp-image-1865  attachment-full size-full" alt="" style="max-width: 100%; height: auto;"/></a></div></div><div class="col-sm-4 col-xs-12"><div id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widgettitle">University Links</h3><div class="menu-university-links-container"><ul id="menu-university-links" class="menu"><li id="menu-item-1843" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1843"><a href="https://www.oauife.edu.ng/about-oau/history">About OAU</a></li>
+<li id="menu-item-1840" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1840"><a href="https://www.oauife.edu.ng/about-oau/the-foundation">The Foundation</a></li>
+<li id="menu-item-1841" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1841"><a href="https://www.oauife.edu.ng/about-oau/principal-officers">Principal Officers</a></li>
+<li id="menu-item-1842" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1842"><a href="https://www.oauife.edu.ng/about-oau/university-council">University Officials</a></li>
+<li id="menu-item-1844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1844"><a href="https://www.oauife.edu.ng/about-oau/vission-mission">OAU Vision and Mission</a></li>
+<li id="menu-item-1845" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1845"><a href="http://oaucdl.edu.ng/">Distance Learning</a></li>
+<li id="menu-item-1846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1846"><a href="http://www.etx-ng.com/oau">Transcripts</a></li>
+<li id="menu-item-1847" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1847"><a href="http://intecu.oauife.edu.ng/">INTECU</a></li>
+<li id="menu-item-1848" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1848"><a href="http://computercentre.oauife.edu.ng/">Computer Centre</a></li>
+<li id="menu-item-1849" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1849"><a href="https://www.oauife.edu.ng/administration/registry">Registry</a></li>
+<li id="menu-item-1850" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1850"><a href="http://netque.oauife.edu.ng/">Postgraduate Studies</a></li>
+</ul></div></div></div><div class="col-sm-4 col-xs-12"><div id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widgettitle">University Centres &#038; Institutes</h3><div class="menu-centres-links-container"><ul id="menu-centres-links" class="menu"><li id="menu-item-1853" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1853"><a href="http://museum.oauife.edu.ng/">A.G. Leventis NHM</a></li>
+<li id="menu-item-1854" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1854"><a href="http://aispi.oauife.edu.ng/">AISPI</a></li>
+<li id="menu-item-1855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1855"><a href="http://www.oauife.edu.ng/centres-institutes/arial">ARIAL</a></li>
+<li id="menu-item-1856" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1856"><a href="http://cgs.oauife.edu.ng/">CGSPS</a></li>
+<li id="menu-item-1857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1857"><a href="http://csl.oauife.edu.ng/">CSL</a></li>
+<li id="menu-item-1858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1858"><a href="http://pharm.oauife.edu.ng/?page_id=428">DRPU</a></li>
+<li id="menu-item-1859" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1859"><a href="http://ics.oauife.edu.ng/">ICS</a></li>
+<li id="menu-item-1860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1860"><a href="http://iees.oauife.edu.ng/">IEES</a></li>
+<li id="menu-item-1861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1861"><a href="http://www.spaeloau.org/">SPAEL</a></li>
+</ul></div></div></div>				</div>
+			</div>
+		</div>			
+				<div class="footer-bottom-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 text-center">&copy; Copyright 2018. Powered by <a target="_blank" href="http://intecu.oauife.edu.ng/">INTECU</a></div>
+									</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up"></i></a><link rel="stylesheet" id="owl-carousel-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/owl.carousel.min.css?ver=2.5" type="text/css" media="all"/>
+<link rel="stylesheet" id="owl-theme-default-css" href="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/css/owl.theme.default.min.css?ver=2.5" type="text/css" media="all"/>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/che.oauife.edu.ng\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.2"></script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/js/bootstrap.min.js?ver=2.5"></script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/js/jquery.meanmenu.min.js?ver=2.5"></script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/js/jquery.nav.min.js?ver=2.5"></script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/js/js.cookie.min.js?ver=2.5"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var EikraObj = {"stickyMenu":"1","meanWidth":"992","primaryColor":"#002147","seconderyColor":"#fdc800","siteLogo":"<a href=\"https:\/\/che.oauife.edu.ng\/\" alt=\"Website of the Department of LGS\"><img class=\"logo-small\" src=\"http:\/\/che.oauife.edu.ng\/wp-content\/uploads\/2018\/06\/oaulogosmaller.png\" \/><\/a>","day":"Day","hour":"Hour","minute":"Minute","second":"Second","extraOffset":"70","extraOffsetMobile":"52","rtl":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/js/main.js?ver=2.5"></script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-includes/js/wp-embed.min.js?ver=4.9.26"></script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7"></script>
+<script type="text/javascript" src="https://che.oauife.edu.ng/wp-content/themes/eikra/assets/js/owl.carousel.min.js?ver=2.5"></script>
+</body>
+</html>
