@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THIS SITE IS TAKEN BY TENNESSEE</title>
+  <style>
+    :root {
+      --bg-darkest: #000000;
+      --bg-darker: #0b0b0b;
+      --text: #e6e6e6;
+      --blood: #8b0000;
+      --shadow: #111;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      color: var(--text);
+      background: radial-gradient(circle at center, #0b0b0b 0%, #000000 90%);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(45deg, rgba(139,0,0,0.05) 0, rgba(139,0,0,0.05) 2px, transparent 2px, transparent 6px);
+      mix-blend-mode: overlay;
+      pointer-events: none;
+    }
+
+    .fog {
+      position: fixed;
+      inset: -50%;
+      background: url('https://www.transparenttextures.com/patterns/dark-fog.png');
+      opacity: 0.1;
+      animation: drift 120s linear infinite;
+      pointer-events: none;
+      filter: hue-rotate(-10deg) brightness(0.8);
+    }
+
+    @keyframes drift {
+      from { transform: translate(0,0) scale(1.2); }
+      to { transform: translate(-10%, -10%) scale(1.2); }
+    }
+
+    .sigil {
+      position: absolute;
+      width: 80vmin;
+      height: 80vmin;
+      opacity: 0.15;
+      stroke: var(--blood);
+      filter: drop-shadow(0 0 25px rgba(139,0,0,0.5));
+      animation: spin 150s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: clamp(2rem, 8vw, 7rem);
+      letter-spacing: 0.1em;
+      color: var(--text);
+      text-align: center;
+      text-shadow: 0 0 15px var(--shadow), 0 0 40px var(--blood);
+      animation: flicker 3s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.4;
+      }
+    }
+
+    .accent {
+      display: inline-block;
+      padding: 0.2em 0.4em;
+      border: 3px solid var(--blood);
+      box-shadow: inset 0 0 15px rgba(139,0,0,0.6), 0 0 25px rgba(139,0,0,0.8);
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="fog"></div>
+
+  <svg class="sigil" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="47" fill="none" stroke="var(--blood)" stroke-width="1.5"/>
+    <polyline points="50,5 76.45,86.406 7.202,36.094 92.798,36.094 23.55,86.406 50,5"
+              fill="none" stroke="var(--blood)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+  <h1><span class="accent">THIS SITE</span><br/>IS TAKEN BY<br/>TENNESSEE</h1>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2021/11/15/audio_74ff1b78b2.mp3?filename=dark-ambient-background-117997.mp3" type="audio/mpeg">
+    Browser anda tidak mendukung audio.
+  </audio>
+</body>
+</html>
