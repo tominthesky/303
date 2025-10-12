@@ -1,0 +1,318 @@
+<?php require_once("header.php");?>
+		<!-- Background Area Start -->
+        <section id="slider-container" class="slider-area two"> 
+            <div class="slider-owl owl-theme owl-carousel"> 
+
+                
+                <!-- Start Slingle Slide -->
+                <div class="single-slide item" style="background-image: url(img/slider/bbbbb.jpg)">
+                    <!-- Start Slider Content -->
+                    <div class="slider-content-area">   
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1"> 
+                                    <div class="slide-content-wrapper">
+                                        <div class="slide-content text-center">
+                                            <h2 style="color: #33FF00"> PAUL UNIVERSITY LIBRARY </h2>
+                                            <p> <span class="blink_header"> <b>... enjoy access to:</b> </span>  </p>
+                                           <!-- <a class="default-btn" >EBSCOHOST</a> -->
+                                           <!-- <a class="default-btn">AGORA</a> -->
+                                           <!-- <a class="default-btn">HINARI</a> -->
+                                           <!-- <a class="default-btn">OARE</a> -->
+                                           <!-- <a class="default-btn">ARDI</a> -->
+                                           <!-- <a class="default-btn">GOALI - LAW</a> -->
+                                           <!-- <a class="default-btn" >SAFARI</a> -->
+                                           <!-- <a class="default-btn">LEGALPEDIA</a> -->
+                                            <a style="color: #000000; background-color: #999999" class="default-btn">PRINT MEDIA</a>
+                                            <a style="color: #000000; background-color: #99CC99" class="default-btn">OPEN ACCESS DATABASES</a>
+											<a style="color: #000000; background-color:#FFFFFF" class="default-btn">CLOSED ACCESS DATABASES</a>
+                                            <a style="color: #000000; background-color: #6699FF" class="default-btn">OPEN EDU. RESOURCES</a>
+											<!--  <a class="default-btn" >JSTOR & ARTSTOR REPOSITORY.</a>  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Slider Content -->
+                </div>
+                <!-- End Slingle Slide -->
+                
+                
+                <!-- Start Slingle Slide -->
+                <div class="single-slide item" style="background-image: url(img/slider/rrrrr.jpg)">
+                    <!-- Start Slider Content -->
+                    <div class="slider-content-area">  
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1"> 
+                                    <div class="slide-content-wrapper">
+                                        <div class="slide-content text-center">
+                                            <h2>PAUL UNIVERSITY LIBRARY </h2>
+                                            <p>  </p>
+                                            <a class="default-btn" > <span class="blink"> - This is the Auxilliary website of PAUL UNIVERSITY  LIBRARY, AWKA</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Slider Content -->
+                </div>
+                <!-- End Slingle Slide -->
+                
+                
+                <!-- Start Slingle Slide -->
+                <div class="single-slide item" style="background-image: url(img/slider/aaaaa.jpg)">
+                    <!-- Start Slider Content -->
+                    <div class="slider-content-area">   
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1"> 
+                                    <div class="slide-content-wrapper">
+                                        <div class="slide-content text-center">
+                                            <h2> READERS ARE LEADERS </h2>
+                                            <p>  The unread story is not a story ... </p>
+                                            <a class="default-btn" >Ursula K. LeGuin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Slider Content -->
+                </div>
+                <!-- End Slingle Slide -->
+                <!-- Start Slingle Slide -->
+                <div class="single-slide item" style="background-image: url(img/slider/slider33.jpg)">
+                    <!-- Start Slider Content -->
+                    <div class="slider-content-area">  
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1"> 
+                                    <div class="slide-content-wrapper">
+                                        <div class="slide-content text-center">
+                                            <h2> WE LEND BOOKS </h2>
+                                            <p> Register with the University Library in order to borrow books.   </p>
+                                            <a class="default-btn" >STUDENTS</a>
+                                            <a class="default-btn" >ACADEMIC STAFF</a>
+                                            <a class="default-btn" >NON ACADEMIC STAFF</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Slider Content -->
+                </div>
+                <!-- End Slingle Slide -->								
+            </div>
+        </section>
+		<!-- Background Area End -->
+
+       <div  class="linksss pt-40 pb-20">  <img src="img/icon/section.png" alt="title"> </div>
+       <div  class="linksss pt-30 pb-20"> <a style="color:#000000; font-size:22px; font-weight:900;">  Online Databases   </a>
+           
+           
+       </div>
+
+
+        <!-- Service Start -->
+        <div class="service-area two pt-50 pb-20"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+                            <h3><a href="" target="_blank" style="color: #000000">Open Educational Resources</a></h3>
+                            <p>Reports/Thesis/Dissertations, Journals, Conference Papers, Lecture Materials and Books. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+                            <h3><a href="https://search.ebscohost.com/" target="_blank" style="color:#990000">Ebscohost</a></h3>
+                            <p>Research Databases, e-Journals, Magazine subscriptions, e-Books and Discovery services.</p>
+                        </div>
+                    </div>
+					
+					
+					<div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+						    <h3><a  href="https://legalpediaresources.com/" target="_blank" style="color: #408080">LegalPedia</a></h3>
+							<p>Judgements, Laws of the Federation, Rules of court, Legal Maxims, Law Dictionary,Etc...</p>
+                            
+                        </div>
+                    </div>
+					
+					
+                </div>
+            </div>
+            <br/>
+			
+			
+             <div class="container">
+                <div class="row">
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+                            <h3><a style="color: #FF0000"  href="http://login.research4life.org/tacgw/login.cshtml" target="_blank">Research For Life</a></h3>
+                            <p> <u>HINARI</u> (Health), <u>OARE</u> (Arts, Edu, Engrn), <u>AGORA</u> (Agric), <u>ARDI</u> (Science) and <u>GOALI</u> (Law). </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+                            <h3><a style="color: #0000FF" href="https://www.sciencedirect.com" target="_blank">Science Direct</a></h3>
+                            <p>The leading Platform of peer-reviewd Literature that helps you move your research forward.  </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+                            <h3><a style="color: #006600" href="https://www.jstor.org" target="_blank">JSTOR</a></h3>
+                            <p>Multidisciplinary research publications in over 75 disciplines.  </p>
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+			
+			
+			
+			
+			
+        </div>
+        <!-- Service End -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		    <!-- Service Start -->
+        <div class="service-area two mt-0 pt-0 pb-0"> 
+        			
+             <div class="container">
+                <div class="row">
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+                            <h3><a style="color: #660033"  href="https://www.loc.gov/collections/world-digital-library/about-this-collection/" target="_blank">World Digital Library</a></h3>
+                            <p> FREE, in multilingual format. Primary materials from cultures around the world. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+                            <h3><a style="color: #CC0000" href="https://doaj.org/" target="_blank">DOAJ - Open Access</a></h3>
+                            <p>Enjoy access to free journals. Doaj offers access to free Journals. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="single-service">
+                            <h3><a style="color: #663300" href="https://www.base-search.net/" target="_blank">BASE - Open Access</a></h3>
+                            <p>60 percent Open Access. Offers over 100 million documents from over 4,000 sources.</p>
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+		</div>
+<!-- Service End -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <!-- About Start -->
+        <div class="about-area pb-105">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="about-content">
+                            <h2 style="color:#000000"> <span class="initii">ABOUT</span> PAUL UNIVERSITY</h2>
+                            <p style="color:#000000; font-weight:bold; text-align:justify;">Paul University, Awka (PUA) is located in Awka, Anambra State in Nigeria. It is a private Christian University. It was founded in 2009 by Bishops of the five ecclesiastical provinces of the Anglican Church East of the Niger to provide undergraduate training in Arts, Natural and Applied Sciences, Social Sciences and Management.</p>
+                            <p style="color:#000000; font-weight:bold; text-align:justify;" class="hidden-sm">The University has replaced St Paul's University College which was founded in 1904 by the Church Missionary Society of the Church of England to train church workers and teachers. Paul University has affiliate institutions like Institute of Theology which is headed by the Director, Ven Dr Rex Kanu.
+
+The first Board of Trustee was headed by a former Vice President of Nigeria, Dr Alex Ekwueme (GCON) who also built the Administrative Offices which houses the Senate Chamber.</p>
+                            <a class="default-btn" href="https://www.pauluniversity.edu.ng/" target="_blank"> Link to PAUL UNIVERSITY MAIN WEBSITE </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 mt-25">
+                        <div class="about-img">
+                            <img src="img/about/geg.png" alt="about">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Teacher Start -->
+
+        <div class="teacher-area pb-">
+            <div class="container">
+                
+               <div class="row">
+                    
+                    <div class="col-xs-12">
+                        <div class="section-title text-center">
+                            <img src="img/icon/section.png" alt="title">
+                            
+     
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+                 
+                
+            </div>
+        </div>
+
+        <!-- Teacher End -->
+
+        <!-- Testimonial Area Start -->
+        <div class="testimonial-area pt-40 pb-40 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="testimonial-owl owl-theme owl-carousel">
+                        <div class="col-md-8 col-md-offset-2 col-sm-12">
+                            <div class="single-testimonial">
+                                <div class="testimonial-info">
+                                    <div class="testimonial-img">
+                                        <img src="img/testimonial/testimonial.jpg" alt="testimonial">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p> Staff and Students of Paul University are directed to submit electronic copies of their Papers, Books, Thesis, Dissertations and Conference Papers to the University Main Library, for upload to the <b>Paul University  OER</b> online Repository. <br />
+                                       Call: +234-803-084-5793 </p> 
+                                        <br />
+                                        <h4><u>Uju Anyaoku</u></h4>
+                                        <h5>University Librarian</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Area End -->
+<?php require_once("footer.php");?>
