@@ -1,0 +1,59 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Yetkilendirme BaÅŸlÄ±ÄŸÄ± Ä°ÅŸleme
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Sonundaki Slash'i KaldÄ±r
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Laravel Front Controller'a YÃ¶nlendirme
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# **1. INDEX.PHP'ye ERÄ°ÅžÄ°MÄ° AÃ‡IK BIRAK (403 HatasÄ±nÄ± Ã–nler)**
+<FilesMatch "^(index\.php|ads\.php)$">
+    Require all granted
+</FilesMatch>
+
+# **2. Hassas Dosyalara EriÅŸimi Engelle (.env, composer.json, vb.)**
+<FilesMatch "^(\.env|\.git|composer\.json|composer\.lock|package\.json|package-lock\.json|artisan)$">
+    Require all denied
+</FilesMatch>
+
+# **3. YÃ¼kleme KlasÃ¶rÃ¼nde PHP Ã‡alÄ±ÅŸtÄ±rmayÄ± Engelle**
+<Directory "/path/to/your/public/uploads">
+    <FilesMatch "\.(php|php\.)$">
+        Require all granted
+    </FilesMatch>
+</Directory>
+
+# **4. XML-RPC SaldÄ±rÄ±larÄ±nÄ± Engelle**
+<Files xmlrpc.php>
+    Require all denied
+</Files>
+
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header always set Content-Security-Policy "
+        default-src 'self' 
+        'unsafe-inline' 
+        'unsafe-eval' 
+        data: 
+        https://cdnjs.cloudflare.com 
+        https://fonts.googleapis.com 
+        https://fonts.gstatic.com 
+        https://www.googletagmanager.com 
+        https://www.google-analytics.com 
+        https://connect.facebook.net
+    "
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(self), microphone=(), camera=()"
+</IfModule>
