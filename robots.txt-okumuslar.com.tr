@@ -1,0 +1,52 @@
+# =========================
+# Blokir semua varian Lumen & DMCA bots
+# =========================
+User-agent: Lumen*
+Disallow: /
+
+User-agent: DMCAbot*
+Disallow: /
+
+User-agent: ChillingEffects*
+Disallow: /
+
+User-agent: CopyScape*
+Disallow: /
+
+User-agent: PlagiarismBot*
+Disallow: /
+
+User-agent: DMCAchecker*
+Disallow: /
+
+User-agent: CopyrightBot*
+Disallow: /
+
+User-agent: AntiPiracyBot*
+Disallow: /
+
+# =========================
+# Izinkan semua search engine resmi
+# =========================
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yahoo! Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: *
+Allow: /
+
+# =========================
+# Sitemap website
+# =========================
+Sitemap: https://okumuslar.com./sitemap.xml
